@@ -1,0 +1,16 @@
+PODS:
+  - MagiEye (0.1.0)
+
+DEPENDENCIES:
+  - MagiEye (from `../`)
+
+EXTERNAL SOURCES:
+  MagiEye:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  MagiEye: df948d0f05de44f9e2af9d7c3fdbf59d4583a434
+
+PODFILE CHECKSUM: a212920ab86c8903437cc1eb21ecc0f3fb6d8171
+
+COCOAPODS: 1.5.3

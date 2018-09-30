@@ -1,0 +1,750 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4160DA009C53817281737FA0735D4AE7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		57571E8CAECA493E1FF6C9A9B6F868F4 /* Pods-MagiEye_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AB76D31E4CF7A423CBE246BEC39197C /* Pods-MagiEye_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A28A654351FD214D16366A65D3D94772 /* MagiEye-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AA76DA819E1E87DD6EEDD63F65146FB4 /* MagiEye-dummy.m */; };
+		AF4926F28F33A468ACBC090D47414003 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		B3EE6DB7C334A99A3C88B4F7B468459B /* Pods-MagiEye_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5798FC0D54D74564C0D67CC44389819C /* Pods-MagiEye_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BB589CBDFD8B17E67619E064444DF33E /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE15E74A2DFC71D75ED4A985A598214C /* ReplaceMe.swift */; };
+		BFFCE17D64C4081DE3BC29A56A581FCC /* Pods-MagiEye_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EA9A5B423A88D0F6BAB0492CCB89F093 /* Pods-MagiEye_Tests-dummy.m */; };
+		C0486C409A9C148813746EFEE0A85A69 /* Pods-MagiEye_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3983BA239AA071B7BC5C6CA6DBAE6F4A /* Pods-MagiEye_Example-dummy.m */; };
+		D49DF586197C469204B5E0C62E086CC5 /* MagiEye-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E2DB864BA3C29B2D017814EC5949598C /* MagiEye-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DFA00D68D6723E2F0E0DE8632784F5EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		35D6898F0691E0A95D1DAFC2CA4DC8EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8F85CA69CF935A4FAE74F6DB04FA6FE8;
+			remoteInfo = "Pods-MagiEye_Example";
+		};
+		702A867E3B86BEA0C78EC248C81696EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA227E63804D6805A404EB0288C2B186;
+			remoteInfo = MagiEye;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0E80E8F1A5497E0D1452E5979DF28EE6 /* Pods-MagiEye_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MagiEye_Example.release.xcconfig"; sourceTree = "<group>"; };
+		14CC6D93ED2F67578A1349234F2C3164 /* Pods-MagiEye_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MagiEye_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1B434971CB5C51551F697273C83D70ED /* Pods-MagiEye_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MagiEye_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		2792FE017BF2DFF6185F57146F68782C /* Pods-MagiEye_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MagiEye_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		28469357E224D7F8EC81D50B939F8BCE /* Pods-MagiEye_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MagiEye_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		29A468305286657D365B4FB8561CA9D0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29EB162C1BF28770769CB5363254042D /* Pods-MagiEye_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MagiEye_Tests-resources.sh"; sourceTree = "<group>"; };
+		2F0BEB1BA603B03D222685B5F6D454C5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30D00FAABFE0C4F2C36DF0C4796429B4 /* MagiEye.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MagiEye.modulemap; sourceTree = "<group>"; };
+		3983BA239AA071B7BC5C6CA6DBAE6F4A /* Pods-MagiEye_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MagiEye_Example-dummy.m"; sourceTree = "<group>"; };
+		3A332A470549B9BCB1248757E5EFA2D6 /* Pods-MagiEye_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MagiEye_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		5717CE69642CE0069050F9640D4EFF1D /* Pods-MagiEye_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MagiEye_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		5798FC0D54D74564C0D67CC44389819C /* Pods-MagiEye_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MagiEye_Example-umbrella.h"; sourceTree = "<group>"; };
+		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		5AB76D31E4CF7A423CBE246BEC39197C /* Pods-MagiEye_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MagiEye_Tests-umbrella.h"; sourceTree = "<group>"; };
+		6B54747370F76E8EC601E4FA14CE8B7C /* Pods-MagiEye_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MagiEye_Example-resources.sh"; sourceTree = "<group>"; };
+		72143D5879E1CA04BB95F961D5596EE7 /* Pods_MagiEye_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MagiEye_Tests.framework; path = "Pods-MagiEye_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E90DE14DEF29DBEDBDD0CFFF0A8CC3C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9649C97735A3031566A0C5D192E703F7 /* Pods-MagiEye_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MagiEye_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		9B77A59DC6C71AC153C8C55C0777BEFD /* MagiEye-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MagiEye-prefix.pch"; sourceTree = "<group>"; };
+		9DC5B41D822F09D83A935E3921AABE67 /* MagiEye.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MagiEye.xcconfig; sourceTree = "<group>"; };
+		A038C9E77F2A88E4232110390EE6DC94 /* MagiEye.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = MagiEye.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A4FF456741E268FFEB505E90F8F5BE7F /* Pods_MagiEye_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MagiEye_Example.framework; path = "Pods-MagiEye_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A64454647C78089212507CE1E849DC2F /* Pods-MagiEye_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MagiEye_Tests.modulemap"; sourceTree = "<group>"; };
+		A9996E05A0D190FF59F7CC09D42938C8 /* Pods-MagiEye_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MagiEye_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		AA76DA819E1E87DD6EEDD63F65146FB4 /* MagiEye-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MagiEye-dummy.m"; sourceTree = "<group>"; };
+		D198A3E37A891C556407A445AD19A9AA /* Pods-MagiEye_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MagiEye_Example-frameworks.sh"; sourceTree = "<group>"; };
+		D56FB62AE7D11755B305E55F1DFB562B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2DB864BA3C29B2D017814EC5949598C /* MagiEye-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MagiEye-umbrella.h"; sourceTree = "<group>"; };
+		EA9A5B423A88D0F6BAB0492CCB89F093 /* Pods-MagiEye_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MagiEye_Tests-dummy.m"; sourceTree = "<group>"; };
+		EB839D84C5862E22CEA53EA82B95F1F2 /* MagiEye.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MagiEye.framework; path = MagiEye.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE15E74A2DFC71D75ED4A985A598214C /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = MagiEye/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
+		F0A6180BDC6F784509729495A0C885DF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		FF43E2931CF1EBCAB4636BB0F3D49DB7 /* Pods-MagiEye_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MagiEye_Example.modulemap"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		36736CA05634C52029F1623EF60C5E16 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4160DA009C53817281737FA0735D4AE7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDA58EA3D8DA77493738776B856F4A78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF4926F28F33A468ACBC090D47414003 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F26E2D05ACEA325C679C67D884B6A19B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFA00D68D6723E2F0E0DE8632784F5EC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1C62D6FC56E0ED08CAA4500A5682B72D /* Pods-MagiEye_Example */ = {
+			isa = PBXGroup;
+			children = (
+				29A468305286657D365B4FB8561CA9D0 /* Info.plist */,
+				FF43E2931CF1EBCAB4636BB0F3D49DB7 /* Pods-MagiEye_Example.modulemap */,
+				2792FE017BF2DFF6185F57146F68782C /* Pods-MagiEye_Example-acknowledgements.markdown */,
+				9649C97735A3031566A0C5D192E703F7 /* Pods-MagiEye_Example-acknowledgements.plist */,
+				3983BA239AA071B7BC5C6CA6DBAE6F4A /* Pods-MagiEye_Example-dummy.m */,
+				D198A3E37A891C556407A445AD19A9AA /* Pods-MagiEye_Example-frameworks.sh */,
+				6B54747370F76E8EC601E4FA14CE8B7C /* Pods-MagiEye_Example-resources.sh */,
+				5798FC0D54D74564C0D67CC44389819C /* Pods-MagiEye_Example-umbrella.h */,
+				3A332A470549B9BCB1248757E5EFA2D6 /* Pods-MagiEye_Example.debug.xcconfig */,
+				0E80E8F1A5497E0D1452E5979DF28EE6 /* Pods-MagiEye_Example.release.xcconfig */,
+			);
+			name = "Pods-MagiEye_Example";
+			path = "Target Support Files/Pods-MagiEye_Example";
+			sourceTree = "<group>";
+		};
+		2DA815A0AE6EB7FABF9EB704F5B5512C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EB839D84C5862E22CEA53EA82B95F1F2 /* MagiEye.framework */,
+				A4FF456741E268FFEB505E90F8F5BE7F /* Pods_MagiEye_Example.framework */,
+				72143D5879E1CA04BB95F961D5596EE7 /* Pods_MagiEye_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		34EDBDD15E49D047E0806BBCDA385023 /* Pods-MagiEye_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				2F0BEB1BA603B03D222685B5F6D454C5 /* Info.plist */,
+				A64454647C78089212507CE1E849DC2F /* Pods-MagiEye_Tests.modulemap */,
+				14CC6D93ED2F67578A1349234F2C3164 /* Pods-MagiEye_Tests-acknowledgements.markdown */,
+				1B434971CB5C51551F697273C83D70ED /* Pods-MagiEye_Tests-acknowledgements.plist */,
+				EA9A5B423A88D0F6BAB0492CCB89F093 /* Pods-MagiEye_Tests-dummy.m */,
+				5717CE69642CE0069050F9640D4EFF1D /* Pods-MagiEye_Tests-frameworks.sh */,
+				29EB162C1BF28770769CB5363254042D /* Pods-MagiEye_Tests-resources.sh */,
+				5AB76D31E4CF7A423CBE246BEC39197C /* Pods-MagiEye_Tests-umbrella.h */,
+				28469357E224D7F8EC81D50B939F8BCE /* Pods-MagiEye_Tests.debug.xcconfig */,
+				A9996E05A0D190FF59F7CC09D42938C8 /* Pods-MagiEye_Tests.release.xcconfig */,
+			);
+			name = "Pods-MagiEye_Tests";
+			path = "Target Support Files/Pods-MagiEye_Tests";
+			sourceTree = "<group>";
+		};
+		3FF60897516AC2215FE218BC4F8A1CAD /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				7E90DE14DEF29DBEDBDD0CFFF0A8CC3C /* LICENSE */,
+				A038C9E77F2A88E4232110390EE6DC94 /* MagiEye.podspec */,
+				F0A6180BDC6F784509729495A0C885DF /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7B37968383E487E46650CCA977540D6A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D56FB62AE7D11755B305E55F1DFB562B /* Info.plist */,
+				30D00FAABFE0C4F2C36DF0C4796429B4 /* MagiEye.modulemap */,
+				9DC5B41D822F09D83A935E3921AABE67 /* MagiEye.xcconfig */,
+				AA76DA819E1E87DD6EEDD63F65146FB4 /* MagiEye-dummy.m */,
+				9B77A59DC6C71AC153C8C55C0777BEFD /* MagiEye-prefix.pch */,
+				E2DB864BA3C29B2D017814EC5949598C /* MagiEye-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/MagiEye";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				F7B6397FF4A78F90FDB445C17280CDE7 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				2DA815A0AE6EB7FABF9EB704F5B5512C /* Products */,
+				D63572A033731A028757B888C558536E /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8ACC5EA1C65C025D555F5E804A5B9D8E /* MagiEye */ = {
+			isa = PBXGroup;
+			children = (
+				EE15E74A2DFC71D75ED4A985A598214C /* ReplaceMe.swift */,
+				3FF60897516AC2215FE218BC4F8A1CAD /* Pod */,
+				7B37968383E487E46650CCA977540D6A /* Support Files */,
+			);
+			name = MagiEye;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5E0D919E635D23B70123790B8308F8EF /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D63572A033731A028757B888C558536E /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1C62D6FC56E0ED08CAA4500A5682B72D /* Pods-MagiEye_Example */,
+				34EDBDD15E49D047E0806BBCDA385023 /* Pods-MagiEye_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		F7B6397FF4A78F90FDB445C17280CDE7 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8ACC5EA1C65C025D555F5E804A5B9D8E /* MagiEye */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0FDA97D16E9D0E0A2D25C9D8C9079BC1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3EE6DB7C334A99A3C88B4F7B468459B /* Pods-MagiEye_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DD1945F4FC31FADE757933EDFEA145F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57571E8CAECA493E1FF6C9A9B6F868F4 /* Pods-MagiEye_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C478BB6036EB1FCA5917CD0ED9970553 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D49DF586197C469204B5E0C62E086CC5 /* MagiEye-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8B8BCD2D87B03A6BD835805DF66C1124 /* Pods-MagiEye_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E43955417CA90A959E2BDB250D65F789 /* Build configuration list for PBXNativeTarget "Pods-MagiEye_Tests" */;
+			buildPhases = (
+				8381DFDBBA56470896C22C61101CE400 /* Sources */,
+				36736CA05634C52029F1623EF60C5E16 /* Frameworks */,
+				2DD1945F4FC31FADE757933EDFEA145F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC14EA54E0B961C20B08570267FFCF2C /* PBXTargetDependency */,
+			);
+			name = "Pods-MagiEye_Tests";
+			productName = "Pods-MagiEye_Tests";
+			productReference = 72143D5879E1CA04BB95F961D5596EE7 /* Pods_MagiEye_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8F85CA69CF935A4FAE74F6DB04FA6FE8 /* Pods-MagiEye_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0E648769BE041C8544E21B5DDB4D8A56 /* Build configuration list for PBXNativeTarget "Pods-MagiEye_Example" */;
+			buildPhases = (
+				BB4A2125D35B712545E5983F1A2E1CA0 /* Sources */,
+				CDA58EA3D8DA77493738776B856F4A78 /* Frameworks */,
+				0FDA97D16E9D0E0A2D25C9D8C9079BC1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7C28C20332B3C7F26330F4EAF10C99A0 /* PBXTargetDependency */,
+			);
+			name = "Pods-MagiEye_Example";
+			productName = "Pods-MagiEye_Example";
+			productReference = A4FF456741E268FFEB505E90F8F5BE7F /* Pods_MagiEye_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FA227E63804D6805A404EB0288C2B186 /* MagiEye */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4AD35C66D18BCD9E9CCC77707C956124 /* Build configuration list for PBXNativeTarget "MagiEye" */;
+			buildPhases = (
+				627DC74B06B709581314024C0537184D /* Sources */,
+				F26E2D05ACEA325C679C67D884B6A19B /* Frameworks */,
+				C478BB6036EB1FCA5917CD0ED9970553 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MagiEye;
+			productName = MagiEye;
+			productReference = EB839D84C5862E22CEA53EA82B95F1F2 /* MagiEye.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 2DA815A0AE6EB7FABF9EB704F5B5512C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA227E63804D6805A404EB0288C2B186 /* MagiEye */,
+				8F85CA69CF935A4FAE74F6DB04FA6FE8 /* Pods-MagiEye_Example */,
+				8B8BCD2D87B03A6BD835805DF66C1124 /* Pods-MagiEye_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		627DC74B06B709581314024C0537184D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A28A654351FD214D16366A65D3D94772 /* MagiEye-dummy.m in Sources */,
+				BB589CBDFD8B17E67619E064444DF33E /* ReplaceMe.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8381DFDBBA56470896C22C61101CE400 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFFCE17D64C4081DE3BC29A56A581FCC /* Pods-MagiEye_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB4A2125D35B712545E5983F1A2E1CA0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0486C409A9C148813746EFEE0A85A69 /* Pods-MagiEye_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7C28C20332B3C7F26330F4EAF10C99A0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MagiEye;
+			target = FA227E63804D6805A404EB0288C2B186 /* MagiEye */;
+			targetProxy = 702A867E3B86BEA0C78EC248C81696EA /* PBXContainerItemProxy */;
+		};
+		CC14EA54E0B961C20B08570267FFCF2C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-MagiEye_Example";
+			target = 8F85CA69CF935A4FAE74F6DB04FA6FE8 /* Pods-MagiEye_Example */;
+			targetProxy = 35D6898F0691E0A95D1DAFC2CA4DC8EB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4FDFEA8A91E6CFC89376A3835D012A4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E80E8F1A5497E0D1452E5979DF28EE6 /* Pods-MagiEye_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MagiEye_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MagiEye_Example/Pods-MagiEye_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		639DB9119AFA7CE6DEAB29B8A3B293AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DC5B41D822F09D83A935E3921AABE67 /* MagiEye.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MagiEye/MagiEye-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MagiEye/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MagiEye/MagiEye.modulemap";
+				PRODUCT_MODULE_NAME = MagiEye;
+				PRODUCT_NAME = MagiEye;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8B33C5230DE4A9DFA6D8F46505DD7AF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		8BD47E151308E972BC31E5D168F5A9EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DC5B41D822F09D83A935E3921AABE67 /* MagiEye.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MagiEye/MagiEye-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MagiEye/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MagiEye/MagiEye.modulemap";
+				PRODUCT_MODULE_NAME = MagiEye;
+				PRODUCT_NAME = MagiEye;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B0400E2E8E1A0D0BDAAB00EFE594CD6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9996E05A0D190FF59F7CC09D42938C8 /* Pods-MagiEye_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MagiEye_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MagiEye_Tests/Pods-MagiEye_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B42B54097A876E8A982CBF5DAA91B1AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		CE9D56F702371EF2EAC616BF590192FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A332A470549B9BCB1248757E5EFA2D6 /* Pods-MagiEye_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MagiEye_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MagiEye_Example/Pods-MagiEye_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F0BA8CA9A2151CB2245626589789FE69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28469357E224D7F8EC81D50B939F8BCE /* Pods-MagiEye_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MagiEye_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MagiEye_Tests/Pods-MagiEye_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0E648769BE041C8544E21B5DDB4D8A56 /* Build configuration list for PBXNativeTarget "Pods-MagiEye_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE9D56F702371EF2EAC616BF590192FF /* Debug */,
+				4FDFEA8A91E6CFC89376A3835D012A4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B33C5230DE4A9DFA6D8F46505DD7AF7 /* Debug */,
+				B42B54097A876E8A982CBF5DAA91B1AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4AD35C66D18BCD9E9CCC77707C956124 /* Build configuration list for PBXNativeTarget "MagiEye" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				639DB9119AFA7CE6DEAB29B8A3B293AA /* Debug */,
+				8BD47E151308E972BC31E5D168F5A9EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E43955417CA90A959E2BDB250D65F789 /* Build configuration list for PBXNativeTarget "Pods-MagiEye_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0BA8CA9A2151CB2245626589789FE69 /* Debug */,
+				B0400E2E8E1A0D0BDAAB00EFE594CD6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

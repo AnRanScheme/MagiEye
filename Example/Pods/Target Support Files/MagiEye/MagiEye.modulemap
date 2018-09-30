@@ -1,0 +1,6 @@
+framework module MagiEye {
+  umbrella header "MagiEye-umbrella.h"
+
+  export *
+  module * { export * }
+}

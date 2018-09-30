@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'MagiEye_Example' do
+  pod 'MagiEye', :path => '../'
+
+  target 'MagiEye_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

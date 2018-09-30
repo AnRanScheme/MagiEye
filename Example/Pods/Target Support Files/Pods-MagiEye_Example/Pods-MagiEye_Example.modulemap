@@ -1,0 +1,6 @@
+framework module Pods_MagiEye_Example {
+  umbrella header "Pods-MagiEye_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
