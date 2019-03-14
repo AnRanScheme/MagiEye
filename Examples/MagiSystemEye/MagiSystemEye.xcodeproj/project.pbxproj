@@ -1,0 +1,641 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3525B5382238E50A000278BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3525B5372238E50A000278BF /* AppDelegate.swift */; };
+		3525B53A2238E50A000278BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3525B5392238E50A000278BF /* ViewController.swift */; };
+		3525B53D2238E50A000278BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3525B53B2238E50A000278BF /* Main.storyboard */; };
+		3525B53F2238E50A000278BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3525B53E2238E50A000278BF /* Assets.xcassets */; };
+		3525B5422238E50A000278BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3525B5402238E50A000278BF /* LaunchScreen.storyboard */; };
+		3525B54D2238E50A000278BF /* MagiSystemEyeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3525B54C2238E50A000278BF /* MagiSystemEyeTests.swift */; };
+		3525B5582238E50A000278BF /* MagiSystemEyeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3525B5572238E50A000278BF /* MagiSystemEyeUITests.swift */; };
+		3525B5662238E6F8000278BF /* MagiCPU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3525B5652238E6F7000278BF /* MagiCPU.swift */; };
+		3525B5682238F913000278BF /* MagiFPSLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3525B5672238F913000278BF /* MagiFPSLabel.swift */; };
+		3525B56A22390214000278BF /* MagiHardware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3525B56922390214000278BF /* MagiHardware.swift */; };
+		3525B56C22390C82000278BF /* MagiFPS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3525B56B22390C82000278BF /* MagiFPS.swift */; };
+		3525B56E22390FA2000278BF /* MagiSystemEye.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3525B56D22390FA2000278BF /* MagiSystemEye.swift */; };
+		3525B5702239FA3D000278BF /* MagiMemory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3525B56F2239FA3D000278BF /* MagiMemory.swift */; };
+		3525B5722239FA53000278BF /* MagiNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3525B5712239FA53000278BF /* MagiNetwork.swift */; };
+		3525B5742239FA65000278BF /* MagiNetworkFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3525B5732239FA65000278BF /* MagiNetworkFlow.swift */; };
+		3525B578223A3E77000278BF /* NetObjc.m in Sources */ = {isa = PBXBuildFile; fileRef = 3525B576223A3E77000278BF /* NetObjc.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3525B5492238E50A000278BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3525B52C2238E509000278BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3525B5332238E50A000278BF;
+			remoteInfo = MagiSystemEye;
+		};
+		3525B5542238E50A000278BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3525B52C2238E509000278BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3525B5332238E50A000278BF;
+			remoteInfo = MagiSystemEye;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3525B5342238E50A000278BF /* MagiSystemEye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagiSystemEye.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3525B5372238E50A000278BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3525B5392238E50A000278BF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3525B53C2238E50A000278BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3525B53E2238E50A000278BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3525B5412238E50A000278BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3525B5432238E50A000278BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3525B5482238E50A000278BF /* MagiSystemEyeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagiSystemEyeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3525B54C2238E50A000278BF /* MagiSystemEyeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagiSystemEyeTests.swift; sourceTree = "<group>"; };
+		3525B54E2238E50A000278BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3525B5532238E50A000278BF /* MagiSystemEyeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagiSystemEyeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3525B5572238E50A000278BF /* MagiSystemEyeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagiSystemEyeUITests.swift; sourceTree = "<group>"; };
+		3525B5592238E50A000278BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3525B5652238E6F7000278BF /* MagiCPU.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagiCPU.swift; sourceTree = "<group>"; };
+		3525B5672238F913000278BF /* MagiFPSLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagiFPSLabel.swift; sourceTree = "<group>"; };
+		3525B56922390214000278BF /* MagiHardware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagiHardware.swift; sourceTree = "<group>"; };
+		3525B56B22390C82000278BF /* MagiFPS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagiFPS.swift; sourceTree = "<group>"; };
+		3525B56D22390FA2000278BF /* MagiSystemEye.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagiSystemEye.swift; sourceTree = "<group>"; };
+		3525B56F2239FA3D000278BF /* MagiMemory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagiMemory.swift; sourceTree = "<group>"; };
+		3525B5712239FA53000278BF /* MagiNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagiNetwork.swift; sourceTree = "<group>"; };
+		3525B5732239FA65000278BF /* MagiNetworkFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagiNetworkFlow.swift; sourceTree = "<group>"; };
+		3525B576223A3E77000278BF /* NetObjc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetObjc.m; sourceTree = "<group>"; };
+		3525B577223A3E77000278BF /* NetObjc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetObjc.h; sourceTree = "<group>"; };
+		3525B57F223A408D000278BF /* Header_brige.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header_brige.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3525B5312238E50A000278BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3525B5452238E50A000278BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3525B5502238E50A000278BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3525B52B2238E509000278BF = {
+			isa = PBXGroup;
+			children = (
+				3525B5362238E50A000278BF /* MagiSystemEye */,
+				3525B54B2238E50A000278BF /* MagiSystemEyeTests */,
+				3525B5562238E50A000278BF /* MagiSystemEyeUITests */,
+				3525B5352238E50A000278BF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3525B5352238E50A000278BF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3525B5342238E50A000278BF /* MagiSystemEye.app */,
+				3525B5482238E50A000278BF /* MagiSystemEyeTests.xctest */,
+				3525B5532238E50A000278BF /* MagiSystemEyeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3525B5362238E50A000278BF /* MagiSystemEye */ = {
+			isa = PBXGroup;
+			children = (
+				3525B5372238E50A000278BF /* AppDelegate.swift */,
+				3525B5392238E50A000278BF /* ViewController.swift */,
+				3525B56D22390FA2000278BF /* MagiSystemEye.swift */,
+				3525B5652238E6F7000278BF /* MagiCPU.swift */,
+				3525B56B22390C82000278BF /* MagiFPS.swift */,
+				3525B5672238F913000278BF /* MagiFPSLabel.swift */,
+				3525B56922390214000278BF /* MagiHardware.swift */,
+				3525B56F2239FA3D000278BF /* MagiMemory.swift */,
+				3525B5712239FA53000278BF /* MagiNetwork.swift */,
+				3525B5732239FA65000278BF /* MagiNetworkFlow.swift */,
+				3525B57F223A408D000278BF /* Header_brige.h */,
+				3525B575223A3E77000278BF /* OCBridge */,
+				3525B53B2238E50A000278BF /* Main.storyboard */,
+				3525B53E2238E50A000278BF /* Assets.xcassets */,
+				3525B5402238E50A000278BF /* LaunchScreen.storyboard */,
+				3525B5432238E50A000278BF /* Info.plist */,
+			);
+			path = MagiSystemEye;
+			sourceTree = "<group>";
+		};
+		3525B54B2238E50A000278BF /* MagiSystemEyeTests */ = {
+			isa = PBXGroup;
+			children = (
+				3525B54C2238E50A000278BF /* MagiSystemEyeTests.swift */,
+				3525B54E2238E50A000278BF /* Info.plist */,
+			);
+			path = MagiSystemEyeTests;
+			sourceTree = "<group>";
+		};
+		3525B5562238E50A000278BF /* MagiSystemEyeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3525B5572238E50A000278BF /* MagiSystemEyeUITests.swift */,
+				3525B5592238E50A000278BF /* Info.plist */,
+			);
+			path = MagiSystemEyeUITests;
+			sourceTree = "<group>";
+		};
+		3525B575223A3E77000278BF /* OCBridge */ = {
+			isa = PBXGroup;
+			children = (
+				3525B577223A3E77000278BF /* NetObjc.h */,
+				3525B576223A3E77000278BF /* NetObjc.m */,
+			);
+			path = OCBridge;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3525B5332238E50A000278BF /* MagiSystemEye */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3525B55C2238E50A000278BF /* Build configuration list for PBXNativeTarget "MagiSystemEye" */;
+			buildPhases = (
+				3525B5302238E50A000278BF /* Sources */,
+				3525B5312238E50A000278BF /* Frameworks */,
+				3525B5322238E50A000278BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MagiSystemEye;
+			productName = MagiSystemEye;
+			productReference = 3525B5342238E50A000278BF /* MagiSystemEye.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3525B5472238E50A000278BF /* MagiSystemEyeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3525B55F2238E50A000278BF /* Build configuration list for PBXNativeTarget "MagiSystemEyeTests" */;
+			buildPhases = (
+				3525B5442238E50A000278BF /* Sources */,
+				3525B5452238E50A000278BF /* Frameworks */,
+				3525B5462238E50A000278BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3525B54A2238E50A000278BF /* PBXTargetDependency */,
+			);
+			name = MagiSystemEyeTests;
+			productName = MagiSystemEyeTests;
+			productReference = 3525B5482238E50A000278BF /* MagiSystemEyeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3525B5522238E50A000278BF /* MagiSystemEyeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3525B5622238E50A000278BF /* Build configuration list for PBXNativeTarget "MagiSystemEyeUITests" */;
+			buildPhases = (
+				3525B54F2238E50A000278BF /* Sources */,
+				3525B5502238E50A000278BF /* Frameworks */,
+				3525B5512238E50A000278BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3525B5552238E50A000278BF /* PBXTargetDependency */,
+			);
+			name = MagiSystemEyeUITests;
+			productName = MagiSystemEyeUITests;
+			productReference = 3525B5532238E50A000278BF /* MagiSystemEyeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3525B52C2238E509000278BF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = anran;
+				TargetAttributes = {
+					3525B5332238E50A000278BF = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					3525B5472238E50A000278BF = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 3525B5332238E50A000278BF;
+					};
+					3525B5522238E50A000278BF = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 3525B5332238E50A000278BF;
+					};
+				};
+			};
+			buildConfigurationList = 3525B52F2238E509000278BF /* Build configuration list for PBXProject "MagiSystemEye" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3525B52B2238E509000278BF;
+			productRefGroup = 3525B5352238E50A000278BF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3525B5332238E50A000278BF /* MagiSystemEye */,
+				3525B5472238E50A000278BF /* MagiSystemEyeTests */,
+				3525B5522238E50A000278BF /* MagiSystemEyeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3525B5322238E50A000278BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3525B5422238E50A000278BF /* LaunchScreen.storyboard in Resources */,
+				3525B53F2238E50A000278BF /* Assets.xcassets in Resources */,
+				3525B53D2238E50A000278BF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3525B5462238E50A000278BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3525B5512238E50A000278BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3525B5302238E50A000278BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3525B578223A3E77000278BF /* NetObjc.m in Sources */,
+				3525B5742239FA65000278BF /* MagiNetworkFlow.swift in Sources */,
+				3525B5722239FA53000278BF /* MagiNetwork.swift in Sources */,
+				3525B56A22390214000278BF /* MagiHardware.swift in Sources */,
+				3525B56E22390FA2000278BF /* MagiSystemEye.swift in Sources */,
+				3525B5702239FA3D000278BF /* MagiMemory.swift in Sources */,
+				3525B5682238F913000278BF /* MagiFPSLabel.swift in Sources */,
+				3525B53A2238E50A000278BF /* ViewController.swift in Sources */,
+				3525B56C22390C82000278BF /* MagiFPS.swift in Sources */,
+				3525B5662238E6F8000278BF /* MagiCPU.swift in Sources */,
+				3525B5382238E50A000278BF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3525B5442238E50A000278BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3525B54D2238E50A000278BF /* MagiSystemEyeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3525B54F2238E50A000278BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3525B5582238E50A000278BF /* MagiSystemEyeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3525B54A2238E50A000278BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3525B5332238E50A000278BF /* MagiSystemEye */;
+			targetProxy = 3525B5492238E50A000278BF /* PBXContainerItemProxy */;
+		};
+		3525B5552238E50A000278BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3525B5332238E50A000278BF /* MagiSystemEye */;
+			targetProxy = 3525B5542238E50A000278BF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3525B53B2238E50A000278BF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3525B53C2238E50A000278BF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3525B5402238E50A000278BF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3525B5412238E50A000278BF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3525B55A2238E50A000278BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = MagiSystemEye/Header_brige.h;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3525B55B2238E50A000278BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = MagiSystemEye/Header_brige.h;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3525B55D2238E50A000278BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TDBLA72SEX;
+				INFOPLIST_FILE = MagiSystemEye/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = www.anran.com.MagiSystemEye;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3525B55E2238E50A000278BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TDBLA72SEX;
+				INFOPLIST_FILE = MagiSystemEye/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = www.anran.com.MagiSystemEye;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3525B5602238E50A000278BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TDBLA72SEX;
+				INFOPLIST_FILE = MagiSystemEyeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = www.anran.com.MagiSystemEyeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MagiSystemEye.app/MagiSystemEye";
+			};
+			name = Debug;
+		};
+		3525B5612238E50A000278BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TDBLA72SEX;
+				INFOPLIST_FILE = MagiSystemEyeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = www.anran.com.MagiSystemEyeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MagiSystemEye.app/MagiSystemEye";
+			};
+			name = Release;
+		};
+		3525B5632238E50A000278BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TDBLA72SEX;
+				INFOPLIST_FILE = MagiSystemEyeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = www.anran.com.MagiSystemEyeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MagiSystemEye;
+			};
+			name = Debug;
+		};
+		3525B5642238E50A000278BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TDBLA72SEX;
+				INFOPLIST_FILE = MagiSystemEyeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = www.anran.com.MagiSystemEyeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MagiSystemEye;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3525B52F2238E509000278BF /* Build configuration list for PBXProject "MagiSystemEye" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3525B55A2238E50A000278BF /* Debug */,
+				3525B55B2238E50A000278BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3525B55C2238E50A000278BF /* Build configuration list for PBXNativeTarget "MagiSystemEye" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3525B55D2238E50A000278BF /* Debug */,
+				3525B55E2238E50A000278BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3525B55F2238E50A000278BF /* Build configuration list for PBXNativeTarget "MagiSystemEyeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3525B5602238E50A000278BF /* Debug */,
+				3525B5612238E50A000278BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3525B5622238E50A000278BF /* Build configuration list for PBXNativeTarget "MagiSystemEyeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3525B5632238E50A000278BF /* Debug */,
+				3525B5642238E50A000278BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3525B52C2238E509000278BF /* Project object */;
+}
