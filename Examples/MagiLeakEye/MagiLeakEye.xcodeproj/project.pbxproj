@@ -1,0 +1,711 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		35E75D9B223A463E00B4069A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75D9A223A463E00B4069A /* AppDelegate.swift */; };
+		35E75D9D223A463E00B4069A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75D9C223A463E00B4069A /* ViewController.swift */; };
+		35E75DA0223A463E00B4069A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35E75D9E223A463E00B4069A /* Main.storyboard */; };
+		35E75DA2223A463F00B4069A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35E75DA1223A463F00B4069A /* Assets.xcassets */; };
+		35E75DA5223A463F00B4069A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35E75DA3223A463F00B4069A /* LaunchScreen.storyboard */; };
+		35E75DB0223A463F00B4069A /* MagiLeakEyeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75DAF223A463F00B4069A /* MagiLeakEyeTests.swift */; };
+		35E75DBB223A463F00B4069A /* MagiLeakEyeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75DBA223A463F00B4069A /* MagiLeakEyeUITests.swift */; };
+		35E75DC9223A558300B4069A /* ObjectAgent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75DC8223A558300B4069A /* ObjectAgent.swift */; };
+		35E75DCB223A562000B4069A /* NSNotification+MagiLeakEye.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75DCA223A562000B4069A /* NSNotification+MagiLeakEye.swift */; };
+		35E75DCD223A5A4300B4069A /* MagiLeakEye.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75DCC223A5A4300B4069A /* MagiLeakEye.swift */; };
+		35E75DCF223A5AF800B4069A /* Preparer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75DCE223A5AF800B4069A /* Preparer.swift */; };
+		35E75DD1223A5B2A00B4069A /* AppSwizzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75DD0223A5B2A00B4069A /* AppSwizzle.swift */; };
+		35E75DD3223A5B6000B4069A /* DispatchQueue+MagiLeakEye.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75DD2223A5B6000B4069A /* DispatchQueue+MagiLeakEye.swift */; };
+		35E75DD5223A5B7700B4069A /* String+MagiLeakEye.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75DD4223A5B7700B4069A /* String+MagiLeakEye.swift */; };
+		35E75DD7223A5E5600B4069A /* Variable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75DD6223A5E5600B4069A /* Variable.swift */; };
+		35E75DD9223A5F5300B4069A /* NSObject+MagiAlive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75DD8223A5F5300B4069A /* NSObject+MagiAlive.swift */; };
+		35E75DDB223A5F6400B4069A /* NSObject+MagiLeakEye.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75DDA223A5F6400B4069A /* NSObject+MagiLeakEye.swift */; };
+		35E75DF4223A633E00B4069A /* UINavigationController+MemoryLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E75DDD223A633E00B4069A /* UINavigationController+MemoryLeak.m */; };
+		35E75DF5223A633E00B4069A /* MLeakedObjectProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E75DE1223A633E00B4069A /* MLeakedObjectProxy.m */; };
+		35E75DF6223A633E00B4069A /* UIView+MemoryLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E75DE3223A633E00B4069A /* UIView+MemoryLeak.m */; };
+		35E75DF7223A633E00B4069A /* UITouch+MemoryLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E75DE6223A633E00B4069A /* UITouch+MemoryLeak.m */; };
+		35E75DF8223A633E00B4069A /* UISplitViewController+MemoryLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E75DE7223A633E00B4069A /* UISplitViewController+MemoryLeak.m */; };
+		35E75DF9223A633E00B4069A /* UIPageViewController+MemoryLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E75DE9223A633E00B4069A /* UIPageViewController+MemoryLeak.m */; };
+		35E75DFA223A633E00B4069A /* UITabBarController+MemoryLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E75DEB223A633E00B4069A /* UITabBarController+MemoryLeak.m */; };
+		35E75DFB223A633E00B4069A /* MLeaksMessenger.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E75DEC223A633E00B4069A /* MLeaksMessenger.m */; };
+		35E75DFC223A633E00B4069A /* UIViewController+MemoryLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E75DEE223A633E00B4069A /* UIViewController+MemoryLeak.m */; };
+		35E75DFD223A633E00B4069A /* UIApplication+MemoryLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E75DF1223A633E00B4069A /* UIApplication+MemoryLeak.m */; };
+		35E75DFE223A633E00B4069A /* NSObject+MemoryLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E75DF2223A633E00B4069A /* NSObject+MemoryLeak.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		35E75DAC223A463F00B4069A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35E75D8F223A463E00B4069A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 35E75D96223A463E00B4069A;
+			remoteInfo = MagiLeakEye;
+		};
+		35E75DB7223A463F00B4069A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35E75D8F223A463E00B4069A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 35E75D96223A463E00B4069A;
+			remoteInfo = MagiLeakEye;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		35E75D97223A463E00B4069A /* MagiLeakEye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagiLeakEye.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		35E75D9A223A463E00B4069A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		35E75D9C223A463E00B4069A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		35E75D9F223A463E00B4069A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		35E75DA1223A463F00B4069A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		35E75DA4223A463F00B4069A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		35E75DA6223A463F00B4069A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35E75DAB223A463F00B4069A /* MagiLeakEyeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagiLeakEyeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		35E75DAF223A463F00B4069A /* MagiLeakEyeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagiLeakEyeTests.swift; sourceTree = "<group>"; };
+		35E75DB1223A463F00B4069A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35E75DB6223A463F00B4069A /* MagiLeakEyeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagiLeakEyeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		35E75DBA223A463F00B4069A /* MagiLeakEyeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagiLeakEyeUITests.swift; sourceTree = "<group>"; };
+		35E75DBC223A463F00B4069A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35E75DC8223A558300B4069A /* ObjectAgent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectAgent.swift; sourceTree = "<group>"; };
+		35E75DCA223A562000B4069A /* NSNotification+MagiLeakEye.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSNotification+MagiLeakEye.swift"; sourceTree = "<group>"; };
+		35E75DCC223A5A4300B4069A /* MagiLeakEye.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagiLeakEye.swift; sourceTree = "<group>"; };
+		35E75DCE223A5AF800B4069A /* Preparer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preparer.swift; sourceTree = "<group>"; };
+		35E75DD0223A5B2A00B4069A /* AppSwizzle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppSwizzle.swift; sourceTree = "<group>"; };
+		35E75DD2223A5B6000B4069A /* DispatchQueue+MagiLeakEye.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+MagiLeakEye.swift"; sourceTree = "<group>"; };
+		35E75DD4223A5B7700B4069A /* String+MagiLeakEye.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+MagiLeakEye.swift"; sourceTree = "<group>"; };
+		35E75DD6223A5E5600B4069A /* Variable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Variable.swift; sourceTree = "<group>"; };
+		35E75DD8223A5F5300B4069A /* NSObject+MagiAlive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+MagiAlive.swift"; sourceTree = "<group>"; };
+		35E75DDA223A5F6400B4069A /* NSObject+MagiLeakEye.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+MagiLeakEye.swift"; sourceTree = "<group>"; };
+		35E75DDD223A633E00B4069A /* UINavigationController+MemoryLeak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+MemoryLeak.m"; sourceTree = "<group>"; };
+		35E75DDE223A633E00B4069A /* MLeaksMessenger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLeaksMessenger.h; sourceTree = "<group>"; };
+		35E75DDF223A633E00B4069A /* UITabBarController+MemoryLeak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBarController+MemoryLeak.h"; sourceTree = "<group>"; };
+		35E75DE0223A633E00B4069A /* UIPageViewController+MemoryLeak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIPageViewController+MemoryLeak.h"; sourceTree = "<group>"; };
+		35E75DE1223A633E00B4069A /* MLeakedObjectProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLeakedObjectProxy.m; sourceTree = "<group>"; };
+		35E75DE2223A633E00B4069A /* UIViewController+MemoryLeak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MemoryLeak.h"; sourceTree = "<group>"; };
+		35E75DE3223A633E00B4069A /* UIView+MemoryLeak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MemoryLeak.m"; sourceTree = "<group>"; };
+		35E75DE4223A633E00B4069A /* NSObject+MemoryLeak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MemoryLeak.h"; sourceTree = "<group>"; };
+		35E75DE5223A633E00B4069A /* UIApplication+MemoryLeak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+MemoryLeak.h"; sourceTree = "<group>"; };
+		35E75DE6223A633E00B4069A /* UITouch+MemoryLeak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITouch+MemoryLeak.m"; sourceTree = "<group>"; };
+		35E75DE7223A633E00B4069A /* UISplitViewController+MemoryLeak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISplitViewController+MemoryLeak.m"; sourceTree = "<group>"; };
+		35E75DE8223A633E00B4069A /* MLeaksFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLeaksFinder.h; sourceTree = "<group>"; };
+		35E75DE9223A633E00B4069A /* UIPageViewController+MemoryLeak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIPageViewController+MemoryLeak.m"; sourceTree = "<group>"; };
+		35E75DEA223A633E00B4069A /* MLeakedObjectProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLeakedObjectProxy.h; sourceTree = "<group>"; };
+		35E75DEB223A633E00B4069A /* UITabBarController+MemoryLeak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBarController+MemoryLeak.m"; sourceTree = "<group>"; };
+		35E75DEC223A633E00B4069A /* MLeaksMessenger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLeaksMessenger.m; sourceTree = "<group>"; };
+		35E75DED223A633E00B4069A /* UINavigationController+MemoryLeak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+MemoryLeak.h"; sourceTree = "<group>"; };
+		35E75DEE223A633E00B4069A /* UIViewController+MemoryLeak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MemoryLeak.m"; sourceTree = "<group>"; };
+		35E75DEF223A633E00B4069A /* UISplitViewController+MemoryLeak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISplitViewController+MemoryLeak.h"; sourceTree = "<group>"; };
+		35E75DF0223A633E00B4069A /* UITouch+MemoryLeak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITouch+MemoryLeak.h"; sourceTree = "<group>"; };
+		35E75DF1223A633E00B4069A /* UIApplication+MemoryLeak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+MemoryLeak.m"; sourceTree = "<group>"; };
+		35E75DF2223A633E00B4069A /* NSObject+MemoryLeak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MemoryLeak.m"; sourceTree = "<group>"; };
+		35E75DF3223A633E00B4069A /* UIView+MemoryLeak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MemoryLeak.h"; sourceTree = "<group>"; };
+		35E75DFF223A634F00B4069A /* MagiLeakEye.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MagiLeakEye.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		35E75D94223A463E00B4069A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35E75DA8223A463F00B4069A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35E75DB3223A463F00B4069A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		35E75D8E223A463E00B4069A = {
+			isa = PBXGroup;
+			children = (
+				35E75D99223A463E00B4069A /* MagiLeakEye */,
+				35E75DAE223A463F00B4069A /* MagiLeakEyeTests */,
+				35E75DB9223A463F00B4069A /* MagiLeakEyeUITests */,
+				35E75D98223A463E00B4069A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		35E75D98223A463E00B4069A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35E75D97223A463E00B4069A /* MagiLeakEye.app */,
+				35E75DAB223A463F00B4069A /* MagiLeakEyeTests.xctest */,
+				35E75DB6223A463F00B4069A /* MagiLeakEyeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35E75D99223A463E00B4069A /* MagiLeakEye */ = {
+			isa = PBXGroup;
+			children = (
+				35E75D9A223A463E00B4069A /* AppDelegate.swift */,
+				35E75D9C223A463E00B4069A /* ViewController.swift */,
+				35E75DCC223A5A4300B4069A /* MagiLeakEye.swift */,
+				35E75DC8223A558300B4069A /* ObjectAgent.swift */,
+				35E75DCE223A5AF800B4069A /* Preparer.swift */,
+				35E75DD6223A5E5600B4069A /* Variable.swift */,
+				35E75DD0223A5B2A00B4069A /* AppSwizzle.swift */,
+				35E75DD8223A5F5300B4069A /* NSObject+MagiAlive.swift */,
+				35E75DDA223A5F6400B4069A /* NSObject+MagiLeakEye.swift */,
+				35E75DCA223A562000B4069A /* NSNotification+MagiLeakEye.swift */,
+				35E75DD2223A5B6000B4069A /* DispatchQueue+MagiLeakEye.swift */,
+				35E75DD4223A5B7700B4069A /* String+MagiLeakEye.swift */,
+				35E75DFF223A634F00B4069A /* MagiLeakEye.h */,
+				35E75DDC223A633E00B4069A /* MLeaksFinder */,
+				35E75D9E223A463E00B4069A /* Main.storyboard */,
+				35E75DA1223A463F00B4069A /* Assets.xcassets */,
+				35E75DA3223A463F00B4069A /* LaunchScreen.storyboard */,
+				35E75DA6223A463F00B4069A /* Info.plist */,
+			);
+			path = MagiLeakEye;
+			sourceTree = "<group>";
+		};
+		35E75DAE223A463F00B4069A /* MagiLeakEyeTests */ = {
+			isa = PBXGroup;
+			children = (
+				35E75DAF223A463F00B4069A /* MagiLeakEyeTests.swift */,
+				35E75DB1223A463F00B4069A /* Info.plist */,
+			);
+			path = MagiLeakEyeTests;
+			sourceTree = "<group>";
+		};
+		35E75DB9223A463F00B4069A /* MagiLeakEyeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				35E75DBA223A463F00B4069A /* MagiLeakEyeUITests.swift */,
+				35E75DBC223A463F00B4069A /* Info.plist */,
+			);
+			path = MagiLeakEyeUITests;
+			sourceTree = "<group>";
+		};
+		35E75DDC223A633E00B4069A /* MLeaksFinder */ = {
+			isa = PBXGroup;
+			children = (
+				35E75DDD223A633E00B4069A /* UINavigationController+MemoryLeak.m */,
+				35E75DDE223A633E00B4069A /* MLeaksMessenger.h */,
+				35E75DDF223A633E00B4069A /* UITabBarController+MemoryLeak.h */,
+				35E75DE0223A633E00B4069A /* UIPageViewController+MemoryLeak.h */,
+				35E75DE1223A633E00B4069A /* MLeakedObjectProxy.m */,
+				35E75DE2223A633E00B4069A /* UIViewController+MemoryLeak.h */,
+				35E75DE3223A633E00B4069A /* UIView+MemoryLeak.m */,
+				35E75DE4223A633E00B4069A /* NSObject+MemoryLeak.h */,
+				35E75DE5223A633E00B4069A /* UIApplication+MemoryLeak.h */,
+				35E75DE6223A633E00B4069A /* UITouch+MemoryLeak.m */,
+				35E75DE7223A633E00B4069A /* UISplitViewController+MemoryLeak.m */,
+				35E75DE8223A633E00B4069A /* MLeaksFinder.h */,
+				35E75DE9223A633E00B4069A /* UIPageViewController+MemoryLeak.m */,
+				35E75DEA223A633E00B4069A /* MLeakedObjectProxy.h */,
+				35E75DEB223A633E00B4069A /* UITabBarController+MemoryLeak.m */,
+				35E75DEC223A633E00B4069A /* MLeaksMessenger.m */,
+				35E75DED223A633E00B4069A /* UINavigationController+MemoryLeak.h */,
+				35E75DEE223A633E00B4069A /* UIViewController+MemoryLeak.m */,
+				35E75DEF223A633E00B4069A /* UISplitViewController+MemoryLeak.h */,
+				35E75DF0223A633E00B4069A /* UITouch+MemoryLeak.h */,
+				35E75DF1223A633E00B4069A /* UIApplication+MemoryLeak.m */,
+				35E75DF2223A633E00B4069A /* NSObject+MemoryLeak.m */,
+				35E75DF3223A633E00B4069A /* UIView+MemoryLeak.h */,
+			);
+			path = MLeaksFinder;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		35E75D96223A463E00B4069A /* MagiLeakEye */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35E75DBF223A463F00B4069A /* Build configuration list for PBXNativeTarget "MagiLeakEye" */;
+			buildPhases = (
+				35E75D93223A463E00B4069A /* Sources */,
+				35E75D94223A463E00B4069A /* Frameworks */,
+				35E75D95223A463E00B4069A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MagiLeakEye;
+			productName = MagiLeakEye;
+			productReference = 35E75D97223A463E00B4069A /* MagiLeakEye.app */;
+			productType = "com.apple.product-type.application";
+		};
+		35E75DAA223A463F00B4069A /* MagiLeakEyeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35E75DC2223A463F00B4069A /* Build configuration list for PBXNativeTarget "MagiLeakEyeTests" */;
+			buildPhases = (
+				35E75DA7223A463F00B4069A /* Sources */,
+				35E75DA8223A463F00B4069A /* Frameworks */,
+				35E75DA9223A463F00B4069A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				35E75DAD223A463F00B4069A /* PBXTargetDependency */,
+			);
+			name = MagiLeakEyeTests;
+			productName = MagiLeakEyeTests;
+			productReference = 35E75DAB223A463F00B4069A /* MagiLeakEyeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		35E75DB5223A463F00B4069A /* MagiLeakEyeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35E75DC5223A463F00B4069A /* Build configuration list for PBXNativeTarget "MagiLeakEyeUITests" */;
+			buildPhases = (
+				35E75DB2223A463F00B4069A /* Sources */,
+				35E75DB3223A463F00B4069A /* Frameworks */,
+				35E75DB4223A463F00B4069A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				35E75DB8223A463F00B4069A /* PBXTargetDependency */,
+			);
+			name = MagiLeakEyeUITests;
+			productName = MagiLeakEyeUITests;
+			productReference = 35E75DB6223A463F00B4069A /* MagiLeakEyeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		35E75D8F223A463E00B4069A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = anran;
+				TargetAttributes = {
+					35E75D96223A463E00B4069A = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					35E75DAA223A463F00B4069A = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 35E75D96223A463E00B4069A;
+					};
+					35E75DB5223A463F00B4069A = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 35E75D96223A463E00B4069A;
+					};
+				};
+			};
+			buildConfigurationList = 35E75D92223A463E00B4069A /* Build configuration list for PBXProject "MagiLeakEye" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 35E75D8E223A463E00B4069A;
+			productRefGroup = 35E75D98223A463E00B4069A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				35E75D96223A463E00B4069A /* MagiLeakEye */,
+				35E75DAA223A463F00B4069A /* MagiLeakEyeTests */,
+				35E75DB5223A463F00B4069A /* MagiLeakEyeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		35E75D95223A463E00B4069A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35E75DA5223A463F00B4069A /* LaunchScreen.storyboard in Resources */,
+				35E75DA2223A463F00B4069A /* Assets.xcassets in Resources */,
+				35E75DA0223A463E00B4069A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35E75DA9223A463F00B4069A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35E75DB4223A463F00B4069A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		35E75D93223A463E00B4069A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35E75DF6223A633E00B4069A /* UIView+MemoryLeak.m in Sources */,
+				35E75DF7223A633E00B4069A /* UITouch+MemoryLeak.m in Sources */,
+				35E75DD9223A5F5300B4069A /* NSObject+MagiAlive.swift in Sources */,
+				35E75DD3223A5B6000B4069A /* DispatchQueue+MagiLeakEye.swift in Sources */,
+				35E75DD1223A5B2A00B4069A /* AppSwizzle.swift in Sources */,
+				35E75DFC223A633E00B4069A /* UIViewController+MemoryLeak.m in Sources */,
+				35E75DCB223A562000B4069A /* NSNotification+MagiLeakEye.swift in Sources */,
+				35E75D9D223A463E00B4069A /* ViewController.swift in Sources */,
+				35E75DFD223A633E00B4069A /* UIApplication+MemoryLeak.m in Sources */,
+				35E75DFA223A633E00B4069A /* UITabBarController+MemoryLeak.m in Sources */,
+				35E75DFE223A633E00B4069A /* NSObject+MemoryLeak.m in Sources */,
+				35E75DF9223A633E00B4069A /* UIPageViewController+MemoryLeak.m in Sources */,
+				35E75DF5223A633E00B4069A /* MLeakedObjectProxy.m in Sources */,
+				35E75DCF223A5AF800B4069A /* Preparer.swift in Sources */,
+				35E75DF4223A633E00B4069A /* UINavigationController+MemoryLeak.m in Sources */,
+				35E75DDB223A5F6400B4069A /* NSObject+MagiLeakEye.swift in Sources */,
+				35E75DC9223A558300B4069A /* ObjectAgent.swift in Sources */,
+				35E75DFB223A633E00B4069A /* MLeaksMessenger.m in Sources */,
+				35E75DF8223A633E00B4069A /* UISplitViewController+MemoryLeak.m in Sources */,
+				35E75DD5223A5B7700B4069A /* String+MagiLeakEye.swift in Sources */,
+				35E75DCD223A5A4300B4069A /* MagiLeakEye.swift in Sources */,
+				35E75D9B223A463E00B4069A /* AppDelegate.swift in Sources */,
+				35E75DD7223A5E5600B4069A /* Variable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35E75DA7223A463F00B4069A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35E75DB0223A463F00B4069A /* MagiLeakEyeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35E75DB2223A463F00B4069A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35E75DBB223A463F00B4069A /* MagiLeakEyeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		35E75DAD223A463F00B4069A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 35E75D96223A463E00B4069A /* MagiLeakEye */;
+			targetProxy = 35E75DAC223A463F00B4069A /* PBXContainerItemProxy */;
+		};
+		35E75DB8223A463F00B4069A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 35E75D96223A463E00B4069A /* MagiLeakEye */;
+			targetProxy = 35E75DB7223A463F00B4069A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		35E75D9E223A463E00B4069A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				35E75D9F223A463E00B4069A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		35E75DA3223A463F00B4069A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				35E75DA4223A463F00B4069A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		35E75DBD223A463F00B4069A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		35E75DBE223A463F00B4069A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		35E75DC0223A463F00B4069A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TDBLA72SEX;
+				INFOPLIST_FILE = MagiLeakEye/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = www.anran.com.MagiLeakEye;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = MagiLeakEye/MagiLeakEye.h;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		35E75DC1223A463F00B4069A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TDBLA72SEX;
+				INFOPLIST_FILE = MagiLeakEye/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = www.anran.com.MagiLeakEye;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = MagiLeakEye/MagiLeakEye.h;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		35E75DC3223A463F00B4069A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TDBLA72SEX;
+				INFOPLIST_FILE = MagiLeakEyeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = www.anran.com.MagiLeakEyeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MagiLeakEye.app/MagiLeakEye";
+			};
+			name = Debug;
+		};
+		35E75DC4223A463F00B4069A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TDBLA72SEX;
+				INFOPLIST_FILE = MagiLeakEyeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = www.anran.com.MagiLeakEyeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MagiLeakEye.app/MagiLeakEye";
+			};
+			name = Release;
+		};
+		35E75DC6223A463F00B4069A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TDBLA72SEX;
+				INFOPLIST_FILE = MagiLeakEyeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = www.anran.com.MagiLeakEyeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MagiLeakEye;
+			};
+			name = Debug;
+		};
+		35E75DC7223A463F00B4069A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TDBLA72SEX;
+				INFOPLIST_FILE = MagiLeakEyeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = www.anran.com.MagiLeakEyeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MagiLeakEye;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		35E75D92223A463E00B4069A /* Build configuration list for PBXProject "MagiLeakEye" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35E75DBD223A463F00B4069A /* Debug */,
+				35E75DBE223A463F00B4069A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		35E75DBF223A463F00B4069A /* Build configuration list for PBXNativeTarget "MagiLeakEye" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35E75DC0223A463F00B4069A /* Debug */,
+				35E75DC1223A463F00B4069A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		35E75DC2223A463F00B4069A /* Build configuration list for PBXNativeTarget "MagiLeakEyeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35E75DC3223A463F00B4069A /* Debug */,
+				35E75DC4223A463F00B4069A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		35E75DC5223A463F00B4069A /* Build configuration list for PBXNativeTarget "MagiLeakEyeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35E75DC6223A463F00B4069A /* Debug */,
+				35E75DC7223A463F00B4069A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 35E75D8F223A463E00B4069A /* Project object */;
+}
