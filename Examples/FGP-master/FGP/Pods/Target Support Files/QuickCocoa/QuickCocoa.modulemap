@@ -1,6 +1,0 @@
-framework module QuickCocoa {
-  umbrella header "QuickCocoa-umbrella.h"
-
-  export *
-  module * { export * }
-}

@@ -1,6 +1,0 @@
-framework module MagiPhotoBrowser {
-  umbrella header "MagiPhotoBrowser-umbrella.h"
-
-  export *
-  module * { export * }
-}
