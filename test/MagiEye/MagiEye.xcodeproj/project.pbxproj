@@ -7,6 +7,122 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		35E75EAF223B466A00B4069A /* WKWebView+SwCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75E02223B466A00B4069A /* WKWebView+SwCapture.swift */; };
+		35E75EB0223B466A00B4069A /* UIScrollView+SwCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75E03223B466A00B4069A /* UIScrollView+SwCapture.swift */; };
+		35E75EB1223B466A00B4069A /* UIView+SwCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75E04223B466A00B4069A /* UIView+SwCapture.swift */; };
+		35E75EB2223B466A00B4069A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 35E75E0C223B466A00B4069A /* README.md */; };
+		35E75EB3223B466A00B4069A /* SQLite-Bridging.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E75E11223B466A00B4069A /* SQLite-Bridging.m */; };
+		35E75EB4223B466A00B4069A /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75E15223B466A00B4069A /* Connection.swift */; };
+		35E75EB5223B466A00B4069A /* Blob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75E16223B466A00B4069A /* Blob.swift */; };
+		35E75EB6223B466A00B4069A /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75E17223B466A00B4069A /* Errors.swift */; };
+		35E75EB7223B466A00B4069A /* Statement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75E18223B466A00B4069A /* Statement.swift */; };
+		35E75EB8223B466A00B4069A /* Value.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75E19223B466A00B4069A /* Value.swift */; };
+		35E75EB9223B466A00B4069A /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75E1A223B466A00B4069A /* Helpers.swift */; };
+		35E75EBA223B466A00B4069A /* RTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75E1C223B466A00B4069A /* RTree.swift */; };
+		35E75EBB223B466A00B4069A /* FTS4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75E1D223B466A00B4069A /* FTS4.swift */; };
+		35E75EBC223B466A00B4069A /* FTS5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75E1E223B466A00B4069A /* FTS5.swift */; };
+		35E75EBD223B466A00B4069A /* Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75E1F223B466A00B4069A /* Foundation.swift */; };
+		35E75EBE223B466A00B4069A /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75E22223B466A00B4069A /* Query.swift */; };
+		35E75EBF223B466A00B4069A /* Coding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75E23223B466A00B4069A /* Coding.swift */; };
+		35E75EC0223B466A00B4069A /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75E24223B466A00B4069A /* Expression.swift */; };
+		35E75EC1223B466A00B4069A /* CoreFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75E25223B466A00B4069A /* CoreFunctions.swift */; };
+		35E75EC2223B466A00B4069A /* Collation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75E26223B466A00B4069A /* Collation.swift */; };
+		35E75EC3223B466A00B4069A /* CustomFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75E27223B466A00B4069A /* CustomFunctions.swift */; };
+		35E75EC4223B466A00B4069A /* DateAndTimeFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75E28223B466A00B4069A /* DateAndTimeFunctions.swift */; };
+		35E75EC5223B466A00B4069A /* Setter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75E29223B466A00B4069A /* Setter.swift */; };
+		35E75EC6223B466A00B4069A /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75E2A223B466A00B4069A /* Operators.swift */; };
+		35E75EC7223B466A00B4069A /* Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75E2B223B466A00B4069A /* Schema.swift */; };
+		35E75EC8223B466A00B4069A /* AggregateFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75E2C223B466A00B4069A /* AggregateFunctions.swift */; };
+		35E75EC9223B466A00B4069A /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 35E75E2D223B466A00B4069A /* LICENSE.txt */; };
+		35E75ECA223B466A00B4069A /* AppSwizzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75E2F223B466A00B4069A /* AppSwizzle.swift */; };
+		35E75ECB223B466A00B4069A /* MagiCrashModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75E31223B466A00B4069A /* MagiCrashModel.swift */; };
+		35E75ECC223B466A00B4069A /* MagiCrashEye.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75E32223B466A00B4069A /* MagiCrashEye.swift */; };
+		35E75ECD223B466A00B4069A /* UIAlertView+AppBaseKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75E37223B466A00B4069A /* UIAlertView+AppBaseKit.swift */; };
+		35E75ECE223B466A00B4069A /* UIFont+AppBaseKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75E38223B466A00B4069A /* UIFont+AppBaseKit.swift */; };
+		35E75ECF223B466A00B4069A /* UIView+AppBaseKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75E39223B466A00B4069A /* UIView+AppBaseKit.swift */; };
+		35E75ED0223B466A00B4069A /* UIApplication+AppBaseKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75E3A223B466A00B4069A /* UIApplication+AppBaseKit.swift */; };
+		35E75ED1223B466A00B4069A /* UIImage+AppBaseKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75E3B223B466A00B4069A /* UIImage+AppBaseKit.swift */; };
+		35E75ED2223B466A00B4069A /* UIColor+AppBaseKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75E3C223B466A00B4069A /* UIColor+AppBaseKit.swift */; };
+		35E75ED3223B466A00B4069A /* UIAlertController+AppBaseKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75E3D223B466A00B4069A /* UIAlertController+AppBaseKit.swift */; };
+		35E75ED4223B466A00B4069A /* NSObject+Closure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75E3F223B466A00B4069A /* NSObject+Closure.swift */; };
+		35E75ED5223B466A00B4069A /* NSFileManager+AppBaseKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75E40223B466A00B4069A /* NSFileManager+AppBaseKit.swift */; };
+		35E75ED6223B466A00B4069A /* String+AppBaseKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75E41223B466A00B4069A /* String+AppBaseKit.swift */; };
+		35E75ED7223B466A00B4069A /* AppPaths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75E43223B466A00B4069A /* AppPaths.swift */; };
+		35E75ED8223B466A00B4069A /* AppNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75E44223B466A00B4069A /* AppNavigationController.swift */; };
+		35E75ED9223B466A00B4069A /* MagiArrowFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75E4A223B466A00B4069A /* MagiArrowFooter.swift */; };
+		35E75EDA223B466A00B4069A /* MagiReplicatorFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75E4B223B466A00B4069A /* MagiReplicatorFooter.swift */; };
+		35E75EDB223B466A00B4069A /* MagiRingIndicatorFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75E4C223B466A00B4069A /* MagiRingIndicatorFooter.swift */; };
+		35E75EDC223B466A00B4069A /* MagiNativeFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75E4D223B466A00B4069A /* MagiNativeFooter.swift */; };
+		35E75EDD223B466A00B4069A /* MagiArrowHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75E4F223B466A00B4069A /* MagiArrowHeader.swift */; };
+		35E75EDE223B466A00B4069A /* MagiNativeHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75E50223B466A00B4069A /* MagiNativeHeader.swift */; };
+		35E75EDF223B466A00B4069A /* MagiRingIndicatorHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75E51223B466A00B4069A /* MagiRingIndicatorHeader.swift */; };
+		35E75EE0223B466A00B4069A /* MagiReplicatorHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75E52223B466A00B4069A /* MagiReplicatorHeader.swift */; };
+		35E75EE1223B466A00B4069A /* UIView+MagiRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75E54223B466A00B4069A /* UIView+MagiRefresh.swift */; };
+		35E75EE2223B466A00B4069A /* CALayer+MagiRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75E55223B466A00B4069A /* CALayer+MagiRefresh.swift */; };
+		35E75EE3223B466A00B4069A /* UICollectionView+MagiRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75E56223B466A00B4069A /* UICollectionView+MagiRefresh.swift */; };
+		35E75EE4223B466A00B4069A /* UIScrollView+MagiRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75E57223B466A00B4069A /* UIScrollView+MagiRefresh.swift */; };
+		35E75EE5223B466A00B4069A /* UITableView+MagiRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75E58223B466A00B4069A /* UITableView+MagiRefresh.swift */; };
+		35E75EE6223B466A00B4069A /* MagiRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75E59223B466A00B4069A /* MagiRefresh.swift */; };
+		35E75EE7223B466A00B4069A /* MagiRunTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75E5A223B466A00B4069A /* MagiRunTime.swift */; };
+		35E75EE8223B466A00B4069A /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 35E75E5B223B466A00B4069A /* .gitkeep */; };
+		35E75EE9223B466A00B4069A /* MagiRefreshDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75E5D223B466A00B4069A /* MagiRefreshDefaults.swift */; };
+		35E75EEA223B466A00B4069A /* MagiAnimatableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75E5F223B466A00B4069A /* MagiAnimatableProtocol.swift */; };
+		35E75EEB223B466A00B4069A /* MagiReplicatorLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75E60223B466A00B4069A /* MagiReplicatorLayer.swift */; };
+		35E75EEC223B466A00B4069A /* MagiArcLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75E61223B466A00B4069A /* MagiArcLayer.swift */; };
+		35E75EED223B466A00B4069A /* MagiBasePlaceHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75E63223B466A00B4069A /* MagiBasePlaceHolder.swift */; };
+		35E75EEE223B466A00B4069A /* MagiPlaceHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75E64223B466A00B4069A /* MagiPlaceHolder.swift */; };
+		35E75EEF223B466A00B4069A /* MagiProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75E65223B466A00B4069A /* MagiProtocol.swift */; };
+		35E75EF0223B466A00B4069A /* MagiRefresh+Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75E66223B466A00B4069A /* MagiRefresh+Configuration.swift */; };
+		35E75EF1223B466A00B4069A /* MagiRefreshProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75E68223B466A00B4069A /* MagiRefreshProtocol.swift */; };
+		35E75EF2223B466A00B4069A /* MagiRefreshFooterConrol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75E69223B466A00B4069A /* MagiRefreshFooterConrol.swift */; };
+		35E75EF3223B466A00B4069A /* MagiRefreshHeaderConrol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75E6A223B466A00B4069A /* MagiRefreshHeaderConrol.swift */; };
+		35E75EF4223B466A00B4069A /* MagiRefreshBaseConrol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75E6B223B466A00B4069A /* MagiRefreshBaseConrol.swift */; };
+		35E75EF5223B466A00B4069A /* MagiAlertLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75E6C223B466A00B4069A /* MagiAlertLabel.swift */; };
+		35E75EF6223B466A00B4069A /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 35E75E6E223B466A00B4069A /* .gitkeep */; };
+		35E75EF7223B466A00B4069A /* Image.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 35E75E6F223B466A00B4069A /* Image.bundle */; };
+		35E75EF8223B466A00B4069A /* MagiLogModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75E71223B466A00B4069A /* MagiLogModel.swift */; };
+		35E75EF9223B466A00B4069A /* MagiLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75E72223B466A00B4069A /* MagiLog.swift */; };
+		35E75EFA223B466A00B4069A /* MagiASL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75E73223B466A00B4069A /* MagiASL.swift */; };
+		35E75EFB223B466A00B4069A /* MagiNetworkFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75E75223B466A00B4069A /* MagiNetworkFlow.swift */; };
+		35E75EFC223B466A00B4069A /* NetObjc.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E75E77223B466A00B4069A /* NetObjc.m */; };
+		35E75EFD223B466A00B4069A /* MagiCPU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75E79223B466A00B4069A /* MagiCPU.swift */; };
+		35E75EFE223B466A00B4069A /* MagiFPSLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75E7A223B466A00B4069A /* MagiFPSLabel.swift */; };
+		35E75EFF223B466A00B4069A /* MagiNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75E7B223B466A00B4069A /* MagiNetwork.swift */; };
+		35E75F00223B466A00B4069A /* MagiHardware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75E7C223B466A00B4069A /* MagiHardware.swift */; };
+		35E75F01223B466A00B4069A /* MagiMemory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75E7D223B466A00B4069A /* MagiMemory.swift */; };
+		35E75F02223B466A00B4069A /* MagiSystemEye.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75E7E223B466A00B4069A /* MagiSystemEye.swift */; };
+		35E75F03223B466A00B4069A /* MagiFPS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75E7F223B466A00B4069A /* MagiFPS.swift */; };
+		35E75F04223B466A00B4069A /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 35E75E83223B466A00B4069A /* LICENSE */; };
+		35E75F05223B466A00B4069A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 35E75E84223B466A00B4069A /* README.md */; };
+		35E75F06223B466A00B4069A /* WebviewPreviewViewContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75E86223B466A00B4069A /* WebviewPreviewViewContoller.swift */; };
+		35E75F07223B466A00B4069A /* PreviewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75E87223B466A00B4069A /* PreviewManager.swift */; };
+		35E75F08223B466A00B4069A /* FileListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75E88223B466A00B4069A /* FileListViewController.swift */; };
+		35E75F09223B466A00B4069A /* FileParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75E89223B466A00B4069A /* FileParser.swift */; };
+		35E75F0A223B466A00B4069A /* folder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 35E75E8B223B466A00B4069A /* folder@2x.png */; };
+		35E75F0B223B466A00B4069A /* zip@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 35E75E8C223B466A00B4069A /* zip@2x.png */; };
+		35E75F0C223B466A00B4069A /* WebviewPreviewViewContoller.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35E75E8D223B466A00B4069A /* WebviewPreviewViewContoller.xib */; };
+		35E75F0D223B466A00B4069A /* image@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 35E75E8E223B466A00B4069A /* image@2x.png */; };
+		35E75F0E223B466A00B4069A /* documents@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 35E75E8F223B466A00B4069A /* documents@2x.png */; };
+		35E75F0F223B466A00B4069A /* file@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 35E75E90223B466A00B4069A /* file@2x.png */; };
+		35E75F10223B466A00B4069A /* FileBrowser.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35E75E91223B466A00B4069A /* FileBrowser.xib */; };
+		35E75F11223B466A00B4069A /* pdf@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 35E75E92223B466A00B4069A /* pdf@2x.png */; };
+		35E75F12223B466A00B4069A /* PreviewTransitionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35E75E93223B466A00B4069A /* PreviewTransitionViewController.xib */; };
+		35E75F13223B466A00B4069A /* PreviewTransitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75E94223B466A00B4069A /* PreviewTransitionViewController.swift */; };
+		35E75F14223B466A00B4069A /* FileListTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75E95223B466A00B4069A /* FileListTableView.swift */; };
+		35E75F15223B466A00B4069A /* FileListPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75E96223B466A00B4069A /* FileListPreview.swift */; };
+		35E75F16223B466A00B4069A /* FBFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75E97223B466A00B4069A /* FBFile.swift */; };
+		35E75F17223B466A00B4069A /* FileListSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75E98223B466A00B4069A /* FileListSearch.swift */; };
+		35E75F18223B466A00B4069A /* FileBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75E9A223B466A00B4069A /* FileBrowser.swift */; };
+		35E75F19223B466A00B4069A /* URLSession+MagiNetworkEye.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75E9C223B466A00B4069A /* URLSession+MagiNetworkEye.swift */; };
+		35E75F1A223B466A00B4069A /* MagiEyeURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75E9D223B466A00B4069A /* MagiEyeURLProtocol.swift */; };
+		35E75F1B223B466A00B4069A /* MagiNetworkEye.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75E9E223B466A00B4069A /* MagiNetworkEye.swift */; };
+		35E75F1C223B466A00B4069A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75E9F223B466A00B4069A /* AppDelegate.swift */; };
+		35E75F1D223B466A00B4069A /* AppBacktrace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75EA4223B466A00B4069A /* AppBacktrace.swift */; };
+		35E75F1E223B466A00B4069A /* MagiCatonEye.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75EA5223B466A00B4069A /* MagiCatonEye.swift */; };
+		35E75F1F223B466A00B4069A /* BSBacktraceLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E75EA6223B466A00B4069A /* BSBacktraceLogger.m */; };
+		35E75F20223B466A00B4069A /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 35E75EA9223B466A00B4069A /* LICENSE */; };
+		35E75F21223B466A00B4069A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 35E75EAA223B466A00B4069A /* README.md */; };
+		35E75F22223B466A00B4069A /* AssistiveButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75EAD223B466A00B4069A /* AssistiveButton.swift */; };
 		FA072CFF223B3BC600AE0CEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA072CFE223B3BC600AE0CEE /* AppDelegate.swift */; };
 		FA072D01223B3BC600AE0CEE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA072D00223B3BC600AE0CEE /* ViewController.swift */; };
 		FA072D04223B3BC600AE0CEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA072D02223B3BC600AE0CEE /* Main.storyboard */; };
@@ -15,6 +131,131 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		35E75E02223B466A00B4069A /* WKWebView+SwCapture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WKWebView+SwCapture.swift"; sourceTree = "<group>"; };
+		35E75E03223B466A00B4069A /* UIScrollView+SwCapture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+SwCapture.swift"; sourceTree = "<group>"; };
+		35E75E04223B466A00B4069A /* UIView+SwCapture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+SwCapture.swift"; sourceTree = "<group>"; };
+		35E75E05223B466A00B4069A /* SwViewCapture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwViewCapture.h; sourceTree = "<group>"; };
+		35E75E0C223B466A00B4069A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		35E75E10223B466A00B4069A /* SQLite-Bridging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SQLite-Bridging.h"; sourceTree = "<group>"; };
+		35E75E11223B466A00B4069A /* SQLite-Bridging.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SQLite-Bridging.m"; sourceTree = "<group>"; };
+		35E75E12223B466A00B4069A /* fts3_tokenizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fts3_tokenizer.h; sourceTree = "<group>"; };
+		35E75E15223B466A00B4069A /* Connection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
+		35E75E16223B466A00B4069A /* Blob.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Blob.swift; sourceTree = "<group>"; };
+		35E75E17223B466A00B4069A /* Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		35E75E18223B466A00B4069A /* Statement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Statement.swift; sourceTree = "<group>"; };
+		35E75E19223B466A00B4069A /* Value.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Value.swift; sourceTree = "<group>"; };
+		35E75E1A223B466A00B4069A /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		35E75E1C223B466A00B4069A /* RTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RTree.swift; sourceTree = "<group>"; };
+		35E75E1D223B466A00B4069A /* FTS4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTS4.swift; sourceTree = "<group>"; };
+		35E75E1E223B466A00B4069A /* FTS5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTS5.swift; sourceTree = "<group>"; };
+		35E75E1F223B466A00B4069A /* Foundation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Foundation.swift; sourceTree = "<group>"; };
+		35E75E20223B466A00B4069A /* SQLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLite.h; sourceTree = "<group>"; };
+		35E75E22223B466A00B4069A /* Query.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Query.swift; sourceTree = "<group>"; };
+		35E75E23223B466A00B4069A /* Coding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coding.swift; sourceTree = "<group>"; };
+		35E75E24223B466A00B4069A /* Expression.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Expression.swift; sourceTree = "<group>"; };
+		35E75E25223B466A00B4069A /* CoreFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreFunctions.swift; sourceTree = "<group>"; };
+		35E75E26223B466A00B4069A /* Collation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Collation.swift; sourceTree = "<group>"; };
+		35E75E27223B466A00B4069A /* CustomFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomFunctions.swift; sourceTree = "<group>"; };
+		35E75E28223B466A00B4069A /* DateAndTimeFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateAndTimeFunctions.swift; sourceTree = "<group>"; };
+		35E75E29223B466A00B4069A /* Setter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Setter.swift; sourceTree = "<group>"; };
+		35E75E2A223B466A00B4069A /* Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
+		35E75E2B223B466A00B4069A /* Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Schema.swift; sourceTree = "<group>"; };
+		35E75E2C223B466A00B4069A /* AggregateFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AggregateFunctions.swift; sourceTree = "<group>"; };
+		35E75E2D223B466A00B4069A /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		35E75E2F223B466A00B4069A /* AppSwizzle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppSwizzle.swift; sourceTree = "<group>"; };
+		35E75E31223B466A00B4069A /* MagiCrashModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagiCrashModel.swift; sourceTree = "<group>"; };
+		35E75E32223B466A00B4069A /* MagiCrashEye.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagiCrashEye.swift; sourceTree = "<group>"; };
+		35E75E37223B466A00B4069A /* UIAlertView+AppBaseKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertView+AppBaseKit.swift"; sourceTree = "<group>"; };
+		35E75E38223B466A00B4069A /* UIFont+AppBaseKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+AppBaseKit.swift"; sourceTree = "<group>"; };
+		35E75E39223B466A00B4069A /* UIView+AppBaseKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+AppBaseKit.swift"; sourceTree = "<group>"; };
+		35E75E3A223B466A00B4069A /* UIApplication+AppBaseKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+AppBaseKit.swift"; sourceTree = "<group>"; };
+		35E75E3B223B466A00B4069A /* UIImage+AppBaseKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+AppBaseKit.swift"; sourceTree = "<group>"; };
+		35E75E3C223B466A00B4069A /* UIColor+AppBaseKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+AppBaseKit.swift"; sourceTree = "<group>"; };
+		35E75E3D223B466A00B4069A /* UIAlertController+AppBaseKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertController+AppBaseKit.swift"; sourceTree = "<group>"; };
+		35E75E3F223B466A00B4069A /* NSObject+Closure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Closure.swift"; sourceTree = "<group>"; };
+		35E75E40223B466A00B4069A /* NSFileManager+AppBaseKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSFileManager+AppBaseKit.swift"; sourceTree = "<group>"; };
+		35E75E41223B466A00B4069A /* String+AppBaseKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+AppBaseKit.swift"; sourceTree = "<group>"; };
+		35E75E43223B466A00B4069A /* AppPaths.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppPaths.swift; sourceTree = "<group>"; };
+		35E75E44223B466A00B4069A /* AppNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppNavigationController.swift; sourceTree = "<group>"; };
+		35E75E4A223B466A00B4069A /* MagiArrowFooter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagiArrowFooter.swift; sourceTree = "<group>"; };
+		35E75E4B223B466A00B4069A /* MagiReplicatorFooter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagiReplicatorFooter.swift; sourceTree = "<group>"; };
+		35E75E4C223B466A00B4069A /* MagiRingIndicatorFooter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagiRingIndicatorFooter.swift; sourceTree = "<group>"; };
+		35E75E4D223B466A00B4069A /* MagiNativeFooter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagiNativeFooter.swift; sourceTree = "<group>"; };
+		35E75E4F223B466A00B4069A /* MagiArrowHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagiArrowHeader.swift; sourceTree = "<group>"; };
+		35E75E50223B466A00B4069A /* MagiNativeHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagiNativeHeader.swift; sourceTree = "<group>"; };
+		35E75E51223B466A00B4069A /* MagiRingIndicatorHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagiRingIndicatorHeader.swift; sourceTree = "<group>"; };
+		35E75E52223B466A00B4069A /* MagiReplicatorHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagiReplicatorHeader.swift; sourceTree = "<group>"; };
+		35E75E54223B466A00B4069A /* UIView+MagiRefresh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+MagiRefresh.swift"; sourceTree = "<group>"; };
+		35E75E55223B466A00B4069A /* CALayer+MagiRefresh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CALayer+MagiRefresh.swift"; sourceTree = "<group>"; };
+		35E75E56223B466A00B4069A /* UICollectionView+MagiRefresh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+MagiRefresh.swift"; sourceTree = "<group>"; };
+		35E75E57223B466A00B4069A /* UIScrollView+MagiRefresh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+MagiRefresh.swift"; sourceTree = "<group>"; };
+		35E75E58223B466A00B4069A /* UITableView+MagiRefresh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+MagiRefresh.swift"; sourceTree = "<group>"; };
+		35E75E59223B466A00B4069A /* MagiRefresh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagiRefresh.swift; sourceTree = "<group>"; };
+		35E75E5A223B466A00B4069A /* MagiRunTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagiRunTime.swift; sourceTree = "<group>"; };
+		35E75E5B223B466A00B4069A /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		35E75E5D223B466A00B4069A /* MagiRefreshDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagiRefreshDefaults.swift; sourceTree = "<group>"; };
+		35E75E5F223B466A00B4069A /* MagiAnimatableProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagiAnimatableProtocol.swift; sourceTree = "<group>"; };
+		35E75E60223B466A00B4069A /* MagiReplicatorLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagiReplicatorLayer.swift; sourceTree = "<group>"; };
+		35E75E61223B466A00B4069A /* MagiArcLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagiArcLayer.swift; sourceTree = "<group>"; };
+		35E75E63223B466A00B4069A /* MagiBasePlaceHolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagiBasePlaceHolder.swift; sourceTree = "<group>"; };
+		35E75E64223B466A00B4069A /* MagiPlaceHolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagiPlaceHolder.swift; sourceTree = "<group>"; };
+		35E75E65223B466A00B4069A /* MagiProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagiProtocol.swift; sourceTree = "<group>"; };
+		35E75E66223B466A00B4069A /* MagiRefresh+Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MagiRefresh+Configuration.swift"; sourceTree = "<group>"; };
+		35E75E68223B466A00B4069A /* MagiRefreshProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagiRefreshProtocol.swift; sourceTree = "<group>"; };
+		35E75E69223B466A00B4069A /* MagiRefreshFooterConrol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagiRefreshFooterConrol.swift; sourceTree = "<group>"; };
+		35E75E6A223B466A00B4069A /* MagiRefreshHeaderConrol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagiRefreshHeaderConrol.swift; sourceTree = "<group>"; };
+		35E75E6B223B466A00B4069A /* MagiRefreshBaseConrol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagiRefreshBaseConrol.swift; sourceTree = "<group>"; };
+		35E75E6C223B466A00B4069A /* MagiAlertLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagiAlertLabel.swift; sourceTree = "<group>"; };
+		35E75E6E223B466A00B4069A /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		35E75E6F223B466A00B4069A /* Image.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Image.bundle; sourceTree = "<group>"; };
+		35E75E71223B466A00B4069A /* MagiLogModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagiLogModel.swift; sourceTree = "<group>"; };
+		35E75E72223B466A00B4069A /* MagiLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagiLog.swift; sourceTree = "<group>"; };
+		35E75E73223B466A00B4069A /* MagiASL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagiASL.swift; sourceTree = "<group>"; };
+		35E75E75223B466A00B4069A /* MagiNetworkFlow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagiNetworkFlow.swift; sourceTree = "<group>"; };
+		35E75E77223B466A00B4069A /* NetObjc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetObjc.m; sourceTree = "<group>"; };
+		35E75E78223B466A00B4069A /* NetObjc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetObjc.h; sourceTree = "<group>"; };
+		35E75E79223B466A00B4069A /* MagiCPU.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagiCPU.swift; sourceTree = "<group>"; };
+		35E75E7A223B466A00B4069A /* MagiFPSLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagiFPSLabel.swift; sourceTree = "<group>"; };
+		35E75E7B223B466A00B4069A /* MagiNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagiNetwork.swift; sourceTree = "<group>"; };
+		35E75E7C223B466A00B4069A /* MagiHardware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagiHardware.swift; sourceTree = "<group>"; };
+		35E75E7D223B466A00B4069A /* MagiMemory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagiMemory.swift; sourceTree = "<group>"; };
+		35E75E7E223B466A00B4069A /* MagiSystemEye.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagiSystemEye.swift; sourceTree = "<group>"; };
+		35E75E7F223B466A00B4069A /* MagiFPS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagiFPS.swift; sourceTree = "<group>"; };
+		35E75E80223B466A00B4069A /* MagiSystemEye.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagiSystemEye.h; sourceTree = "<group>"; };
+		35E75E83223B466A00B4069A /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		35E75E84223B466A00B4069A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		35E75E86223B466A00B4069A /* WebviewPreviewViewContoller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebviewPreviewViewContoller.swift; sourceTree = "<group>"; };
+		35E75E87223B466A00B4069A /* PreviewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewManager.swift; sourceTree = "<group>"; };
+		35E75E88223B466A00B4069A /* FileListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileListViewController.swift; sourceTree = "<group>"; };
+		35E75E89223B466A00B4069A /* FileParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileParser.swift; sourceTree = "<group>"; };
+		35E75E8B223B466A00B4069A /* folder@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "folder@2x.png"; sourceTree = "<group>"; };
+		35E75E8C223B466A00B4069A /* zip@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zip@2x.png"; sourceTree = "<group>"; };
+		35E75E8D223B466A00B4069A /* WebviewPreviewViewContoller.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebviewPreviewViewContoller.xib; sourceTree = "<group>"; };
+		35E75E8E223B466A00B4069A /* image@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "image@2x.png"; sourceTree = "<group>"; };
+		35E75E8F223B466A00B4069A /* documents@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "documents@2x.png"; sourceTree = "<group>"; };
+		35E75E90223B466A00B4069A /* file@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "file@2x.png"; sourceTree = "<group>"; };
+		35E75E91223B466A00B4069A /* FileBrowser.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FileBrowser.xib; sourceTree = "<group>"; };
+		35E75E92223B466A00B4069A /* pdf@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pdf@2x.png"; sourceTree = "<group>"; };
+		35E75E93223B466A00B4069A /* PreviewTransitionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PreviewTransitionViewController.xib; sourceTree = "<group>"; };
+		35E75E94223B466A00B4069A /* PreviewTransitionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewTransitionViewController.swift; sourceTree = "<group>"; };
+		35E75E95223B466A00B4069A /* FileListTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileListTableView.swift; sourceTree = "<group>"; };
+		35E75E96223B466A00B4069A /* FileListPreview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileListPreview.swift; sourceTree = "<group>"; };
+		35E75E97223B466A00B4069A /* FBFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBFile.swift; sourceTree = "<group>"; };
+		35E75E98223B466A00B4069A /* FileListSearch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileListSearch.swift; sourceTree = "<group>"; };
+		35E75E99223B466A00B4069A /* FileBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileBrowser.h; sourceTree = "<group>"; };
+		35E75E9A223B466A00B4069A /* FileBrowser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileBrowser.swift; sourceTree = "<group>"; };
+		35E75E9C223B466A00B4069A /* URLSession+MagiNetworkEye.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URLSession+MagiNetworkEye.swift"; sourceTree = "<group>"; };
+		35E75E9D223B466A00B4069A /* MagiEyeURLProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagiEyeURLProtocol.swift; sourceTree = "<group>"; };
+		35E75E9E223B466A00B4069A /* MagiNetworkEye.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagiNetworkEye.swift; sourceTree = "<group>"; };
+		35E75E9F223B466A00B4069A /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		35E75EA2223B466A00B4069A /* BSBacktraceLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSBacktraceLogger.h; sourceTree = "<group>"; };
+		35E75EA3223B466A00B4069A /* MagiCatonEye.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagiCatonEye.h; sourceTree = "<group>"; };
+		35E75EA4223B466A00B4069A /* AppBacktrace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppBacktrace.swift; sourceTree = "<group>"; };
+		35E75EA5223B466A00B4069A /* MagiCatonEye.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagiCatonEye.swift; sourceTree = "<group>"; };
+		35E75EA6223B466A00B4069A /* BSBacktraceLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSBacktraceLogger.m; sourceTree = "<group>"; };
+		35E75EA9223B466A00B4069A /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		35E75EAA223B466A00B4069A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		35E75EAD223B466A00B4069A /* AssistiveButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssistiveButton.swift; sourceTree = "<group>"; };
 		FA072CFB223B3BC600AE0CEE /* MagiEye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagiEye.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA072CFE223B3BC600AE0CEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA072D00223B3BC600AE0CEE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +276,530 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		35E75E00223B466A00B4069A /* MagiEyeClasses */ = {
+			isa = PBXGroup;
+			children = (
+				35E75E01223B466A00B4069A /* SwViewCapture */,
+				35E75E06223B466A00B4069A /* ViewModel */,
+				35E75E07223B466A00B4069A /* Configuration */,
+				35E75E08223B466A00B4069A /* Extension */,
+				35E75E09223B466A00B4069A /* Define */,
+				35E75E0A223B466A00B4069A /* Util */,
+				35E75E0B223B466A00B4069A /* SQLite.swift */,
+				35E75E2E223B466A00B4069A /* MagiAppSwizzle */,
+				35E75E30223B466A00B4069A /* MagiCrashEye */,
+				35E75E33223B466A00B4069A /* AppBaseKit */,
+				35E75E45223B466A00B4069A /* Controller */,
+				35E75E46223B466A00B4069A /* MagiRefresh */,
+				35E75E70223B466A00B4069A /* MagiASLLog */,
+				35E75E74223B466A00B4069A /* MagiSystemEye */,
+				35E75E81223B466A00B4069A /* Model */,
+				35E75E82223B466A00B4069A /* FileBrowser */,
+				35E75E9B223B466A00B4069A /* MagiNetworkEye */,
+				35E75EA0223B466A00B4069A /* View */,
+				35E75EA1223B466A00B4069A /* MagiCatonEye */,
+				35E75EA7223B466A00B4069A /* ORM */,
+				35E75EA8223B466A00B4069A /* AssistiveButton */,
+				35E75EAE223B466A00B4069A /* Store */,
+			);
+			path = MagiEyeClasses;
+			sourceTree = "<group>";
+		};
+		35E75E01223B466A00B4069A /* SwViewCapture */ = {
+			isa = PBXGroup;
+			children = (
+				35E75E02223B466A00B4069A /* WKWebView+SwCapture.swift */,
+				35E75E03223B466A00B4069A /* UIScrollView+SwCapture.swift */,
+				35E75E04223B466A00B4069A /* UIView+SwCapture.swift */,
+				35E75E05223B466A00B4069A /* SwViewCapture.h */,
+			);
+			path = SwViewCapture;
+			sourceTree = "<group>";
+		};
+		35E75E06223B466A00B4069A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		35E75E07223B466A00B4069A /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		35E75E08223B466A00B4069A /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		35E75E09223B466A00B4069A /* Define */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Define;
+			sourceTree = "<group>";
+		};
+		35E75E0A223B466A00B4069A /* Util */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		35E75E0B223B466A00B4069A /* SQLite.swift */ = {
+			isa = PBXGroup;
+			children = (
+				35E75E0C223B466A00B4069A /* README.md */,
+				35E75E0D223B466A00B4069A /* Sources */,
+				35E75E2D223B466A00B4069A /* LICENSE.txt */,
+			);
+			path = SQLite.swift;
+			sourceTree = "<group>";
+		};
+		35E75E0D223B466A00B4069A /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				35E75E0E223B466A00B4069A /* SQLiteObjc */,
+				35E75E13223B466A00B4069A /* SQLite */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		35E75E0E223B466A00B4069A /* SQLiteObjc */ = {
+			isa = PBXGroup;
+			children = (
+				35E75E0F223B466A00B4069A /* include */,
+				35E75E11223B466A00B4069A /* SQLite-Bridging.m */,
+				35E75E12223B466A00B4069A /* fts3_tokenizer.h */,
+			);
+			path = SQLiteObjc;
+			sourceTree = "<group>";
+		};
+		35E75E0F223B466A00B4069A /* include */ = {
+			isa = PBXGroup;
+			children = (
+				35E75E10223B466A00B4069A /* SQLite-Bridging.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		35E75E13223B466A00B4069A /* SQLite */ = {
+			isa = PBXGroup;
+			children = (
+				35E75E14223B466A00B4069A /* Core */,
+				35E75E1A223B466A00B4069A /* Helpers.swift */,
+				35E75E1B223B466A00B4069A /* Extensions */,
+				35E75E1F223B466A00B4069A /* Foundation.swift */,
+				35E75E20223B466A00B4069A /* SQLite.h */,
+				35E75E21223B466A00B4069A /* Typed */,
+			);
+			path = SQLite;
+			sourceTree = "<group>";
+		};
+		35E75E14223B466A00B4069A /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				35E75E15223B466A00B4069A /* Connection.swift */,
+				35E75E16223B466A00B4069A /* Blob.swift */,
+				35E75E17223B466A00B4069A /* Errors.swift */,
+				35E75E18223B466A00B4069A /* Statement.swift */,
+				35E75E19223B466A00B4069A /* Value.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		35E75E1B223B466A00B4069A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				35E75E1C223B466A00B4069A /* RTree.swift */,
+				35E75E1D223B466A00B4069A /* FTS4.swift */,
+				35E75E1E223B466A00B4069A /* FTS5.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		35E75E21223B466A00B4069A /* Typed */ = {
+			isa = PBXGroup;
+			children = (
+				35E75E22223B466A00B4069A /* Query.swift */,
+				35E75E23223B466A00B4069A /* Coding.swift */,
+				35E75E24223B466A00B4069A /* Expression.swift */,
+				35E75E25223B466A00B4069A /* CoreFunctions.swift */,
+				35E75E26223B466A00B4069A /* Collation.swift */,
+				35E75E27223B466A00B4069A /* CustomFunctions.swift */,
+				35E75E28223B466A00B4069A /* DateAndTimeFunctions.swift */,
+				35E75E29223B466A00B4069A /* Setter.swift */,
+				35E75E2A223B466A00B4069A /* Operators.swift */,
+				35E75E2B223B466A00B4069A /* Schema.swift */,
+				35E75E2C223B466A00B4069A /* AggregateFunctions.swift */,
+			);
+			path = Typed;
+			sourceTree = "<group>";
+		};
+		35E75E2E223B466A00B4069A /* MagiAppSwizzle */ = {
+			isa = PBXGroup;
+			children = (
+				35E75E2F223B466A00B4069A /* AppSwizzle.swift */,
+			);
+			path = MagiAppSwizzle;
+			sourceTree = "<group>";
+		};
+		35E75E30223B466A00B4069A /* MagiCrashEye */ = {
+			isa = PBXGroup;
+			children = (
+				35E75E31223B466A00B4069A /* MagiCrashModel.swift */,
+				35E75E32223B466A00B4069A /* MagiCrashEye.swift */,
+			);
+			path = MagiCrashEye;
+			sourceTree = "<group>";
+		};
+		35E75E33223B466A00B4069A /* AppBaseKit */ = {
+			isa = PBXGroup;
+			children = (
+				35E75E34223B466A00B4069A /* Classes */,
+			);
+			path = AppBaseKit;
+			sourceTree = "<group>";
+		};
+		35E75E34223B466A00B4069A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				35E75E35223B466A00B4069A /* Extension */,
+				35E75E42223B466A00B4069A /* Util */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		35E75E35223B466A00B4069A /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				35E75E36223B466A00B4069A /* UIKit */,
+				35E75E3E223B466A00B4069A /* Foundation */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		35E75E36223B466A00B4069A /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				35E75E37223B466A00B4069A /* UIAlertView+AppBaseKit.swift */,
+				35E75E38223B466A00B4069A /* UIFont+AppBaseKit.swift */,
+				35E75E39223B466A00B4069A /* UIView+AppBaseKit.swift */,
+				35E75E3A223B466A00B4069A /* UIApplication+AppBaseKit.swift */,
+				35E75E3B223B466A00B4069A /* UIImage+AppBaseKit.swift */,
+				35E75E3C223B466A00B4069A /* UIColor+AppBaseKit.swift */,
+				35E75E3D223B466A00B4069A /* UIAlertController+AppBaseKit.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		35E75E3E223B466A00B4069A /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				35E75E3F223B466A00B4069A /* NSObject+Closure.swift */,
+				35E75E40223B466A00B4069A /* NSFileManager+AppBaseKit.swift */,
+				35E75E41223B466A00B4069A /* String+AppBaseKit.swift */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		35E75E42223B466A00B4069A /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				35E75E43223B466A00B4069A /* AppPaths.swift */,
+				35E75E44223B466A00B4069A /* AppNavigationController.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		35E75E45223B466A00B4069A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		35E75E46223B466A00B4069A /* MagiRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				35E75E47223B466A00B4069A /* Classes */,
+				35E75E6D223B466A00B4069A /* Assets */,
+			);
+			path = MagiRefresh;
+			sourceTree = "<group>";
+		};
+		35E75E47223B466A00B4069A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				35E75E48223B466A00B4069A /* UI */,
+				35E75E53223B466A00B4069A /* Extension */,
+				35E75E59223B466A00B4069A /* MagiRefresh.swift */,
+				35E75E5A223B466A00B4069A /* MagiRunTime.swift */,
+				35E75E5B223B466A00B4069A /* .gitkeep */,
+				35E75E5C223B466A00B4069A /* Default */,
+				35E75E5E223B466A00B4069A /* Layer */,
+				35E75E62223B466A00B4069A /* PLaceHolder */,
+				35E75E65223B466A00B4069A /* MagiProtocol.swift */,
+				35E75E66223B466A00B4069A /* MagiRefresh+Configuration.swift */,
+				35E75E67223B466A00B4069A /* MagiRefreshCore */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		35E75E48223B466A00B4069A /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				35E75E49223B466A00B4069A /* Footer */,
+				35E75E4E223B466A00B4069A /* Header */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		35E75E49223B466A00B4069A /* Footer */ = {
+			isa = PBXGroup;
+			children = (
+				35E75E4A223B466A00B4069A /* MagiArrowFooter.swift */,
+				35E75E4B223B466A00B4069A /* MagiReplicatorFooter.swift */,
+				35E75E4C223B466A00B4069A /* MagiRingIndicatorFooter.swift */,
+				35E75E4D223B466A00B4069A /* MagiNativeFooter.swift */,
+			);
+			path = Footer;
+			sourceTree = "<group>";
+		};
+		35E75E4E223B466A00B4069A /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				35E75E4F223B466A00B4069A /* MagiArrowHeader.swift */,
+				35E75E50223B466A00B4069A /* MagiNativeHeader.swift */,
+				35E75E51223B466A00B4069A /* MagiRingIndicatorHeader.swift */,
+				35E75E52223B466A00B4069A /* MagiReplicatorHeader.swift */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		35E75E53223B466A00B4069A /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				35E75E54223B466A00B4069A /* UIView+MagiRefresh.swift */,
+				35E75E55223B466A00B4069A /* CALayer+MagiRefresh.swift */,
+				35E75E56223B466A00B4069A /* UICollectionView+MagiRefresh.swift */,
+				35E75E57223B466A00B4069A /* UIScrollView+MagiRefresh.swift */,
+				35E75E58223B466A00B4069A /* UITableView+MagiRefresh.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		35E75E5C223B466A00B4069A /* Default */ = {
+			isa = PBXGroup;
+			children = (
+				35E75E5D223B466A00B4069A /* MagiRefreshDefaults.swift */,
+			);
+			path = Default;
+			sourceTree = "<group>";
+		};
+		35E75E5E223B466A00B4069A /* Layer */ = {
+			isa = PBXGroup;
+			children = (
+				35E75E5F223B466A00B4069A /* MagiAnimatableProtocol.swift */,
+				35E75E60223B466A00B4069A /* MagiReplicatorLayer.swift */,
+				35E75E61223B466A00B4069A /* MagiArcLayer.swift */,
+			);
+			path = Layer;
+			sourceTree = "<group>";
+		};
+		35E75E62223B466A00B4069A /* PLaceHolder */ = {
+			isa = PBXGroup;
+			children = (
+				35E75E63223B466A00B4069A /* MagiBasePlaceHolder.swift */,
+				35E75E64223B466A00B4069A /* MagiPlaceHolder.swift */,
+			);
+			path = PLaceHolder;
+			sourceTree = "<group>";
+		};
+		35E75E67223B466A00B4069A /* MagiRefreshCore */ = {
+			isa = PBXGroup;
+			children = (
+				35E75E68223B466A00B4069A /* MagiRefreshProtocol.swift */,
+				35E75E69223B466A00B4069A /* MagiRefreshFooterConrol.swift */,
+				35E75E6A223B466A00B4069A /* MagiRefreshHeaderConrol.swift */,
+				35E75E6B223B466A00B4069A /* MagiRefreshBaseConrol.swift */,
+				35E75E6C223B466A00B4069A /* MagiAlertLabel.swift */,
+			);
+			path = MagiRefreshCore;
+			sourceTree = "<group>";
+		};
+		35E75E6D223B466A00B4069A /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				35E75E6E223B466A00B4069A /* .gitkeep */,
+				35E75E6F223B466A00B4069A /* Image.bundle */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		35E75E70223B466A00B4069A /* MagiASLLog */ = {
+			isa = PBXGroup;
+			children = (
+				35E75E71223B466A00B4069A /* MagiLogModel.swift */,
+				35E75E72223B466A00B4069A /* MagiLog.swift */,
+				35E75E73223B466A00B4069A /* MagiASL.swift */,
+			);
+			path = MagiASLLog;
+			sourceTree = "<group>";
+		};
+		35E75E74223B466A00B4069A /* MagiSystemEye */ = {
+			isa = PBXGroup;
+			children = (
+				35E75E75223B466A00B4069A /* MagiNetworkFlow.swift */,
+				35E75E76223B466A00B4069A /* OCBridge */,
+				35E75E79223B466A00B4069A /* MagiCPU.swift */,
+				35E75E7A223B466A00B4069A /* MagiFPSLabel.swift */,
+				35E75E7B223B466A00B4069A /* MagiNetwork.swift */,
+				35E75E7C223B466A00B4069A /* MagiHardware.swift */,
+				35E75E7D223B466A00B4069A /* MagiMemory.swift */,
+				35E75E7E223B466A00B4069A /* MagiSystemEye.swift */,
+				35E75E7F223B466A00B4069A /* MagiFPS.swift */,
+				35E75E80223B466A00B4069A /* MagiSystemEye.h */,
+			);
+			path = MagiSystemEye;
+			sourceTree = "<group>";
+		};
+		35E75E76223B466A00B4069A /* OCBridge */ = {
+			isa = PBXGroup;
+			children = (
+				35E75E77223B466A00B4069A /* NetObjc.m */,
+				35E75E78223B466A00B4069A /* NetObjc.h */,
+			);
+			path = OCBridge;
+			sourceTree = "<group>";
+		};
+		35E75E81223B466A00B4069A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		35E75E82223B466A00B4069A /* FileBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				35E75E83223B466A00B4069A /* LICENSE */,
+				35E75E84223B466A00B4069A /* README.md */,
+				35E75E85223B466A00B4069A /* FileBrowser */,
+			);
+			path = FileBrowser;
+			sourceTree = "<group>";
+		};
+		35E75E85223B466A00B4069A /* FileBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				35E75E86223B466A00B4069A /* WebviewPreviewViewContoller.swift */,
+				35E75E87223B466A00B4069A /* PreviewManager.swift */,
+				35E75E88223B466A00B4069A /* FileListViewController.swift */,
+				35E75E89223B466A00B4069A /* FileParser.swift */,
+				35E75E8A223B466A00B4069A /* Resources */,
+				35E75E94223B466A00B4069A /* PreviewTransitionViewController.swift */,
+				35E75E95223B466A00B4069A /* FileListTableView.swift */,
+				35E75E96223B466A00B4069A /* FileListPreview.swift */,
+				35E75E97223B466A00B4069A /* FBFile.swift */,
+				35E75E98223B466A00B4069A /* FileListSearch.swift */,
+				35E75E99223B466A00B4069A /* FileBrowser.h */,
+				35E75E9A223B466A00B4069A /* FileBrowser.swift */,
+			);
+			path = FileBrowser;
+			sourceTree = "<group>";
+		};
+		35E75E8A223B466A00B4069A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				35E75E8B223B466A00B4069A /* folder@2x.png */,
+				35E75E8C223B466A00B4069A /* zip@2x.png */,
+				35E75E8D223B466A00B4069A /* WebviewPreviewViewContoller.xib */,
+				35E75E8E223B466A00B4069A /* image@2x.png */,
+				35E75E8F223B466A00B4069A /* documents@2x.png */,
+				35E75E90223B466A00B4069A /* file@2x.png */,
+				35E75E91223B466A00B4069A /* FileBrowser.xib */,
+				35E75E92223B466A00B4069A /* pdf@2x.png */,
+				35E75E93223B466A00B4069A /* PreviewTransitionViewController.xib */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		35E75E9B223B466A00B4069A /* MagiNetworkEye */ = {
+			isa = PBXGroup;
+			children = (
+				35E75E9C223B466A00B4069A /* URLSession+MagiNetworkEye.swift */,
+				35E75E9D223B466A00B4069A /* MagiEyeURLProtocol.swift */,
+				35E75E9E223B466A00B4069A /* MagiNetworkEye.swift */,
+				35E75E9F223B466A00B4069A /* AppDelegate.swift */,
+			);
+			path = MagiNetworkEye;
+			sourceTree = "<group>";
+		};
+		35E75EA0223B466A00B4069A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		35E75EA1223B466A00B4069A /* MagiCatonEye */ = {
+			isa = PBXGroup;
+			children = (
+				35E75EA2223B466A00B4069A /* BSBacktraceLogger.h */,
+				35E75EA3223B466A00B4069A /* MagiCatonEye.h */,
+				35E75EA4223B466A00B4069A /* AppBacktrace.swift */,
+				35E75EA5223B466A00B4069A /* MagiCatonEye.swift */,
+				35E75EA6223B466A00B4069A /* BSBacktraceLogger.m */,
+			);
+			path = MagiCatonEye;
+			sourceTree = "<group>";
+		};
+		35E75EA7223B466A00B4069A /* ORM */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ORM;
+			sourceTree = "<group>";
+		};
+		35E75EA8223B466A00B4069A /* AssistiveButton */ = {
+			isa = PBXGroup;
+			children = (
+				35E75EA9223B466A00B4069A /* LICENSE */,
+				35E75EAA223B466A00B4069A /* README.md */,
+				35E75EAB223B466A00B4069A /* AssistiveButton */,
+			);
+			path = AssistiveButton;
+			sourceTree = "<group>";
+		};
+		35E75EAB223B466A00B4069A /* AssistiveButton */ = {
+			isa = PBXGroup;
+			children = (
+				35E75EAC223B466A00B4069A /* Classes */,
+			);
+			path = AssistiveButton;
+			sourceTree = "<group>";
+		};
+		35E75EAC223B466A00B4069A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				35E75EAD223B466A00B4069A /* AssistiveButton.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		35E75EAE223B466A00B4069A /* Store */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
 		FA072CF2223B3BC600AE0CEE = {
 			isa = PBXGroup;
 			children = (
@@ -54,6 +819,7 @@
 		FA072CFD223B3BC600AE0CEE /* MagiEye */ = {
 			isa = PBXGroup;
 			children = (
+				35E75E00223B466A00B4069A /* MagiEyeClasses */,
 				FA072CFE223B3BC600AE0CEE /* AppDelegate.swift */,
 				FA072D00223B3BC600AE0CEE /* ViewController.swift */,
 				FA072D02223B3BC600AE0CEE /* Main.storyboard */,
@@ -122,9 +888,27 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35E75F0D223B466A00B4069A /* image@2x.png in Resources */,
+				35E75F12223B466A00B4069A /* PreviewTransitionViewController.xib in Resources */,
 				FA072D09223B3BC700AE0CEE /* LaunchScreen.storyboard in Resources */,
+				35E75F21223B466A00B4069A /* README.md in Resources */,
 				FA072D06223B3BC700AE0CEE /* Assets.xcassets in Resources */,
+				35E75F05223B466A00B4069A /* README.md in Resources */,
+				35E75F10223B466A00B4069A /* FileBrowser.xib in Resources */,
+				35E75F0A223B466A00B4069A /* folder@2x.png in Resources */,
+				35E75EB2223B466A00B4069A /* README.md in Resources */,
+				35E75EE8223B466A00B4069A /* .gitkeep in Resources */,
+				35E75F0B223B466A00B4069A /* zip@2x.png in Resources */,
+				35E75F11223B466A00B4069A /* pdf@2x.png in Resources */,
+				35E75F0F223B466A00B4069A /* file@2x.png in Resources */,
+				35E75EC9223B466A00B4069A /* LICENSE.txt in Resources */,
 				FA072D04223B3BC600AE0CEE /* Main.storyboard in Resources */,
+				35E75F20223B466A00B4069A /* LICENSE in Resources */,
+				35E75F04223B466A00B4069A /* LICENSE in Resources */,
+				35E75EF6223B466A00B4069A /* .gitkeep in Resources */,
+				35E75F0E223B466A00B4069A /* documents@2x.png in Resources */,
+				35E75EF7223B466A00B4069A /* Image.bundle in Resources */,
+				35E75F0C223B466A00B4069A /* WebviewPreviewViewContoller.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,8 +919,106 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35E75F1F223B466A00B4069A /* BSBacktraceLogger.m in Sources */,
+				35E75F18223B466A00B4069A /* FileBrowser.swift in Sources */,
+				35E75ECA223B466A00B4069A /* AppSwizzle.swift in Sources */,
+				35E75ECC223B466A00B4069A /* MagiCrashEye.swift in Sources */,
+				35E75EFD223B466A00B4069A /* MagiCPU.swift in Sources */,
+				35E75EDD223B466A00B4069A /* MagiArrowHeader.swift in Sources */,
+				35E75EF1223B466A00B4069A /* MagiRefreshProtocol.swift in Sources */,
+				35E75F22223B466A00B4069A /* AssistiveButton.swift in Sources */,
+				35E75EFC223B466A00B4069A /* NetObjc.m in Sources */,
+				35E75EFF223B466A00B4069A /* MagiNetwork.swift in Sources */,
+				35E75EFE223B466A00B4069A /* MagiFPSLabel.swift in Sources */,
+				35E75EE0223B466A00B4069A /* MagiReplicatorHeader.swift in Sources */,
+				35E75F15223B466A00B4069A /* FileListPreview.swift in Sources */,
+				35E75F14223B466A00B4069A /* FileListTableView.swift in Sources */,
+				35E75EB0223B466A00B4069A /* UIScrollView+SwCapture.swift in Sources */,
+				35E75EDA223B466A00B4069A /* MagiReplicatorFooter.swift in Sources */,
+				35E75EF5223B466A00B4069A /* MagiAlertLabel.swift in Sources */,
+				35E75EC4223B466A00B4069A /* DateAndTimeFunctions.swift in Sources */,
 				FA072D01223B3BC600AE0CEE /* ViewController.swift in Sources */,
+				35E75ED7223B466A00B4069A /* AppPaths.swift in Sources */,
+				35E75EBD223B466A00B4069A /* Foundation.swift in Sources */,
+				35E75F00223B466A00B4069A /* MagiHardware.swift in Sources */,
+				35E75EBF223B466A00B4069A /* Coding.swift in Sources */,
+				35E75F01223B466A00B4069A /* MagiMemory.swift in Sources */,
+				35E75EC0223B466A00B4069A /* Expression.swift in Sources */,
+				35E75F07223B466A00B4069A /* PreviewManager.swift in Sources */,
+				35E75EFA223B466A00B4069A /* MagiASL.swift in Sources */,
+				35E75ECD223B466A00B4069A /* UIAlertView+AppBaseKit.swift in Sources */,
+				35E75EB8223B466A00B4069A /* Value.swift in Sources */,
+				35E75F02223B466A00B4069A /* MagiSystemEye.swift in Sources */,
+				35E75EED223B466A00B4069A /* MagiBasePlaceHolder.swift in Sources */,
+				35E75F1A223B466A00B4069A /* MagiEyeURLProtocol.swift in Sources */,
+				35E75EAF223B466A00B4069A /* WKWebView+SwCapture.swift in Sources */,
+				35E75EB1223B466A00B4069A /* UIView+SwCapture.swift in Sources */,
+				35E75EDE223B466A00B4069A /* MagiNativeHeader.swift in Sources */,
+				35E75EF8223B466A00B4069A /* MagiLogModel.swift in Sources */,
+				35E75EC3223B466A00B4069A /* CustomFunctions.swift in Sources */,
+				35E75ED1223B466A00B4069A /* UIImage+AppBaseKit.swift in Sources */,
+				35E75EB5223B466A00B4069A /* Blob.swift in Sources */,
+				35E75EE1223B466A00B4069A /* UIView+MagiRefresh.swift in Sources */,
+				35E75EF0223B466A00B4069A /* MagiRefresh+Configuration.swift in Sources */,
+				35E75ED2223B466A00B4069A /* UIColor+AppBaseKit.swift in Sources */,
 				FA072CFF223B3BC600AE0CEE /* AppDelegate.swift in Sources */,
+				35E75EB9223B466A00B4069A /* Helpers.swift in Sources */,
+				35E75EBA223B466A00B4069A /* RTree.swift in Sources */,
+				35E75EE5223B466A00B4069A /* UITableView+MagiRefresh.swift in Sources */,
+				35E75EC5223B466A00B4069A /* Setter.swift in Sources */,
+				35E75ED8223B466A00B4069A /* AppNavigationController.swift in Sources */,
+				35E75EF3223B466A00B4069A /* MagiRefreshHeaderConrol.swift in Sources */,
+				35E75EF4223B466A00B4069A /* MagiRefreshBaseConrol.swift in Sources */,
+				35E75EB3223B466A00B4069A /* SQLite-Bridging.m in Sources */,
+				35E75EF2223B466A00B4069A /* MagiRefreshFooterConrol.swift in Sources */,
+				35E75EC6223B466A00B4069A /* Operators.swift in Sources */,
+				35E75F08223B466A00B4069A /* FileListViewController.swift in Sources */,
+				35E75F17223B466A00B4069A /* FileListSearch.swift in Sources */,
+				35E75EDF223B466A00B4069A /* MagiRingIndicatorHeader.swift in Sources */,
+				35E75ED0223B466A00B4069A /* UIApplication+AppBaseKit.swift in Sources */,
+				35E75EEC223B466A00B4069A /* MagiArcLayer.swift in Sources */,
+				35E75EE3223B466A00B4069A /* UICollectionView+MagiRefresh.swift in Sources */,
+				35E75EE6223B466A00B4069A /* MagiRefresh.swift in Sources */,
+				35E75EB6223B466A00B4069A /* Errors.swift in Sources */,
+				35E75ED6223B466A00B4069A /* String+AppBaseKit.swift in Sources */,
+				35E75EBC223B466A00B4069A /* FTS5.swift in Sources */,
+				35E75EE9223B466A00B4069A /* MagiRefreshDefaults.swift in Sources */,
+				35E75EDB223B466A00B4069A /* MagiRingIndicatorFooter.swift in Sources */,
+				35E75ECE223B466A00B4069A /* UIFont+AppBaseKit.swift in Sources */,
+				35E75F16223B466A00B4069A /* FBFile.swift in Sources */,
+				35E75EEB223B466A00B4069A /* MagiReplicatorLayer.swift in Sources */,
+				35E75EC8223B466A00B4069A /* AggregateFunctions.swift in Sources */,
+				35E75EFB223B466A00B4069A /* MagiNetworkFlow.swift in Sources */,
+				35E75ED4223B466A00B4069A /* NSObject+Closure.swift in Sources */,
+				35E75EDC223B466A00B4069A /* MagiNativeFooter.swift in Sources */,
+				35E75EEE223B466A00B4069A /* MagiPlaceHolder.swift in Sources */,
+				35E75ED3223B466A00B4069A /* UIAlertController+AppBaseKit.swift in Sources */,
+				35E75F1C223B466A00B4069A /* AppDelegate.swift in Sources */,
+				35E75F1D223B466A00B4069A /* AppBacktrace.swift in Sources */,
+				35E75F06223B466A00B4069A /* WebviewPreviewViewContoller.swift in Sources */,
+				35E75EB4223B466A00B4069A /* Connection.swift in Sources */,
+				35E75F1B223B466A00B4069A /* MagiNetworkEye.swift in Sources */,
+				35E75F03223B466A00B4069A /* MagiFPS.swift in Sources */,
+				35E75EF9223B466A00B4069A /* MagiLog.swift in Sources */,
+				35E75EE2223B466A00B4069A /* CALayer+MagiRefresh.swift in Sources */,
+				35E75EC7223B466A00B4069A /* Schema.swift in Sources */,
+				35E75EC2223B466A00B4069A /* Collation.swift in Sources */,
+				35E75ECF223B466A00B4069A /* UIView+AppBaseKit.swift in Sources */,
+				35E75EC1223B466A00B4069A /* CoreFunctions.swift in Sources */,
+				35E75EE4223B466A00B4069A /* UIScrollView+MagiRefresh.swift in Sources */,
+				35E75ED5223B466A00B4069A /* NSFileManager+AppBaseKit.swift in Sources */,
+				35E75F13223B466A00B4069A /* PreviewTransitionViewController.swift in Sources */,
+				35E75EE7223B466A00B4069A /* MagiRunTime.swift in Sources */,
+				35E75ECB223B466A00B4069A /* MagiCrashModel.swift in Sources */,
+				35E75EBB223B466A00B4069A /* FTS4.swift in Sources */,
+				35E75F09223B466A00B4069A /* FileParser.swift in Sources */,
+				35E75F1E223B466A00B4069A /* MagiCatonEye.swift in Sources */,
+				35E75F19223B466A00B4069A /* URLSession+MagiNetworkEye.swift in Sources */,
+				35E75EBE223B466A00B4069A /* Query.swift in Sources */,
+				35E75EEA223B466A00B4069A /* MagiAnimatableProtocol.swift in Sources */,
+				35E75EEF223B466A00B4069A /* MagiProtocol.swift in Sources */,
+				35E75ED9223B466A00B4069A /* MagiArrowFooter.swift in Sources */,
+				35E75EB7223B466A00B4069A /* Statement.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
