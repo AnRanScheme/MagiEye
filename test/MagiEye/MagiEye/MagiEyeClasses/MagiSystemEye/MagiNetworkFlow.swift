@@ -9,8 +9,8 @@
 import Foundation
 import UIKit
 
-
-@objc public protocol MagiNetDelegate: class {
+@objc
+public protocol MagiNetDelegate: class {
     @objc optional func networkFlow(networkFlow: MagiNetworkFlow,
                                     catchWithWifiSend wifiSend: UInt32,
                                     wifiReceived: UInt32,

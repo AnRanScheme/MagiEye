@@ -154,6 +154,34 @@
 		35E760D1223B7EF300B4069A /* LogRecordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E760D0223B7EF300B4069A /* LogRecordViewModel.swift */; };
 		35E760D3223B7EFF00B4069A /* NetworkRecordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E760D2223B7EFF00B4069A /* NetworkRecordViewModel.swift */; };
 		35E760D5223B800E00B4069A /* MonitorSystemType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E760D4223B800E00B4069A /* MonitorSystemType.swift */; };
+		35E760D7223B816E00B4069A /* MagiEyeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E760D6223B816E00B4069A /* MagiEyeController.swift */; };
+		35E760E5223B81FD00B4069A /* FileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E760DA223B81FD00B4069A /* FileController.swift */; };
+		35E760E6223B81FD00B4069A /* MonitorContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E760DC223B81FD00B4069A /* MonitorContainerView.swift */; };
+		35E760E7223B81FD00B4069A /* MonitorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E760DD223B81FD00B4069A /* MonitorController.swift */; };
+		35E760E8223B81FD00B4069A /* ConsoleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E760DF223B81FD00B4069A /* ConsoleController.swift */; };
+		35E760E9223B81FD00B4069A /* ConsoleController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E760E0223B81FD00B4069A /* ConsoleController+TableView.swift */; };
+		35E760EA223B81FD00B4069A /* ConsoleController+MagiEye.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E760E1223B81FD00B4069A /* ConsoleController+MagiEye.swift */; };
+		35E760EB223B81FD00B4069A /* MagiEyesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E760E2223B81FD00B4069A /* MagiEyesManager.swift */; };
+		35E760EC223B81FD00B4069A /* SettingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E760E4223B81FD00B4069A /* SettingController.swift */; };
+		35E760F8223B881900B4069A /* NSNotification+MagiLeakEye.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E760EE223B881900B4069A /* NSNotification+MagiLeakEye.swift */; };
+		35E760F9223B881900B4069A /* MagiLeakEye.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E760EF223B881900B4069A /* MagiLeakEye.swift */; };
+		35E760FA223B881900B4069A /* DispatchQueue+MagiLeakEye.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E760F0223B881900B4069A /* DispatchQueue+MagiLeakEye.swift */; };
+		35E760FB223B881900B4069A /* NSObject+MagiAlive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E760F1223B881900B4069A /* NSObject+MagiAlive.swift */; };
+		35E760FC223B881900B4069A /* String+MagiLeakEye.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E760F2223B881900B4069A /* String+MagiLeakEye.swift */; };
+		35E760FD223B881900B4069A /* Variable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E760F3223B881900B4069A /* Variable.swift */; };
+		35E760FE223B881900B4069A /* ObjectAgent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E760F4223B881900B4069A /* ObjectAgent.swift */; };
+		35E760FF223B881900B4069A /* NSObject+MagiLeakEye.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E760F5223B881900B4069A /* NSObject+MagiLeakEye.swift */; };
+		35E76100223B881900B4069A /* Preparer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E760F7223B881900B4069A /* Preparer.swift */; };
+		35E76102223B8A2300B4069A /* ConsolePrintViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E76101223B8A2300B4069A /* ConsolePrintViewController.swift */; };
+		35E7610A223B906800B4069A /* RecordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E76104223B906800B4069A /* RecordTableViewCell.swift */; };
+		35E7610B223B906800B4069A /* RecordTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E76105223B906800B4069A /* RecordTableView.swift */; };
+		35E7610C223B906800B4069A /* MonitorDeviceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E76107223B906800B4069A /* MonitorDeviceView.swift */; };
+		35E7610D223B906800B4069A /* MonitorSysNetFlowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E76108223B906800B4069A /* MonitorSysNetFlowView.swift */; };
+		35E7610E223B906800B4069A /* MonitorBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E76109223B906800B4069A /* MonitorBaseView.swift */; };
+		35E76110223B971B00B4069A /* MagiEye.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E7610F223B971B00B4069A /* MagiEye.swift */; };
+		35E76112223B984600B4069A /* MagiEyeController+Show.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E76111223B984600B4069A /* MagiEyeController+Show.swift */; };
+		35E76116223B998C00B4069A /* eye@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 35E76114223B998C00B4069A /* eye@3x.png */; };
+		35E76117223B998C00B4069A /* eye@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 35E76115223B998C00B4069A /* eye@2x.png */; };
 		FA072CFF223B3BC600AE0CEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA072CFE223B3BC600AE0CEE /* AppDelegate.swift */; };
 		FA072D01223B3BC600AE0CEE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA072D00223B3BC600AE0CEE /* ViewController.swift */; };
 		FA072D04223B3BC600AE0CEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA072D02223B3BC600AE0CEE /* Main.storyboard */; };
@@ -319,6 +347,35 @@
 		35E760D0223B7EF300B4069A /* LogRecordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogRecordViewModel.swift; sourceTree = "<group>"; };
 		35E760D2223B7EFF00B4069A /* NetworkRecordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRecordViewModel.swift; sourceTree = "<group>"; };
 		35E760D4223B800E00B4069A /* MonitorSystemType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonitorSystemType.swift; sourceTree = "<group>"; };
+		35E760D6223B816E00B4069A /* MagiEyeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagiEyeController.swift; sourceTree = "<group>"; };
+		35E760DA223B81FD00B4069A /* FileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileController.swift; sourceTree = "<group>"; };
+		35E760DC223B81FD00B4069A /* MonitorContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonitorContainerView.swift; sourceTree = "<group>"; };
+		35E760DD223B81FD00B4069A /* MonitorController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonitorController.swift; sourceTree = "<group>"; };
+		35E760DF223B81FD00B4069A /* ConsoleController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsoleController.swift; sourceTree = "<group>"; };
+		35E760E0223B81FD00B4069A /* ConsoleController+TableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ConsoleController+TableView.swift"; sourceTree = "<group>"; };
+		35E760E1223B81FD00B4069A /* ConsoleController+MagiEye.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ConsoleController+MagiEye.swift"; sourceTree = "<group>"; };
+		35E760E2223B81FD00B4069A /* MagiEyesManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagiEyesManager.swift; sourceTree = "<group>"; };
+		35E760E4223B81FD00B4069A /* SettingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingController.swift; sourceTree = "<group>"; };
+		35E760EE223B881900B4069A /* NSNotification+MagiLeakEye.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSNotification+MagiLeakEye.swift"; sourceTree = "<group>"; };
+		35E760EF223B881900B4069A /* MagiLeakEye.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagiLeakEye.swift; sourceTree = "<group>"; };
+		35E760F0223B881900B4069A /* DispatchQueue+MagiLeakEye.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+MagiLeakEye.swift"; sourceTree = "<group>"; };
+		35E760F1223B881900B4069A /* NSObject+MagiAlive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+MagiAlive.swift"; sourceTree = "<group>"; };
+		35E760F2223B881900B4069A /* String+MagiLeakEye.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+MagiLeakEye.swift"; sourceTree = "<group>"; };
+		35E760F3223B881900B4069A /* Variable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Variable.swift; sourceTree = "<group>"; };
+		35E760F4223B881900B4069A /* ObjectAgent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectAgent.swift; sourceTree = "<group>"; };
+		35E760F5223B881900B4069A /* NSObject+MagiLeakEye.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+MagiLeakEye.swift"; sourceTree = "<group>"; };
+		35E760F6223B881900B4069A /* MagiLeakEye.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagiLeakEye.h; sourceTree = "<group>"; };
+		35E760F7223B881900B4069A /* Preparer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Preparer.swift; sourceTree = "<group>"; };
+		35E76101223B8A2300B4069A /* ConsolePrintViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsolePrintViewController.swift; sourceTree = "<group>"; };
+		35E76104223B906800B4069A /* RecordTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordTableViewCell.swift; sourceTree = "<group>"; };
+		35E76105223B906800B4069A /* RecordTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordTableView.swift; sourceTree = "<group>"; };
+		35E76107223B906800B4069A /* MonitorDeviceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonitorDeviceView.swift; sourceTree = "<group>"; };
+		35E76108223B906800B4069A /* MonitorSysNetFlowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonitorSysNetFlowView.swift; sourceTree = "<group>"; };
+		35E76109223B906800B4069A /* MonitorBaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonitorBaseView.swift; sourceTree = "<group>"; };
+		35E7610F223B971B00B4069A /* MagiEye.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagiEye.swift; sourceTree = "<group>"; };
+		35E76111223B984600B4069A /* MagiEyeController+Show.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MagiEyeController+Show.swift"; sourceTree = "<group>"; };
+		35E76114223B998C00B4069A /* eye@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "eye@3x.png"; sourceTree = "<group>"; };
+		35E76115223B998C00B4069A /* eye@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "eye@2x.png"; sourceTree = "<group>"; };
 		FA072CFB223B3BC600AE0CEE /* MagiEye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagiEye.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA072CFE223B3BC600AE0CEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA072D00223B3BC600AE0CEE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -342,6 +399,7 @@
 		35E75F23223B470200B4069A /* MagiEyeClasses */ = {
 			isa = PBXGroup;
 			children = (
+				35E76113223B998C00B4069A /* Assets */,
 				35E75F29223B470200B4069A /* Classes */,
 				35E76048223B4DC900B4069A /* SQLite.swift */,
 				35E75F24223B470200B4069A /* SwViewCapture */,
@@ -354,6 +412,7 @@
 				35E75FA9223B470200B4069A /* FileBrowser */,
 				35E75FC2223B470200B4069A /* MagiNetworkEye */,
 				35E75FC7223B470200B4069A /* MagiCatonEye */,
+				35E760ED223B881900B4069A /* MagiLeakEye */,
 				35E75FCD223B470200B4069A /* AssistiveButton */,
 			);
 			path = MagiEyeClasses;
@@ -373,6 +432,7 @@
 		35E75F29223B470200B4069A /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				35E7610F223B971B00B4069A /* MagiEye.swift */,
 				35E76084223B55EB00B4069A /* MagiDefine.swift */,
 				35E75F2B223B470200B4069A /* Configuration */,
 				35E75F2D223B470200B4069A /* Define */,
@@ -442,6 +502,10 @@
 		35E75F2F223B470200B4069A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				35E760D6223B816E00B4069A /* MagiEyeController.swift */,
+				35E76111223B984600B4069A /* MagiEyeController+Show.swift */,
+				35E76101223B8A2300B4069A /* ConsolePrintViewController.swift */,
+				35E760D8223B81BA00B4069A /* TabbarConttoller */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -462,6 +526,8 @@
 		35E75F31223B470200B4069A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				35E76106223B906800B4069A /* Monitor */,
+				35E76103223B906800B4069A /* RecordTableView */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -885,6 +951,98 @@
 			path = Typed;
 			sourceTree = "<group>";
 		};
+		35E760D8223B81BA00B4069A /* TabbarConttoller */ = {
+			isa = PBXGroup;
+			children = (
+				35E760DE223B81FD00B4069A /* ConsoleController */,
+				35E760D9223B81FD00B4069A /* FileController */,
+				35E760DB223B81FD00B4069A /* MonitorController */,
+				35E760E3223B81FD00B4069A /* SettingController */,
+			);
+			path = TabbarConttoller;
+			sourceTree = "<group>";
+		};
+		35E760D9223B81FD00B4069A /* FileController */ = {
+			isa = PBXGroup;
+			children = (
+				35E760DA223B81FD00B4069A /* FileController.swift */,
+			);
+			path = FileController;
+			sourceTree = "<group>";
+		};
+		35E760DB223B81FD00B4069A /* MonitorController */ = {
+			isa = PBXGroup;
+			children = (
+				35E760DC223B81FD00B4069A /* MonitorContainerView.swift */,
+				35E760DD223B81FD00B4069A /* MonitorController.swift */,
+			);
+			path = MonitorController;
+			sourceTree = "<group>";
+		};
+		35E760DE223B81FD00B4069A /* ConsoleController */ = {
+			isa = PBXGroup;
+			children = (
+				35E760DF223B81FD00B4069A /* ConsoleController.swift */,
+				35E760E0223B81FD00B4069A /* ConsoleController+TableView.swift */,
+				35E760E1223B81FD00B4069A /* ConsoleController+MagiEye.swift */,
+				35E760E2223B81FD00B4069A /* MagiEyesManager.swift */,
+			);
+			path = ConsoleController;
+			sourceTree = "<group>";
+		};
+		35E760E3223B81FD00B4069A /* SettingController */ = {
+			isa = PBXGroup;
+			children = (
+				35E760E4223B81FD00B4069A /* SettingController.swift */,
+			);
+			path = SettingController;
+			sourceTree = "<group>";
+		};
+		35E760ED223B881900B4069A /* MagiLeakEye */ = {
+			isa = PBXGroup;
+			children = (
+				35E760EE223B881900B4069A /* NSNotification+MagiLeakEye.swift */,
+				35E760EF223B881900B4069A /* MagiLeakEye.swift */,
+				35E760F0223B881900B4069A /* DispatchQueue+MagiLeakEye.swift */,
+				35E760F1223B881900B4069A /* NSObject+MagiAlive.swift */,
+				35E760F2223B881900B4069A /* String+MagiLeakEye.swift */,
+				35E760F3223B881900B4069A /* Variable.swift */,
+				35E760F4223B881900B4069A /* ObjectAgent.swift */,
+				35E760F5223B881900B4069A /* NSObject+MagiLeakEye.swift */,
+				35E760F6223B881900B4069A /* MagiLeakEye.h */,
+				35E760F7223B881900B4069A /* Preparer.swift */,
+			);
+			path = MagiLeakEye;
+			sourceTree = "<group>";
+		};
+		35E76103223B906800B4069A /* RecordTableView */ = {
+			isa = PBXGroup;
+			children = (
+				35E76104223B906800B4069A /* RecordTableViewCell.swift */,
+				35E76105223B906800B4069A /* RecordTableView.swift */,
+			);
+			path = RecordTableView;
+			sourceTree = "<group>";
+		};
+		35E76106223B906800B4069A /* Monitor */ = {
+			isa = PBXGroup;
+			children = (
+				35E76107223B906800B4069A /* MonitorDeviceView.swift */,
+				35E76108223B906800B4069A /* MonitorSysNetFlowView.swift */,
+				35E76109223B906800B4069A /* MonitorBaseView.swift */,
+			);
+			path = Monitor;
+			sourceTree = "<group>";
+		};
+		35E76113223B998C00B4069A /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				35E76114223B998C00B4069A /* eye@3x.png */,
+				35E76115223B998C00B4069A /* eye@2x.png */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		FA072CF2223B3BC600AE0CEE = {
 			isa = PBXGroup;
 			children = (
@@ -978,8 +1136,10 @@
 				35E76031223B470200B4069A /* image@2x.png in Resources */,
 				35E76036223B470200B4069A /* PreviewTransitionViewController.xib in Resources */,
 				FA072D09223B3BC700AE0CEE /* LaunchScreen.storyboard in Resources */,
+				35E76116223B998C00B4069A /* eye@3x.png in Resources */,
 				FA072D06223B3BC700AE0CEE /* Assets.xcassets in Resources */,
 				35E76034223B470200B4069A /* FileBrowser.xib in Resources */,
+				35E76117223B998C00B4069A /* eye@2x.png in Resources */,
 				35E7602E223B470200B4069A /* folder@2x.png in Resources */,
 				35E7602F223B470200B4069A /* zip@2x.png in Resources */,
 				35E76035223B470200B4069A /* pdf@2x.png in Resources */,
@@ -998,6 +1158,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35E760FE223B881900B4069A /* ObjectAgent.swift in Sources */,
 				35E76043223B470200B4069A /* BSBacktraceLogger.m in Sources */,
 				35E7603C223B470200B4069A /* FileBrowser.swift in Sources */,
 				35E75FEE223B470200B4069A /* AppSwizzle.swift in Sources */,
@@ -1007,31 +1168,40 @@
 				35E76021223B470200B4069A /* MagiCPU.swift in Sources */,
 				35E76001223B470200B4069A /* MagiArrowHeader.swift in Sources */,
 				35E760AB223B753200B4069A /* UIFont+MagiEye.swift in Sources */,
+				35E760E8223B81FD00B4069A /* ConsoleController.swift in Sources */,
 				35E760B7223B7A0800B4069A /* RecordORMProtocol.swift in Sources */,
 				35E76015223B470200B4069A /* MagiRefreshProtocol.swift in Sources */,
 				35E76046223B470200B4069A /* AssistiveButton.swift in Sources */,
 				35E76097223B728D00B4069A /* CrashRecordModel.swift in Sources */,
 				35E76076223B4DC900B4069A /* Query.swift in Sources */,
+				35E760FD223B881900B4069A /* Variable.swift in Sources */,
 				35E76020223B470200B4069A /* NetObjc.m in Sources */,
 				35E76023223B470200B4069A /* MagiNetwork.swift in Sources */,
 				35E76022223B470200B4069A /* MagiFPSLabel.swift in Sources */,
 				35E76004223B470200B4069A /* MagiReplicatorHeader.swift in Sources */,
 				35E76039223B470200B4069A /* FileListPreview.swift in Sources */,
 				35E7609D223B72B700B4069A /* NetworkRecordModel.swift in Sources */,
+				35E760F8223B881900B4069A /* NSNotification+MagiLeakEye.swift in Sources */,
 				35E7606B223B4DC900B4069A /* Connection.swift in Sources */,
 				35E760AA223B753200B4069A /* String+MagiEye.swift in Sources */,
 				35E76038223B470200B4069A /* FileListTableView.swift in Sources */,
+				35E7610D223B906800B4069A /* MonitorSysNetFlowView.swift in Sources */,
+				35E760EB223B81FD00B4069A /* MagiEyesManager.swift in Sources */,
 				35E75FD4223B470200B4069A /* UIScrollView+SwCapture.swift in Sources */,
 				35E75FFE223B470200B4069A /* MagiReplicatorFooter.swift in Sources */,
+				35E760FF223B881900B4069A /* NSObject+MagiLeakEye.swift in Sources */,
 				35E76019223B470200B4069A /* MagiAlertLabel.swift in Sources */,
 				35E76075223B4DC900B4069A /* Foundation.swift in Sources */,
 				35E760AD223B753200B4069A /* Double+MagiEye.swift in Sources */,
+				35E7610E223B906800B4069A /* MonitorBaseView.swift in Sources */,
 				35E7608B223B575A00B4069A /* SwitchConfiguration.swift in Sources */,
+				35E760E6223B81FD00B4069A /* MonitorContainerView.swift in Sources */,
 				35E760B0223B753200B4069A /* UIWindow+MagiEye.swift in Sources */,
 				FA072D01223B3BC600AE0CEE /* ViewController.swift in Sources */,
 				35E75FFB223B470200B4069A /* AppPaths.swift in Sources */,
 				35E76024223B470200B4069A /* MagiHardware.swift in Sources */,
 				35E76025223B470200B4069A /* MagiMemory.swift in Sources */,
+				35E7610C223B906800B4069A /* MonitorDeviceView.swift in Sources */,
 				35E7608D223B57A500B4069A /* ControlConfiguration.swift in Sources */,
 				35E760BB223B7B6100B4069A /* CommandRecordModel+ORM.swift in Sources */,
 				35E7602B223B470200B4069A /* PreviewManager.swift in Sources */,
@@ -1045,6 +1215,7 @@
 				35E7603E223B470200B4069A /* MagiEyeURLProtocol.swift in Sources */,
 				35E75FD3223B470200B4069A /* WKWebView+SwCapture.swift in Sources */,
 				35E76071223B4DC900B4069A /* Cipher.swift in Sources */,
+				35E760FC223B881900B4069A /* String+MagiLeakEye.swift in Sources */,
 				35E75FD5223B470200B4069A /* UIView+SwCapture.swift in Sources */,
 				35E76002223B470200B4069A /* MagiNativeHeader.swift in Sources */,
 				35E7601C223B470200B4069A /* MagiLogModel.swift in Sources */,
@@ -1063,19 +1234,24 @@
 				35E76017223B470200B4069A /* MagiRefreshHeaderConrol.swift in Sources */,
 				35E76018223B470200B4069A /* MagiRefreshBaseConrol.swift in Sources */,
 				35E76016223B470200B4069A /* MagiRefreshFooterConrol.swift in Sources */,
+				35E760FB223B881900B4069A /* NSObject+MagiAlive.swift in Sources */,
 				35E760CB223B7ED100B4069A /* CommandRecordViewModel.swift in Sources */,
 				35E7602C223B470200B4069A /* FileListViewController.swift in Sources */,
 				35E7606A223B4DC900B4069A /* SQLite-Bridging.m in Sources */,
 				35E7603B223B470200B4069A /* FileListSearch.swift in Sources */,
 				35E76003223B470200B4069A /* MagiRingIndicatorHeader.swift in Sources */,
 				35E760D3223B7EFF00B4069A /* NetworkRecordViewModel.swift in Sources */,
+				35E76102223B8A2300B4069A /* ConsolePrintViewController.swift in Sources */,
 				35E760C3223B7C1400B4069A /* LogRecordModel+ORM.swift in Sources */,
+				35E7610B223B906800B4069A /* RecordTableView.swift in Sources */,
 				35E760D1223B7EF300B4069A /* LogRecordViewModel.swift in Sources */,
 				35E75FF4223B470200B4069A /* UIApplication+AppBaseKit.swift in Sources */,
 				35E76010223B470200B4069A /* MagiArcLayer.swift in Sources */,
+				35E760FA223B881900B4069A /* DispatchQueue+MagiLeakEye.swift in Sources */,
 				35E76007223B470200B4069A /* UICollectionView+MagiRefresh.swift in Sources */,
 				35E7600A223B470200B4069A /* MagiRefresh.swift in Sources */,
 				35E7607A223B4DC900B4069A /* Collation.swift in Sources */,
+				35E760E5223B81FD00B4069A /* FileController.swift in Sources */,
 				35E75FFA223B470200B4069A /* String+AppBaseKit.swift in Sources */,
 				35E7600D223B470200B4069A /* MagiRefreshDefaults.swift in Sources */,
 				35E760C9223B7CE900B4069A /* CatonRecordViewModel.swift in Sources */,
@@ -1084,6 +1260,7 @@
 				35E760B3223B753200B4069A /* UITableView+MagiEye.swift in Sources */,
 				35E7606F223B4DC900B4069A /* Value.swift in Sources */,
 				35E760BF223B7BF800B4069A /* CrashRecordModel+ORM.swift in Sources */,
+				35E760E7223B81FD00B4069A /* MonitorController.swift in Sources */,
 				35E75FFF223B470200B4069A /* MagiRingIndicatorFooter.swift in Sources */,
 				35E7606E223B4DC900B4069A /* Statement.swift in Sources */,
 				35E76085223B55EB00B4069A /* MagiDefine.swift in Sources */,
@@ -1093,12 +1270,16 @@
 				35E7603A223B470200B4069A /* FBFile.swift in Sources */,
 				35E76099223B729900B4069A /* LeakRecordModel.swift in Sources */,
 				35E7600F223B470200B4069A /* MagiReplicatorLayer.swift in Sources */,
+				35E76100223B881900B4069A /* Preparer.swift in Sources */,
+				35E76110223B971B00B4069A /* MagiEye.swift in Sources */,
 				35E7601F223B470200B4069A /* MagiNetworkFlow.swift in Sources */,
 				35E75FF8223B470200B4069A /* NSObject+Closure.swift in Sources */,
 				35E7609B223B72AB00B4069A /* LogRecordModel.swift in Sources */,
 				35E76000223B470200B4069A /* MagiNativeFooter.swift in Sources */,
+				35E760EC223B81FD00B4069A /* SettingController.swift in Sources */,
 				35E76012223B470200B4069A /* MagiPlaceHolder.swift in Sources */,
 				35E760CD223B7EDD00B4069A /* CrashRecordViewModel.swift in Sources */,
+				35E760F9223B881900B4069A /* MagiLeakEye.swift in Sources */,
 				35E76080223B4DC900B4069A /* AggregateFunctions.swift in Sources */,
 				35E75FF7223B470200B4069A /* UIAlertController+AppBaseKit.swift in Sources */,
 				35E76041223B470200B4069A /* AppBacktrace.swift in Sources */,
@@ -1106,6 +1287,7 @@
 				35E7602A223B470200B4069A /* WebviewPreviewViewContoller.swift in Sources */,
 				35E7603F223B470200B4069A /* MagiNetworkEye.swift in Sources */,
 				35E760C7223B7C9B00B4069A /* BaseRecordViewModel.swift in Sources */,
+				35E76112223B984600B4069A /* MagiEyeController+Show.swift in Sources */,
 				35E76093223B5A9D00B4069A /* CommandRecordModel.swift in Sources */,
 				35E76027223B470200B4069A /* MagiFPS.swift in Sources */,
 				35E7601D223B470200B4069A /* MagiLog.swift in Sources */,
@@ -1113,6 +1295,7 @@
 				35E75FF3223B470200B4069A /* UIView+AppBaseKit.swift in Sources */,
 				35E7607F223B4DC900B4069A /* Schema.swift in Sources */,
 				35E76008223B470200B4069A /* UIScrollView+MagiRefresh.swift in Sources */,
+				35E760D7223B816E00B4069A /* MagiEyeController.swift in Sources */,
 				35E75FF9223B470200B4069A /* NSFileManager+AppBaseKit.swift in Sources */,
 				35E76037223B470200B4069A /* PreviewTransitionViewController.swift in Sources */,
 				35E7607E223B4DC900B4069A /* Operators.swift in Sources */,
@@ -1121,6 +1304,7 @@
 				35E76072223B4DC900B4069A /* RTree.swift in Sources */,
 				35E760A9223B753200B4069A /* Thread+MagiEye.swift in Sources */,
 				35E7607C223B4DC900B4069A /* DateAndTimeFunctions.swift in Sources */,
+				35E7610A223B906800B4069A /* RecordTableViewCell.swift in Sources */,
 				35E7602D223B470200B4069A /* FileParser.swift in Sources */,
 				35E76042223B470200B4069A /* MagiCatonEye.swift in Sources */,
 				35E7603D223B470200B4069A /* URLSession+MagiNetworkEye.swift in Sources */,
@@ -1136,7 +1320,9 @@
 				35E760CF223B7EE700B4069A /* LeakRecordViewModel.swift in Sources */,
 				35E760B5223B77BF00B4069A /* Store.swift in Sources */,
 				35E75FFD223B470200B4069A /* MagiArrowFooter.swift in Sources */,
+				35E760E9223B81FD00B4069A /* ConsoleController+TableView.swift in Sources */,
 				35E7606C223B4DC900B4069A /* Blob.swift in Sources */,
+				35E760EA223B81FD00B4069A /* ConsoleController+MagiEye.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -15,7 +15,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        let configuration = Configuration()
+        configuration.command.add(command: "test", description: "test command") { () -> (String) in
+            return "this is test command result"
+        }
+        configuration.command.add(command: "info", description: "print test info") { () -> (String) in
+            return "info"
+        }
+        
+        MagiEye.makeEye(with: self.window!, configuration: configuration)
         return true
     }
 
