@@ -20,7 +20,7 @@ extension UITableView: MagiInitAware {
     
     private static let swizzleMethod: Void = {
         /// insertSections
-        let originalSelector = #selector//(insertSections(_:with:))
+        let originalSelector = #selector(insertSections(_:with:))
         let swizzledSelector = #selector(magi_insertSections(_:with:))
         MagiRunTime.exchangeMethod(selector: originalSelector, replace: swizzledSelector, class: UITableView.self)
         

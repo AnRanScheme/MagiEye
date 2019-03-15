@@ -11,11 +11,10 @@ import UIKit
 
 private var key = "kUIAlertViewHandler"
 extension UIAlertView {
-    
-    
-    private var handler:UIAlertViewHandler?{
+
+    private var handler: UIAlertViewHandler? {
         set{
-            objc_setAssociatedObject(self, &key, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+            objc_setAssociatedObject(self, &key, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
         }
         get{
             return objc_getAssociatedObject(self, &key) as! UIAlertViewHandler?
@@ -32,9 +31,9 @@ extension UIAlertView {
     
     public class func quickConfirm(message: String,
                                    title: String,
-                                   cancelButtonTitle:String = "No",
-                                   confirmButtonTitle:String = "Yes",
-                                   clickedButtonAtIndex:@escaping ( _ buttonIndex: Int)->()) {
+                                   cancelButtonTitle: String = "No",
+                                   confirmButtonTitle: String = "Yes",
+                                   clickedButtonAtIndex: @escaping ( _ buttonIndex: Int)->()) {
         
         let alert = UIAlertView(title: title,
                                 message: message,
@@ -48,20 +47,21 @@ extension UIAlertView {
         alert.delegate = alert.handler
         alert.show()
     }
+    
 }
 
 
-private class UIAlertViewHandler: NSObject,UIAlertViewDelegate {
-    typealias ClickBlock = (_ handler:UIAlertViewHandler,_ index:Int)->()
+private class UIAlertViewHandler: NSObject, UIAlertViewDelegate {
+    typealias ClickBlock = (_ handler: UIAlertViewHandler, _ index: Int)->()
     
-    private var clickBlock: ClickBlock!
+    private var clickBlock: ClickBlock
     
-    init(clickBlock:@escaping ClickBlock) {
-        super.init()
+    init(clickBlock: @escaping ClickBlock) {
         self.clickBlock = clickBlock
+        super.init()
     }
     
     @objc func alertView(alertView: UIAlertView, clickedButtonAtIndex buttonIndex: Int) {
-        self.clickBlock(self,buttonIndex)
+        clickBlock(self, buttonIndex)
     }
 }

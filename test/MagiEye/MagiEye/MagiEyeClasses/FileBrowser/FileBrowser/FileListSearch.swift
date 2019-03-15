@@ -7,16 +7,17 @@
 //
 
 import Foundation
+import UIKit
 
 extension FileListViewController: UISearchBarDelegate, UISearchControllerDelegate, UISearchResultsUpdating {
         
     // MARK: UISearchControllerDelegate
     func willPresentSearchController(_ searchController: UISearchController) {
-        self.tableView.contentInset = UIEdgeInsetsMake(20, 0, 0, 0)
+        self.tableView.contentInset = UIEdgeInsets(top: 20, left: 0, bottom: 0, right: 0)
     }
     
     func willDismissSearchController(_ searchController: UISearchController) {
-        self.tableView.contentInset = UIEdgeInsetsMake(0, 0, 0, 0)
+        self.tableView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
     }
     
     // MARK: UISearchBarDelegate

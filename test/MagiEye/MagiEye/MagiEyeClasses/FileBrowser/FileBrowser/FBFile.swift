@@ -7,21 +7,22 @@
 //
 
 import Foundation
+import UIKit
 
 /// FBFile is a class representing a file in FileBrowser
 open class FBFile: NSObject {
     /// Display name. String.
-    open let displayName: String
+    public let displayName: String
     // is Directory. Bool.
-    open let isDirectory: Bool
+    public let isDirectory: Bool
     /// File extension.
-    open let fileExtension: String?
+    public let fileExtension: String?
     /// File attributes (including size, creation date etc).
-    open let fileAttributes: NSDictionary?
+    public let fileAttributes: NSDictionary?
     /// NSURL file path.
-    open let filePath: URL
+    public let filePath: URL
     // FBFileType
-    open let type: FBFileType
+    public let type: FBFileType
     
     /**
      Initialize an FBFile object with a filePath
