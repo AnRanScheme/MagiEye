@@ -10,32 +10,31 @@ import Foundation
 
 class MonitorController: UIViewController {
     
+    private var containerView = MonitorContainerView()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.view.backgroundColor = UIColor.niceBlack()
-        
-        self.view.addSubview(self.containerView)
-        self.containerView.delegateContainer = self;
+        containerView.delegateContainer = self
+        view.addSubview(self.containerView)
+        view.backgroundColor = UIColor.niceBlack()
     }
     
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
-        self.containerView.frame = self.view.bounds
+        containerView.frame = self.view.bounds
     }
-    
-    private var containerView = MonitorContainerView()
+ 
 }
 
 extension MonitorController: MonitorContainerViewDelegate {
+    
     func container(container:MonitorContainerView, didSelectedType type:MonitorSystemType) {
-        
         UIAlertView.quickTip(message: "detail and historical data coming soon")
         
         if type.hasDetail {
             //TODO: add detail
-            
         }
     }
+    
 }
 

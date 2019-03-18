@@ -9,119 +9,102 @@
 import Foundation
 import UIKit
 
-
 protocol MonitorContainerViewDelegate: class {
     func container(container: MonitorContainerView, didSelectedType type: MonitorSystemType)
 }
 
-class MonitorContainerView: UIScrollView, MagiFPSDelegate, MagiNetDelegate {
+class MonitorContainerView: UIScrollView {
     
     weak var delegateContainer: MonitorContainerViewDelegate?
     
     init() {
         super.init(frame: CGRect.zero)
-        
-        self.addSubview(self.deviceView)
-        self.addSubview(self.sysNetView)
-        
-        self.fps.open()
-        self.networkFlow.open()
-        
-        self.deviceView.configure(
+        addSubview(deviceView)
+        addSubview(sysNetView)
+        fps.open()
+        networkFlow.open()
+        deviceView.configure(
             nameString: MagiSystemEye.hardware.deviceModel,
             osString: MagiSystemEye.hardware.systemName + " " + MagiSystemEye.hardware.systemVersion)
         
         Store.shared.networkByteDidChange { [weak self] (byte:Double) in
             self?.appNetView.configure(byte: byte)
         }
-        
-        
-        Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(MonitorContainerView.timerHandler), userInfo: nil, repeats: true)
+        Timer.scheduledTimer(timeInterval: 1,
+                             target: self,
+                             selector: #selector(timerHandler),
+                             userInfo: nil,
+                             repeats: true)
     }
     
     override func layoutSubviews() {
         super.layoutSubviews()
        
-        self.deviceView.frame = CGRect(x: 0, y: 0, width: self.frame.size.width, height: 100)
-        
-        
-        for i in 0..<self.monitorAppViews.count {
-            var rect = self.deviceView.frame
+        deviceView.frame = CGRect(x: 0,
+                                  y: 0,
+                                  width: frame.size.width,
+                                  height: 100)
+
+        for i in 0..<monitorAppViews.count {
+            var rect = deviceView.frame
             rect.origin.y = rect.maxY
-            rect.size.width = self.frame.size.width / 2.0
+            rect.size.width = frame.size.width / 2.0
             rect.size.height = 100
-            
-            
             rect.origin.y += rect.size.height * CGFloat( i / 2)
             rect.origin.x += rect.size.width * CGFloat( i % 2)
-            
-            self.monitorAppViews[i].frame = rect
+            monitorAppViews[i].frame = rect
         }
         
-        for i in 0..<self.monitorSysViews.count {
-            var rect = self.monitorAppViews.last?.frame ?? CGRect.zero
+        for i in 0..<monitorSysViews.count {
+            var rect = monitorAppViews.last?.frame ?? CGRect.zero
             rect.origin.y += rect.size.height
             rect.origin.x = 0
-            
             rect.origin.y += rect.size.height * CGFloat( i / 2)
             rect.origin.x += rect.size.width * CGFloat( i % 2)
-            
-            self.monitorSysViews[i].frame = rect
+            monitorSysViews[i].frame = rect
         }
         
-        var rect = self.monitorSysViews.last?.frame ?? CGRect.zero
+        var rect = monitorSysViews.last?.frame ?? CGRect.zero
         rect.origin.y += rect.size.height
         rect.origin.x = 0
-        rect.size.width = self.frame.size.width
-        self.sysNetView.frame = rect
+        rect.size.width = frame.size.width
+        sysNetView.frame = rect
         
-        self.contentSize = CGSize(width: self.frame.size.width, height: self.sysNetView.frame.maxY)
+        contentSize = CGSize(width: frame.size.width, height: sysNetView.frame.maxY)
     }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    
-    
-    //--------------------------------------------------------------------------
     // MARK: PRIVATE FUNCTION
-    //--------------------------------------------------------------------------
-    
-    @objc private func didTap(sender: MonitorBaseView) {
-        self.delegateContainer?.container(container: self, didSelectedType: sender.type)
+    @objc
+    private func didTap(sender: MonitorBaseView) {
+        delegateContainer?.container(container: self, didSelectedType: sender.type)
     }
     
-    @objc private func didTapSysNetView(sender: MonitorSysNetFlowView) {
-        self.delegateContainer?.container(container: self, didSelectedType: sender.type)
+    @objc
+    private func didTapSysNetView(sender: MonitorSysNetFlowView) {
+        delegateContainer?.container(container: self, didSelectedType: sender.type)
     }
     
-    @objc private func timerHandler() {
+    @objc
+    private func timerHandler() {
         
-        self.appCPUView.configure(percent: MagiSystemEye.cpu.applicationUsage())
+        appCPUView.configure(percent: MagiSystemEye.cpu.applicationUsage())
         
         let cpuSystemUsage = MagiSystemEye.cpu.systemUsage()
-        self.sysCPUView.configure(percent: cpuSystemUsage.system + cpuSystemUsage.user + cpuSystemUsage.nice)
+        sysCPUView.configure(percent: cpuSystemUsage.system + cpuSystemUsage.user + cpuSystemUsage.nice)
         
-        self.appRAMView.configure(byte: MagiSystemEye.memory.applicationUsage().used)
+        appRAMView.configure(byte: MagiSystemEye.memory.applicationUsage().used)
         
         let ramSysUsage = MagiSystemEye.memory.systemUsage()
         let percent = (ramSysUsage.active + ramSysUsage.inactive + ramSysUsage.wired) / ramSysUsage.total
-        self.sysRAMView.configure(percent: percent * 100.0)
+        sysRAMView.configure(percent: percent * 100.0)
         
     }
-    
-    func fps(fps: MagiFPS, currentFPS: Double) {
-        self.appFPSView.configure(fps: currentFPS)
-    }
-    
-    func networkFlow(networkFlow: MagiNetworkFlow,catchWithWifiSend wifiSend:UInt32,wifiReceived:UInt32,wwanSend:UInt32,wwanReceived:UInt32) {
-        self.sysNetView.configure(wifiSend: wifiSend, wifiReceived: wifiReceived, wwanSend: wwanSend, wwanReceived: wwanReceived)
-    }
-    //--------------------------------------------------------------------------
+
     // MARK: PRIVATE PROPERTY
-    //--------------------------------------------------------------------------
-    
     private lazy var fps: MagiFPS = { [unowned self] in
         let new = MagiFPS()
         new.delegate = self
@@ -180,16 +163,15 @@ class MonitorContainerView: UIScrollView, MagiFPSDelegate, MagiNetDelegate {
     
     private lazy var monitorAppViews: [MonitorBaseView] = { [unowned self] in
         var new = [MonitorBaseView]()
+        addSubview(appCPUView)
+        addSubview(appRAMView)
+        addSubview(appFPSView)
+        addSubview(appNetView)
         
-        self.addSubview(self.appCPUView)
-        self.addSubview(self.appRAMView)
-        self.addSubview(self.appFPSView)
-        self.addSubview(self.appNetView)
-        
-        new.append(self.appCPUView)
-        new.append(self.appRAMView)
-        new.append(self.appFPSView)
-        new.append(self.appNetView)
+        new.append(appCPUView)
+        new.append(appRAMView)
+        new.append(appFPSView)
+        new.append(appNetView)
         
         for i in 0..<new.count {
             new[i].firstRow = i < 2
@@ -201,10 +183,10 @@ class MonitorContainerView: UIScrollView, MagiFPSDelegate, MagiNetDelegate {
     private lazy var monitorSysViews: [MonitorBaseView] = { [unowned self] in
         var new = [MonitorBaseView]()
         
-        self.addSubview(self.sysCPUView)
-        self.addSubview(self.sysRAMView)
-        new.append(self.sysCPUView)
-        new.append(self.sysRAMView)
+        addSubview(sysCPUView)
+        addSubview(sysRAMView)
+        new.append(sysCPUView)
+        new.append(sysRAMView)
         
         for i in 0..<new.count {
             new[i].firstRow = i < 2
@@ -212,4 +194,16 @@ class MonitorContainerView: UIScrollView, MagiFPSDelegate, MagiNetDelegate {
         }
         return new
     }()
+}
+
+extension MonitorContainerView: MagiFPSDelegate {
+    func fps(fps: MagiFPS, currentFPS: Double) {
+        appFPSView.configure(fps: currentFPS)
+    }
+}
+
+extension MonitorContainerView: MagiNetDelegate {
+    func networkFlow(networkFlow: MagiNetworkFlow,catchWithWifiSend wifiSend:UInt32,wifiReceived:UInt32,wwanSend:UInt32,wwanReceived:UInt32) {
+        sysNetView.configure(wifiSend: wifiSend, wifiReceived: wifiReceived, wwanSend: wwanSend, wwanReceived: wwanReceived)
+    }
 }

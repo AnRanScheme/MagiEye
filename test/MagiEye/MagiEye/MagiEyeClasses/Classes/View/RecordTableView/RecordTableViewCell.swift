@@ -39,15 +39,6 @@ class RecordTableViewCell: UITableViewCell {
         self.logTextView.frame = rect
     }
     
-//        private lazy var logLabel: UILabel = {
-//            let new = UILabel()
-//            new.numberOfLines = 0
-//            new.font = Define.Font.log
-//            new.textColor = self.configurator.skin.textBodyColor
-//            new.backgroundColor = UIColor.clear
-//            return new
-//        }()
-    
     private lazy var logTextView: UITextView = { [unowned self] in
         let new = UITextView()
         new.isSelectable = false
