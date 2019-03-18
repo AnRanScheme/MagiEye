@@ -53,7 +53,7 @@ extension CatonRecordModel: RecordORMProtocol {
     }
     
     class col: NSObject {
-        static let threshold = Expression<Double>("threshold")
+        static let threshold = Expression<Double?>("threshold")
         static let mainThreadBacktrace = Expression<String?>("mainThreadBacktrace")
         static let allThreadBacktrace = Expression<String?>("allThreadBacktrace")
     }
