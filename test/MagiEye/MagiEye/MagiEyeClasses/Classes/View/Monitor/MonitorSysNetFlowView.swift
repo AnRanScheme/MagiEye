@@ -11,27 +11,28 @@ import Foundation
 
 class MonitorSysNetFlowView: UIButton {
     
-    private(set) var type: MonitorSystemType!
+    private(set) var type: MonitorSystemType
     
-    init(type:MonitorSystemType) {
-        super.init(frame: CGRect.zero)
+    init(type: MonitorSystemType) {
         self.type = type
-        self.infoLabel.text = type.info
-        self.addSubview(self.topLine)
-        self.addSubview(self.infoLabel)
-        self.addSubview(self.wifiSendLabel)
-        self.addSubview(self.wifiReceivedLabel)
-        self.addSubview(self.wwanSendLabel)
-        self.addSubview(self.wwanReceivedLabel)
+        super.init(frame: CGRect.zero)
+        infoLabel.text = type.info
+        addSubview(topLine)
+        addSubview(infoLabel)
+        addSubview(wifiSendLabel)
+        addSubview(wifiReceivedLabel)
+        addSubview(wwanSendLabel)
+        addSubview(wwanReceivedLabel)
         
     }
     
-    func configure(wifiSend:UInt32,wifiReceived:UInt32,wwanSend:UInt32,wwanReceived:UInt32) {
-        
-        self.wifiSendLabel.attributedText = self.attributedString(prefix: "wifi send:", byte: wifiSend)
-        self.wifiReceivedLabel.attributedText = self.attributedString(prefix: "wifi received:", byte: wifiReceived)
-        self.wwanSendLabel.attributedText = self.attributedString(prefix: "wwan send:", byte: wwanSend)
-        self.wwanReceivedLabel.attributedText = self.attributedString(prefix: "wwan received:", byte: wwanReceived)
+    func configure(wifiSend: UInt32, wifiReceived: UInt32, wwanSend: UInt32, wwanReceived: UInt32) {
+        DispatchQueue.main.async {
+            self.wifiSendLabel.attributedText = self.attributedString(prefix: "wifi send:", byte: wifiSend)
+            self.wifiReceivedLabel.attributedText = self.attributedString(prefix: "wifi received:", byte: wifiReceived)
+            self.wwanSendLabel.attributedText = self.attributedString(prefix: "wwan send:", byte: wwanSend)
+            self.wwanReceivedLabel.attributedText = self.attributedString(prefix: "wwan received:", byte: wwanReceived)
+        }
     }
     
     private func attributedString(prefix:String,byte:UInt32) -> NSAttributedString {
@@ -41,11 +42,11 @@ class MonitorSysNetFlowView: UIButton {
         result.append(NSAttributedString(string: prefix + "  ",
                                          attributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 10),
                                                       NSAttributedString.Key.foregroundColor:UIColor.white]))
-        result.append(NSAttributedString(string: String.init(format: "%.1f",storage.capacity),
-                                         attributes: [NSAttributedString.Key.font: UIFont(name: "HelveticaNeue-UltraLight", size: 18),
+        result.append(NSAttributedString(string: String(format: "%.1f",storage.capacity),
+                                         attributes: [NSAttributedString.Key.font: UIFont(name: "HelveticaNeue-UltraLight", size: 18)!,
                                                       NSAttributedString.Key.foregroundColor:UIColor.white]))
         result.append(NSAttributedString(string: storage.unit,
-                                         attributes: [NSAttributedString.Key.font: UIFont(name: "HelveticaNeue-UltraLight", size: 12),
+                                         attributes: [NSAttributedString.Key.font: UIFont(name: "HelveticaNeue-UltraLight", size: 12)!,
                                                       NSAttributedString.Key.foregroundColor:UIColor.white]))
         return result
     }

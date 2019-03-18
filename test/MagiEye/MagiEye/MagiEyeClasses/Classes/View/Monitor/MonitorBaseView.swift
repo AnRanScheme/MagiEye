@@ -19,21 +19,21 @@ class MonitorBaseView: UIButton {
     
     var firstRow:Bool = true
     
-    private(set) var type: MonitorSystemType!
+    private(set) var type: MonitorSystemType
     
     init(type:MonitorSystemType) {
-        super.init(frame: CGRect.zero)
         self.type = type
-        self.infoLabel.text = type.info
-        self.contentLabel.text = type.initialValue
+        super.init(frame: CGRect.zero)
+        infoLabel.text = type.info
+        contentLabel.text = type.initialValue
         
-        self.backgroundColor = UIColor.clear
+        backgroundColor = UIColor.clear
         
-        self.addSubview(self.rightLine)
-        self.addSubview(self.topLine)
+        addSubview(rightLine)
+        addSubview(topLine)
         
-        self.addSubview(self.infoLabel)
-        self.addSubview(self.contentLabel)
+        addSubview(infoLabel)
+        addSubview(contentLabel)
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -128,7 +128,7 @@ extension MonitorBaseView {
 
 // MARK: - Percent
 extension MonitorBaseView {
-    func configure(percent:Double) {
+    func configure(percent: Double) {
         self.contentLabel.attributedText = self.contentString(String.init(format: "%.1f", percent), unit: "%")
     }
 }

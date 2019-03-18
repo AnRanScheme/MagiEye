@@ -11,7 +11,6 @@ import Foundation
 class RecordTableView: UITableView {
     
     private var timer: Timer?
-    
     private var needScrollToBottom = false
     
     override init(frame: CGRect, style: UITableView.Style) {
@@ -38,7 +37,6 @@ class RecordTableView: UITableView {
     
     override func reloadData() {
         super.reloadData()
-        
         if needScrollToBottom == true {
             DispatchQueue.main.async { [weak self] in
                 self?.scrollToBottom(animated: true)
@@ -85,24 +83,20 @@ class RecordTableViewDataSource: NSObject {
         case .leak:
             return LeakRecordModel.select(at: logIndex)
         }
-        //fatalError("type:\(type) not define the database")
     }
     
     private func addCount() {
-        self.type.model()?.addCount += 1
+        type.model()?.addCount += 1
     }
     
     func loadPrePage() -> Bool {
-        self.logIndex += 1
-        
-        guard let models = self.currentPageModel() else {
+        logIndex += 1
+        guard let models = currentPageModel() else {
             return false
         }
-        
         guard models.count != 0 else {
             return false
         }
-        
         for model in models.reversed() {
             recordData?.insert(model, at: 0)
         }
@@ -126,6 +120,7 @@ class RecordTableViewDataSource: NSObject {
     func cleanRecord() {
         recordData?.removeAll()
     }
+    
 }
 
 extension RecordTableViewDataSource: UITableViewDataSource, UITableViewDelegate {
@@ -164,9 +159,10 @@ extension RecordTableViewDataSource: UITableViewDataSource, UITableViewDelegate 
     }
     
     func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
-        if self.type == .network || self.type == .caton {
+        if type == .network || type == .caton {
             return indexPath
-        }else {
+        }
+        else {
             return nil
         }
     }
@@ -176,5 +172,6 @@ extension RecordTableViewDataSource: UITableViewDataSource, UITableViewDelegate 
         model.showAll = !model.showAll
         tableView.reloadData()
     }
+    
 }
 
