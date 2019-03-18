@@ -22,7 +22,7 @@ class ConsoleTableViewModel: NSObject {
 }
 
 extension ConsoleController {
-    func reloadRow(of type:RecordType) {
+    func reloadRow(of type: RecordType) {
         if let indexPath = self.indexPath(of: type) {
             self.tableView.reloadRows(at: [indexPath], with: UITableView.RowAnimation.none)
         }

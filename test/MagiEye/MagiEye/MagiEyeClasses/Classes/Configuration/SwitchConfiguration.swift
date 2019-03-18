@@ -9,8 +9,8 @@
 import Foundation
 
 /// DESCRIPTION: all switch is default switch value, it only will
-/// work while passed as argument while GodEye init.
-/// In an other words,after the GodEye has inited,you can't
+/// work while passed as argument while MagiEye init.
+/// In an other words,after the MagiEye has inited,you can't
 /// change the switch value to turn on or turn off the monitor eye
 open class SwitchConfiguration: NSObject {
     /// asl switch defualt value

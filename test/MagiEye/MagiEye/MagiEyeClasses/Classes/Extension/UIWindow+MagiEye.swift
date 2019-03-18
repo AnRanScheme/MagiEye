@@ -35,14 +35,16 @@ extension UIWindow {
             rect.origin = location
         }
         
-        var image = UIImage(named: "GodEye.bundle/eye", in: Bundle(for: MagiEyeController.classForCoder()), compatibleWith: nil)
+        var image = UIImage(named: "GodEye.bundle/eye",
+                            in: Bundle(for: MagiEyeController.classForCoder()),
+                            compatibleWith: nil)
         if image == nil {
             // for carthage, image in framework
             image = UIImage(named: "eye", in: Bundle(for: MagiEyeController.classForCoder()), compatibleWith: nil)
         }
         let btn = AssistiveButton(frame: rect, normalImage: image!)
         btn.didTap = { () -> () in
-            if MagiEyeController.shared.showing {
+            if MagiEyeController.shared.isShowing {
                 MagiEyeController.hide()
             }else {
                 MagiEyeController.show()
@@ -73,7 +75,7 @@ extension UIResponder {
         let control = MagiEyeController.shared.configuration?.control
         if control?.enabled ?? false && control?.shakeToShow() ?? false {
             if event?.type == UIEvent.EventType.motion && event?.subtype == UIEvent.EventSubtype.motionShake {
-                if MagiEyeController.shared.showing {
+                if MagiEyeController.shared.isShowing {
                     MagiEyeController.hide()
                 }else {
                     MagiEyeController.show()

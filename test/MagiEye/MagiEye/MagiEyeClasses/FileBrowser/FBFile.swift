@@ -7,22 +7,33 @@
 //
 
 import Foundation
-import UIKit
 
 /// FBFile is a class representing a file in FileBrowser
-open class FBFile: NSObject {
+@objc open class FBFile: NSObject {
     /// Display name. String.
-    public let displayName: String
+    @objc open let displayName: String
     // is Directory. Bool.
-    public let isDirectory: Bool
+    open let isDirectory: Bool
     /// File extension.
-    public let fileExtension: String?
+    open let fileExtension: String?
     /// File attributes (including size, creation date etc).
-    public let fileAttributes: NSDictionary?
+    open let fileAttributes: NSDictionary?
     /// NSURL file path.
-    public let filePath: URL
+    open let filePath: URL
     // FBFileType
-    public let type: FBFileType
+    open let type: FBFileType
+    
+    open func delete()
+    {
+        do
+        {
+            try FileManager.default.removeItem(at: self.filePath)
+        }
+        catch
+        {
+            print("An error occured when trying to delete file:\(self.filePath) Error:\(error)")
+        }
+    }
     
     /**
      Initialize an FBFile object with a filePath

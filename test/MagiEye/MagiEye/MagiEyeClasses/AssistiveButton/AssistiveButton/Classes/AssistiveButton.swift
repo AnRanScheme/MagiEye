@@ -9,13 +9,18 @@
 import Foundation
 import UIKit
 
-//MARK: AssistiveButton
+//MARK: - AssistiveButton
 open class AssistiveButton: UIButton {
     
-    //MARK: Public Var
+    //MARK: - Public Var
     open var moveEnable = true
     
     open var didTap: (()->())?
+    
+    //MARK: - Private Var
+    fileprivate var beginPoint = CGPoint.zero
+    
+    fileprivate var didMoved = false
     
     //MARK: Init
     public init(frame: CGRect,normalImage:UIImage,highlightedImage:UIImage? = nil) {
@@ -31,16 +36,6 @@ open class AssistiveButton: UIButton {
     required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
-    //MARK: Action
-    @objc fileprivate func tap() {
-        if self.didMoved {
-            return
-        }
-        
-        self.didTap?()
-    }
-    
     
     //MARK: Override
     override open func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -113,18 +108,25 @@ open class AssistiveButton: UIButton {
             return
         }
         
-        if (self.center.x >= superview.frame.size.width/2) {//Move to the right
+        if self.center.x >= superview.frame.size.width/2 {//Move to the right
             //move animation
             UIView.beginAnimations("move", context: nil)
             UIView.setAnimationDuration(0.2)
             UIView.setAnimationDelegate(self)
-            self.frame = CGRect(x: superview.frame.size.width - self.frame.size.width, y: self.center.y - self.frame.size.height / 2.0, width: self.frame.size.width, height: self.frame.size.height)
+            self.frame = CGRect(x: superview.frame.size.width - self.frame.size.width,
+                                y: self.center.y - self.frame.size.height / 2.0,
+                                width: self.frame.size.width,
+                                height: self.frame.size.height)
             UIView.commitAnimations()
-        }else{//move to the left
+        }else{
+            //move to the left
             UIView.beginAnimations("move", context: nil)
             UIView.setAnimationDuration(0.2)
             UIView.setAnimationDelegate(self)
-            self.frame = CGRect(x: 0, y: self.center.y - self.frame.size.height / 2.0, width: self.frame.size.width, height: self.frame.size.height)
+            self.frame = CGRect(x: 0,
+                                y: self.center.y - self.frame.size.height / 2.0,
+                                width: self.frame.size.width,
+                                height: self.frame.size.height)
             UIView.commitAnimations()
         }
         
@@ -135,8 +137,13 @@ open class AssistiveButton: UIButton {
         super.touchesCancelled(touches, with: event)
     }
     
-    //MARK: Private Var
-    fileprivate var beginPoint = CGPoint.zero
-    
-    fileprivate var didMoved = false
+    //MARK: Action
+    @objc fileprivate func tap() {
+        if self.didMoved {
+            return
+        }
+        
+        self.didTap?()
+    }
+
 }

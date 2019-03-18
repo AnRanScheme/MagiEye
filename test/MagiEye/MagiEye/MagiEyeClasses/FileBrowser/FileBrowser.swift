@@ -35,30 +35,27 @@ open class FileBrowser: UINavigationController {
             fileList?.didSelectFile = didSelectFile
         }
     }
-    
-    /**
-     Init to documents folder.
-     
-     - returns: File browser view controller.
-     */
+
     public convenience init() {
         let parser = FileParser.sharedInstance
         let path = parser.documentsURL()
-        self.init(initialPath: path as URL)
+        self.init(initialPath: path, allowEditing: true)
     }
-    
-    /**
-     Init to a custom directory path.
-     
-     - parameter initialPath: NSURL filepath to containing directory.
-     
-     - returns: File browser view controller.
-     */
-    public convenience init(initialPath: URL) {
-        let fileListViewController = FileListViewController(initialPath: initialPath)
+
+    /// Initialise file browser.
+    ///
+    /// - Parameters:
+    ///   - initialPath: NSURL filepath to containing directory.
+    ///   - allowEditing: Whether to allow editing.
+    ///   - showCancelButton: Whether to show the cancel button.
+    public convenience init(initialPath: URL? = nil, allowEditing: Bool = false, showCancelButton: Bool = true) {
+        
+        let validInitialPath = initialPath ?? FileParser.sharedInstance.documentsURL()
+        
+        let fileListViewController = FileListViewController(initialPath: validInitialPath, showCancelButton: showCancelButton)
+        fileListViewController.allowEditing = allowEditing
         self.init(rootViewController: fileListViewController)
         self.view.backgroundColor = UIColor.white
         self.fileList = fileListViewController
     }
-    
 }

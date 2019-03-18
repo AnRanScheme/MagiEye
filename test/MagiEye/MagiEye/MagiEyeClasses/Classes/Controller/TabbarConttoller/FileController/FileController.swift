@@ -10,39 +10,45 @@ import Foundation
 
 class FileController: UIViewController {
     
+    private lazy var tableView: UITableView = { [unowned self] in
+        let new = UITableView(
+            frame: CGRect.zero,
+            style: .grouped)
+        new.backgroundColor = UIColor.clear
+        new.dataSource = self
+        new.delegate = self
+        
+        return new
+        }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor.niceBlack()
-        
-        self.view.addSubview(self.tableView)
+        view.addSubview(tableView)
+        view.backgroundColor = UIColor.niceBlack()
     }
-    
-    private lazy var tableView: UITableView = { [unowned self] in
-        let new = UITableView(frame: CGRect.zero, style: .grouped)
-        new.delegate = self
-        new.dataSource = self
-        new.backgroundColor = UIColor.clear
-        return new
-    }()
-    
+
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
-        self.tableView.frame = self.view.bounds
+        tableView.frame = self.view.bounds
     }
 }
 
 extension FileController: UITableViewDataSource, UITableViewDelegate {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
         return 3
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        return tableView.dequeueReusableCell(style: UITableViewCell.CellStyle.subtitle, identifier: UITableViewCell.identifier(), { (cell:UITableViewCell) in
-            cell.backgroundColor = UIColor.clear
-            cell.textLabel?.textColor = UIColor.white
-            cell.detailTextLabel?.textColor = UIColor.gray
-            cell.accessoryType = UITableViewCell.AccessoryType.disclosureIndicator
+        return tableView.dequeueReusableCell(style: .subtitle,
+                                             identifier: UITableViewCell.identifier(),
+                                             { (cell: UITableViewCell) in
+                                                cell.accessoryType = .disclosureIndicator
+                                                cell.backgroundColor = UIColor.clear
+                                                cell.textLabel?.textColor = UIColor.white
+                                                cell.detailTextLabel?.textColor = UIColor.gray
         })
     }
     
@@ -62,6 +68,7 @@ extension FileController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        
         return 64
     }
     
@@ -88,6 +95,7 @@ extension FileController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        
         switch section {
         case 0:
             return "Folder"
@@ -95,5 +103,6 @@ extension FileController: UITableViewDataSource, UITableViewDelegate {
             return ""
         }
     }
+    
 }
 

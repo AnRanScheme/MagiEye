@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import UIKit
 
 extension FileListViewController: UITableViewDataSource, UITableViewDelegate {
     
@@ -85,6 +84,20 @@ extension FileListViewController: UITableViewDataSource, UITableViewDelegate {
             return 0
         }
         return collation.section(forSectionIndexTitle: index)
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if (editingStyle == .delete) {
+            let selectedFile = fileForIndexPath(indexPath)
+            selectedFile.delete()
+            prepareData()
+            tableView.reloadSections([indexPath.section], with: .automatic)
+        }
+    }
+    
+    
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return allowEditing
     }
     
     

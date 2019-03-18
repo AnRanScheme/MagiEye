@@ -10,10 +10,14 @@ import Foundation
 
 class RecordTableView: UITableView {
     
+    private var timer: Timer?
+    
+    private var needScrollToBottom = false
+    
     override init(frame: CGRect, style: UITableView.Style) {
         super.init(frame: frame, style: style)
-        self.separatorStyle = .none
-        self.backgroundColor = UIColor.niceBlack()
+        separatorStyle = .none
+        backgroundColor = UIColor.niceBlack()
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -21,68 +25,67 @@ class RecordTableView: UITableView {
     }
     
     func smoothReloadData(need scrollToBottom: Bool) {
-        self.timer?.invalidate()
-        self.timer = nil
-        self.needScrollToBottom = false
-        
-        self.timer = Timer.scheduledTimer(timeInterval: 0.5,
-                                          target: self,
-                                          selector: #selector(RecordTableView.reloadData),
-                                          userInfo: nil,
-                                          repeats: false)
+        timer?.invalidate()
+        timer = nil
+        needScrollToBottom = false
+        timer = Timer.scheduledTimer(
+            timeInterval: 0.5,
+            target: self,
+            selector: #selector(RecordTableView.reloadData),
+            userInfo: nil,
+            repeats: false)
     }
     
     override func reloadData() {
         super.reloadData()
         
-        if self.needScrollToBottom == true {
-            DispatchQueue.main.async {
-                self.scrollToBottom(animated: true)
+        if needScrollToBottom == true {
+            DispatchQueue.main.async { [weak self] in
+                self?.scrollToBottom(animated: true)
             }
         }
     }
     
     func scrollToBottom(animated: Bool) {
-        let point = CGPoint(x: 0, y: max(self.contentSize.height + self.contentInset.bottom - self.bounds.size.height, 0))
-        self.setContentOffset(point, animated: animated)
+        let y = max(contentSize.height + contentInset.bottom - bounds.size.height, 0)
+        let point = CGPoint(x: 0,
+                            y: y)
+        setContentOffset(point,
+                         animated: animated)
     }
-    
-    private var timer: Timer?
-    
-    private var needScrollToBottom = false
+
 }
 
 class RecordTableViewDataSource: NSObject {
+    
     private let maxLogItems: Int = 1000
-    
-    fileprivate(set) var recordData: [RecordORMProtocol]!
-    
     private var logIndex: Int = 0
-    fileprivate var type: RecordType!
-    init(type:RecordType) {
-        super.init()
+    fileprivate var type: RecordType
+    fileprivate(set) var recordData: [RecordORMProtocol]?
+    
+    init(type: RecordType) {
         self.type = type
-        
+        super.init()
         self.type.model()?.addCount = 0
-        self.recordData = self.currentPageModel()
+        recordData = currentPageModel()
     }
     
     private func currentPageModel() -> [RecordORMProtocol]? {
-        if self.type == RecordType.log {
-            return LogRecordModel.select(at: self.logIndex)
-        }else if self.type == RecordType.crash {
-            return CrashRecordModel.select(at: self.logIndex)
-        }else if self.type == .network {
-            return NetworkRecordModel.select(at: self.logIndex)
-        }else if self.type == .caton {
-            return CatonRecordModel.select(at: self.logIndex)
-        }else if self.type == .command {
-            return CommandRecordModel.select(at: self.logIndex)
-        }else if self.type == .leak {
-            return LeakRecordModel.select(at: self.logIndex)
+        switch type {
+        case .log:
+            return LogRecordModel.select(at: logIndex)
+        case .crash:
+            return CrashRecordModel.select(at: logIndex)
+        case .network:
+            return NetworkRecordModel.select(at: logIndex)
+        case .caton:
+            return CatonRecordModel.select(at: logIndex)
+        case .command:
+            return CommandRecordModel.select(at: logIndex)
+        case .leak:
+            return LeakRecordModel.select(at: logIndex)
         }
-        
-        fatalError("type:\(self.type) not define the database")
+        //fatalError("type:\(type) not define the database")
     }
     
     private func addCount() {
@@ -101,47 +104,49 @@ class RecordTableViewDataSource: NSObject {
         }
         
         for model in models.reversed() {
-            self.recordData.insert(model, at: 0)
+            recordData?.insert(model, at: 0)
         }
         return true
     }
     
-    func addRecord(model:RecordORMProtocol) {
+    func addRecord(model: RecordORMProtocol) {
         
-        if self.recordData.count != 0 &&
-            Swift.type(of: model).type != self.type {
+        if (recordData?.count ?? 0) != 0 &&
+            Swift.type(of: model).type != type {
             return
         }
         
-        self.recordData.append(model)
-        if self.recordData.count > self.maxLogItems {
-            self.recordData.remove(at: 0)
+        recordData?.append(model)
+        if (recordData?.count ?? 0) > maxLogItems {
+            recordData?.remove(at: 0)
         }
-        self.addCount()
+        addCount()
     }
     
     func cleanRecord() {
-        self.recordData.removeAll()
+        recordData?.removeAll()
     }
 }
 
 extension RecordTableViewDataSource: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.recordData.count
+        return recordData?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        return tableView.dequeueReusableCell({ (cell:RecordTableViewCell) in
+        return tableView.dequeueReusableCell({ (cell: RecordTableViewCell) in
             
         })
     }
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         let cell = cell as? RecordTableViewCell
-        
-        let attributeString = self.recordData[indexPath.row].attributeString()
+        guard let data = recordData?[indexPath.row] else {
+            return
+        }
+        let attributeString = data.attributeString()
         cell?.configure(attributeString)
     }
     
@@ -149,8 +154,13 @@ extension RecordTableViewDataSource: UITableViewDataSource, UITableViewDelegate 
         let tableView = tableView as! RecordTableView
         
         let width = tableView.bounds.size.width - 10
-        let attributeString = self.recordData[indexPath.row].attributeString()
-        return RecordTableViewCell.boundingHeight(with: width, attributedText: attributeString)
+        guard let data = recordData?[indexPath.row] else {
+            return 0
+        }
+        let attributeString = data.attributeString()
+        return RecordTableViewCell.boundingHeight(
+            with: width,
+            attributedText: attributeString)
     }
     
     func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
@@ -162,7 +172,7 @@ extension RecordTableViewDataSource: UITableViewDataSource, UITableViewDelegate 
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let model = self.recordData[indexPath.row]
+        guard let model = recordData?[indexPath.row] else { return }
         model.showAll = !model.showAll
         tableView.reloadData()
     }

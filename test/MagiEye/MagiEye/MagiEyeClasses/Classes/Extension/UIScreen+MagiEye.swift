@@ -1,5 +1,5 @@
 //
-//  UIScreen+GodEye.swift
+//  UIScreen+MagiEye.swift
 //  Pods
 //
 //  Created by zixun on 16/12/27.

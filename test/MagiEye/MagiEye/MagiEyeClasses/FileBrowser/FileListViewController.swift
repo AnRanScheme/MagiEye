@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import UIKit
 
 class FileListViewController: UIViewController {
     
@@ -22,6 +21,7 @@ class FileListViewController: UIViewController {
     let parser = FileParser.sharedInstance
     let previewManager = PreviewManager()
     var sections: [[FBFile]] = []
+    var allowEditing: Bool = false
 
     // Search controller
     var filteredFiles = [FBFile]()
@@ -35,8 +35,11 @@ class FileListViewController: UIViewController {
     
     
     //MARK: Lifecycle
-    
     convenience init (initialPath: URL) {
+        self.init(initialPath: initialPath, showCancelButton: true)
+    }
+    
+    convenience init (initialPath: URL, showCancelButton: Bool) {
         self.init(nibName: "FileBrowser", bundle: Bundle(for: FileListViewController.self))
         self.edgesForExtendedLayout = UIRectEdge()
         
@@ -49,10 +52,11 @@ class FileListViewController: UIViewController {
         searchController.searchBar.delegate = self
         searchController.delegate = self
         
-        // Add dismiss button
-        let dismissButton = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(FileListViewController.dismiss(button:)))
-        self.navigationItem.rightBarButtonItem = dismissButton
-        
+        if showCancelButton {
+            // Add dismiss button
+            let dismissButton = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(FileListViewController.dismiss(button:)))
+            self.navigationItem.rightBarButtonItem = dismissButton
+        }
     }
     
     deinit{
@@ -63,15 +67,19 @@ class FileListViewController: UIViewController {
         }
     }
     
-    //MARK: UIViewController
-    
-    override func viewDidLoad() {
-        
+    func prepareData() {
         // Prepare data
         if let initialPath = initialPath {
             files = parser.filesForDirectory(initialPath)
             indexFiles()
         }
+    }
+    
+    //MARK: UIViewController
+    
+    override func viewDidLoad() {
+        
+        prepareData()
         
         // Set search bar
         tableView.tableHeaderView = searchController.searchBar
@@ -97,7 +105,7 @@ class FileListViewController: UIViewController {
     //MARK: Data
     
     func indexFiles() {
-        let selector: Selector = #selector(getter: UIPrinter.displayName)
+        let selector: Selector = #selector(getter: FBFile.displayName)
         sections = Array(repeating: [], count: collation.sectionTitles.count)
         if let sortedObjects = collation.sortedArray(from: files, collationStringSelector: selector) as? [FBFile]{
             for object in sortedObjects {

@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import UIKit
 
 extension FileListViewController: UISearchBarDelegate, UISearchControllerDelegate, UISearchResultsUpdating {
         

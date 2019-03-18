@@ -22,17 +22,17 @@ extension CatonRecordModel: RecordORMProtocol {
     
     static func mappingToObject(with row: Row) -> CatonRecordModel {
         return CatonRecordModel(threshold: row[CatonRecordModel.col.threshold],
-                              mainThreadBacktrace: row[CatonRecordModel.col.mainThreadBacktrace],
-                              allThreadBacktrace: row[CatonRecordModel.col.allThreadBacktrace])
+                                mainThreadBacktrace: row[CatonRecordModel.col.mainThreadBacktrace],
+                                allThreadBacktrace: row[CatonRecordModel.col.allThreadBacktrace])
     }
     
-    static func configure(tableBuilder:TableBuilder) {
+    static func configure(tableBuilder: TableBuilder) {
         tableBuilder.column(CatonRecordModel.col.threshold)
         tableBuilder.column(CatonRecordModel.col.mainThreadBacktrace)
         tableBuilder.column(CatonRecordModel.col.allThreadBacktrace)
     }
     
-    static func configure(select table:Table) -> Table {
+    static func configure(select table: Table) -> Table {
         return table.select(CatonRecordModel.col.threshold,
                             CatonRecordModel.col.mainThreadBacktrace,
                             CatonRecordModel.col.allThreadBacktrace)

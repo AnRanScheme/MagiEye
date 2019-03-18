@@ -10,129 +10,12 @@ import Foundation
 
 class ConsolePrintViewController: UIViewController {
     
-    private var type: RecordType
-    
-    init(type:RecordType) {
-        self.type = type
-        super.init(nibName: nil, bundle: nil)
-        self.hidesBottomBarWhenPushed = true
-        self.dataSource = RecordTableViewDataSource(type: type)
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        self.automaticallyAdjustsScrollViewInsets = false
-        self.edgesForExtendedLayout = []
-        self.navigationController?.navigationBar.barStyle = .black
-        self.view.backgroundColor = UIColor.niceBlack()
-        
-        self.navigationItem.rightBarButtonItems = [UIBarButtonItem(barButtonSystemItem: .trash,
-                                                                   target: self,
-                                                                   action: #selector(ConsolePrintViewController.handleDeleteButtonTap)),UIBarButtonItem(barButtonSystemItem: .action,
-                                                                                                                                                        target: self,
-                                                                                                                                                        action: #selector(ConsolePrintViewController.handleSharedButtonTap))]
-        
-        self.view.addSubview(self.recordTableView)
-        self.view.addSubview(self.inputField)
-         self.recordTableView.magiRefresh.bindStyleForHeaderRefresh(themeColor: UIColor.orange,
-                                                                    refreshStyle: MagiRefreshStyle.replicatorCircle) {
-                                                                        [weak self] in
-                                                                        let result = self?.dataSource.loadPrePage()
-                                                                        if result == true {
-                                                                            self?.recordTableView.reloadData()
-                                                                        }
-                                                                        self?.recordTableView.magiRefresh.header?.endRefreshing()
-        }
-        
-        NotificationCenter.default.addObserver(self,
-                                               selector: #selector(ConsolePrintViewController.keyboardWillShow(noti:)),
-                                               name: UIResponder.keyboardWillShowNotification,
-                                               object: nil)
-        NotificationCenter.default.addObserver(self,
-                                               selector: #selector(ConsolePrintViewController.keyboardWillHide(noti:)),
-                                               name: UIResponder.keyboardWillHideNotification,
-                                               object: nil)
-    }
-    
-    deinit {
-        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillShowNotification, object: nil)
-        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
-    }
-    
-    override func viewWillLayoutSubviews() {
-        super.viewWillLayoutSubviews()
-        
-        var rect = self.view.bounds
-        if self.type == .command {
-            let height: CGFloat = 28.0
-            var rect = self.view.bounds
-            rect.origin.x = 5
-            rect.origin.y = rect.size.height - height - 5
-            rect.size.width -= rect.origin.x * 2
-            rect.size.height = height
-            self.inputField.frame = rect
-            
-            self.recordTableView.frame = CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: self.inputField.frame.minY)
-        }else {
-            self.recordTableView.frame = rect
-            self.inputField.frame = CGRect.zero
-        }
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        self.navigationController?.isNavigationBarHidden = false
-        self.recordTableView.smoothReloadData(need: false)
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        self.recordTableView.scrollToBottom(animated: false)
-    }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        self.navigationController?.isNavigationBarHidden = true
-        
-    }
-    
-    func addRecord(model:RecordORMProtocol) {
-        
-        self.dataSource.addRecord(model: model)
-        
-        if self.view.superview != nil {
-            self.recordTableView.smoothReloadData(need: false)
-        }
-    }
-    
-    @objc private func handleSharedButtonTap() {
-        
-        let image = self.recordTableView.swContentCapture { [unowned self] (image:UIImage?) in
-            
-            let activity = UIActivityViewController(activityItems: [image], applicationActivities: nil)
-            if let popover = activity.popoverPresentationController {
-                popover.sourceView = self.view
-                popover.permittedArrowDirections = .up
-            }
-            self.present(activity, animated: true, completion: nil)
-        }
-    }
-    
-    @objc private func handleDeleteButtonTap() {
-        self.type.model()?.delete(complete: { [unowned self] (finish:Bool) in
-            self.dataSource.cleanRecord()
-            self.recordTableView.reloadData()
-        })
-    }
     
     private lazy var recordTableView: RecordTableView = { [unowned self] in
         let new = RecordTableView()
         new.delegate = self.dataSource
         new.dataSource = self.dataSource
+        
         return new
         }()
     
@@ -153,8 +36,146 @@ class ConsolePrintViewController: UIViewController {
         }()
     
     private var dataSource: RecordTableViewDataSource!
-    
     fileprivate var originRect: CGRect = CGRect.zero
+    private var type: RecordType
+    
+    init(type: RecordType) {
+        self.type = type
+        super.init(nibName: nil, bundle: nil)
+        hidesBottomBarWhenPushed = true
+        dataSource = RecordTableViewDataSource(type: type)
+    }
+
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        if #available(iOS 11.0, *) {
+            
+        }
+        else {
+            automaticallyAdjustsScrollViewInsets = false
+        }
+        edgesForExtendedLayout = []
+        navigationController?.navigationBar.barStyle = .black
+        view.backgroundColor = UIColor.niceBlack()
+        
+        navigationItem.rightBarButtonItems = [
+            UIBarButtonItem(
+                barButtonSystemItem: .trash,
+                target: self,
+                action: #selector(handleDeleteButtonTap)),
+            UIBarButtonItem(
+                barButtonSystemItem: .action,
+                target: self,
+                action: #selector(handleSharedButtonTap))
+        ]
+        
+        view.addSubview(recordTableView)
+        view.addSubview(inputField)
+        recordTableView.magiRefresh.bindStyleForHeaderRefresh(
+            themeColor: UIColor.orange,
+            refreshStyle: .replicatorTriangle) {
+                [weak self] in
+                let result = self?.dataSource.loadPrePage()
+                if result == true {
+                    self?.recordTableView.reloadData()
+                }
+                self?.recordTableView.magiRefresh.header?.endRefreshing()
+        }
+        
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(keyboardWillShow(noti:)),
+            name: UIResponder.keyboardWillShowNotification,
+            object: nil)
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(keyboardWillHide(noti:)),
+            name: UIResponder.keyboardWillHideNotification,
+            object: nil)
+    }
+    
+    deinit {
+        NotificationCenter.default.removeObserver(
+            self,
+            name: UIResponder.keyboardWillShowNotification,
+            object: nil)
+        NotificationCenter.default.removeObserver(
+            self,
+            name: UIResponder.keyboardWillHideNotification,
+            object: nil)
+    }
+    
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        
+        let rect = view.bounds
+        if type == .command {
+            let height: CGFloat = 28.0
+            var rect = view.bounds
+            rect.origin.x = 5
+            rect.origin.y = rect.size.height - height - 5
+            rect.size.width -= rect.origin.x * 2
+            rect.size.height = height
+            inputField.frame = rect
+            
+            recordTableView.frame = CGRect(x: 0, y: 0,
+                                           width: view.frame.size.width,
+                                           height: inputField.frame.minY)
+        }else {
+            recordTableView.frame = rect
+            inputField.frame = CGRect.zero
+        }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.isNavigationBarHidden = false
+        recordTableView.smoothReloadData(need: false)
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        recordTableView.scrollToBottom(animated: false)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.isNavigationBarHidden = true
+    }
+    
+    func addRecord(model:RecordORMProtocol) {
+        
+        self.dataSource.addRecord(model: model)
+        
+        if self.view.superview != nil {
+            self.recordTableView.smoothReloadData(need: false)
+        }
+    }
+    
+    @objc private func handleSharedButtonTap() {
+        
+        let image = self.recordTableView.swContentCapture { [unowned self] (image: UIImage?) in
+            
+            let activity = UIActivityViewController(activityItems: [image], applicationActivities: nil)
+            if let popover = activity.popoverPresentationController {
+                popover.sourceView = self.view
+                popover.permittedArrowDirections = .up
+            }
+            self.present(activity, animated: true, completion: nil)
+        }
+    }
+    
+    @objc private func handleDeleteButtonTap() {
+        self.type.model()?.delete(complete: { [unowned self] (finish:Bool) in
+            self.dataSource.cleanRecord()
+            self.recordTableView.reloadData()
+        })
+    }
+ 
 }
 
 
@@ -189,7 +210,8 @@ extension ConsolePrintViewController: UITextFieldDelegate {
         return true
     }
     
-    @objc fileprivate func keyboardWillShow(noti:NSNotification) {
+    @objc
+    fileprivate func keyboardWillShow(noti: Notification) {
         guard let userInfo = noti.userInfo else {
             return
         }
@@ -234,7 +256,8 @@ extension ConsolePrintViewController: UITextFieldDelegate {
         UIView.commitAnimations()
     }
     
-    @objc fileprivate func keyboardWillHide(noti:NSNotification) {
+    @objc
+    fileprivate func keyboardWillHide(noti: NSNotification) {
         guard let userInfo = noti.userInfo else {
             return
         }

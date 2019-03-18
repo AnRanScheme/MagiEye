@@ -23,7 +23,7 @@ open class ControlConfiguration: NSObject {
     open var shakeShowForSimulator = true
     /// allowed share to show under the device, default is false
     open var shakeShowForDevice = false
-    /// the origin of GodEye button's Frame
+    /// the origin of MagiEye button's Frame
     open var location: CGPoint?
 
     // MARK: INTERNAL FUNCTION

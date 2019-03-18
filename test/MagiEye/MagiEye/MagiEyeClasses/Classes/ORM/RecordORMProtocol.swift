@@ -76,11 +76,13 @@ extension RecordORMProtocol {
     
     static func create() {
         do {
-            let sql = self.table.create(temporary: false, ifNotExists: true, block: {(t:TableBuilder) in
-                t.column(self.col_id, primaryKey: true)
-                self.configure(tableBuilder: t)
+            let sql = table.create(temporary: false,
+                                   ifNotExists: true,
+                                   block: {(t: TableBuilder) in
+                                    t.column(col_id, primaryKey: true)
+                                    configure(tableBuilder: t)
             })
-            try self.connection?.run(sql)
+            try connection?.run(sql)
         } catch {
             fatalError("create log table failure")
         }
@@ -105,7 +107,7 @@ extension RecordORMProtocol {
         }
     }
     
-    func insertSync(complete:@escaping (_ success:Bool)->()){
+    func insertSync(complete: @escaping (_ success: Bool)->()){
         let insert = Self.table.insert(self.mappingToRelation())
         
         do {
@@ -157,6 +159,7 @@ extension RecordORMProtocol {
             }
         }
     }
+    
 }
 
 // MARK: - Inner used variable
@@ -173,10 +176,10 @@ extension RecordORMProtocol {
         }
     }
     
-    fileprivate static var connection:Connection? {
+    fileprivate static var connection: Connection? {
         get {
             var key = "\(#file)+\(#line)"
-            let path = AppPathForDocumentsResource(relativePath: "/GodEye.sqlite")
+            let path = AppPathForDocumentsResource(relativePath: "/MagiEye.sqlite")
             do {
                 guard let result = objc_getAssociatedObject(self, &key) as? Connection else {
                     let result = try Connection(path)
@@ -186,7 +189,7 @@ extension RecordORMProtocol {
                 
                 return result
             } catch {
-                fatalError("Init GodEye database failue")
+                fatalError("Init MagiEye database failue")
             }
         }
     }

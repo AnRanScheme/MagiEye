@@ -32,6 +32,7 @@ extension ConsoleController {
             self.reloadRow(of: type)
         }
     }
+    
 }
 
 extension ConsoleController: MagiLogDelegate {

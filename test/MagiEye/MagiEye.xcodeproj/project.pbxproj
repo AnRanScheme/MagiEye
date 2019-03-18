@@ -7,6 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		35AD9C99223F33A400F4DAB5 /* FileParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AD9C84223F33A300F4DAB5 /* FileParser.swift */; };
+		35AD9C9A223F33A400F4DAB5 /* PreviewTransitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AD9C86223F33A300F4DAB5 /* PreviewTransitionViewController.swift */; };
+		35AD9C9B223F33A400F4DAB5 /* FBFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AD9C87223F33A300F4DAB5 /* FBFile.swift */; };
+		35AD9C9C223F33A400F4DAB5 /* FileListPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AD9C88223F33A300F4DAB5 /* FileListPreview.swift */; };
+		35AD9C9D223F33A400F4DAB5 /* WebviewPreviewViewContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AD9C89223F33A300F4DAB5 /* WebviewPreviewViewContoller.swift */; };
+		35AD9C9E223F33A400F4DAB5 /* PreviewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AD9C8A223F33A300F4DAB5 /* PreviewManager.swift */; };
+		35AD9C9F223F33A400F4DAB5 /* FileBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AD9C8B223F33A300F4DAB5 /* FileBrowser.swift */; };
+		35AD9CA0223F33A400F4DAB5 /* FileListTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AD9C8C223F33A300F4DAB5 /* FileListTableView.swift */; };
+		35AD9CA1223F33A400F4DAB5 /* folder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 35AD9C8E223F33A400F4DAB5 /* folder@2x.png */; };
+		35AD9CA2223F33A400F4DAB5 /* zip@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 35AD9C8F223F33A400F4DAB5 /* zip@2x.png */; };
+		35AD9CA3223F33A400F4DAB5 /* WebviewPreviewViewContoller.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35AD9C90223F33A400F4DAB5 /* WebviewPreviewViewContoller.xib */; };
+		35AD9CA4223F33A400F4DAB5 /* image@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 35AD9C91223F33A400F4DAB5 /* image@2x.png */; };
+		35AD9CA5223F33A400F4DAB5 /* documents@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 35AD9C92223F33A400F4DAB5 /* documents@2x.png */; };
+		35AD9CA6223F33A400F4DAB5 /* file@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 35AD9C93223F33A400F4DAB5 /* file@2x.png */; };
+		35AD9CA7223F33A400F4DAB5 /* FileBrowser.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35AD9C94223F33A400F4DAB5 /* FileBrowser.xib */; };
+		35AD9CA8223F33A400F4DAB5 /* pdf@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 35AD9C95223F33A400F4DAB5 /* pdf@2x.png */; };
+		35AD9CA9223F33A400F4DAB5 /* PreviewTransitionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35AD9C96223F33A400F4DAB5 /* PreviewTransitionViewController.xib */; };
+		35AD9CAA223F33A400F4DAB5 /* FileListSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AD9C97223F33A400F4DAB5 /* FileListSearch.swift */; };
+		35AD9CAB223F33A400F4DAB5 /* FileListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AD9C98223F33A400F4DAB5 /* FileListViewController.swift */; };
 		35E75FD3223B470200B4069A /* WKWebView+SwCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75F25223B470200B4069A /* WKWebView+SwCapture.swift */; };
 		35E75FD4223B470200B4069A /* UIScrollView+SwCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75F26223B470200B4069A /* UIScrollView+SwCapture.swift */; };
 		35E75FD5223B470200B4069A /* UIView+SwCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75F27223B470200B4069A /* UIView+SwCapture.swift */; };
@@ -65,25 +84,6 @@
 		35E76025223B470200B4069A /* MagiMemory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75FA5223B470200B4069A /* MagiMemory.swift */; };
 		35E76026223B470200B4069A /* MagiSystemEye.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75FA6223B470200B4069A /* MagiSystemEye.swift */; };
 		35E76027223B470200B4069A /* MagiFPS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75FA7223B470200B4069A /* MagiFPS.swift */; };
-		35E7602A223B470200B4069A /* WebviewPreviewViewContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75FAD223B470200B4069A /* WebviewPreviewViewContoller.swift */; };
-		35E7602B223B470200B4069A /* PreviewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75FAE223B470200B4069A /* PreviewManager.swift */; };
-		35E7602C223B470200B4069A /* FileListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75FAF223B470200B4069A /* FileListViewController.swift */; };
-		35E7602D223B470200B4069A /* FileParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75FB0223B470200B4069A /* FileParser.swift */; };
-		35E7602E223B470200B4069A /* folder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 35E75FB2223B470200B4069A /* folder@2x.png */; };
-		35E7602F223B470200B4069A /* zip@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 35E75FB3223B470200B4069A /* zip@2x.png */; };
-		35E76030223B470200B4069A /* WebviewPreviewViewContoller.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35E75FB4223B470200B4069A /* WebviewPreviewViewContoller.xib */; };
-		35E76031223B470200B4069A /* image@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 35E75FB5223B470200B4069A /* image@2x.png */; };
-		35E76032223B470200B4069A /* documents@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 35E75FB6223B470200B4069A /* documents@2x.png */; };
-		35E76033223B470200B4069A /* file@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 35E75FB7223B470200B4069A /* file@2x.png */; };
-		35E76034223B470200B4069A /* FileBrowser.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35E75FB8223B470200B4069A /* FileBrowser.xib */; };
-		35E76035223B470200B4069A /* pdf@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 35E75FB9223B470200B4069A /* pdf@2x.png */; };
-		35E76036223B470200B4069A /* PreviewTransitionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35E75FBA223B470200B4069A /* PreviewTransitionViewController.xib */; };
-		35E76037223B470200B4069A /* PreviewTransitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75FBB223B470200B4069A /* PreviewTransitionViewController.swift */; };
-		35E76038223B470200B4069A /* FileListTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75FBC223B470200B4069A /* FileListTableView.swift */; };
-		35E76039223B470200B4069A /* FileListPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75FBD223B470200B4069A /* FileListPreview.swift */; };
-		35E7603A223B470200B4069A /* FBFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75FBE223B470200B4069A /* FBFile.swift */; };
-		35E7603B223B470200B4069A /* FileListSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75FBF223B470200B4069A /* FileListSearch.swift */; };
-		35E7603C223B470200B4069A /* FileBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75FC1223B470200B4069A /* FileBrowser.swift */; };
 		35E7603D223B470200B4069A /* URLSession+MagiNetworkEye.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75FC3223B470200B4069A /* URLSession+MagiNetworkEye.swift */; };
 		35E7603E223B470200B4069A /* MagiEyeURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75FC4223B470200B4069A /* MagiEyeURLProtocol.swift */; };
 		35E7603F223B470200B4069A /* MagiNetworkEye.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75FC5223B470200B4069A /* MagiNetworkEye.swift */; };
@@ -179,7 +179,7 @@
 		35E7610D223B906800B4069A /* MonitorSysNetFlowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E76108223B906800B4069A /* MonitorSysNetFlowView.swift */; };
 		35E7610E223B906800B4069A /* MonitorBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E76109223B906800B4069A /* MonitorBaseView.swift */; };
 		35E76110223B971B00B4069A /* MagiEye.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E7610F223B971B00B4069A /* MagiEye.swift */; };
-		35E76112223B984600B4069A /* MagiEyeController+Show.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E76111223B984600B4069A /* MagiEyeController+Show.swift */; };
+		35E76112223B984600B4069A /* MagiEyeController+ShowOrHide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E76111223B984600B4069A /* MagiEyeController+ShowOrHide.swift */; };
 		35E76116223B998C00B4069A /* eye@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 35E76114223B998C00B4069A /* eye@3x.png */; };
 		35E76117223B998C00B4069A /* eye@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 35E76115223B998C00B4069A /* eye@2x.png */; };
 		FA072CFF223B3BC600AE0CEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA072CFE223B3BC600AE0CEE /* AppDelegate.swift */; };
@@ -190,6 +190,26 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		35AD9C84223F33A300F4DAB5 /* FileParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileParser.swift; sourceTree = "<group>"; };
+		35AD9C85223F33A300F4DAB5 /* FileBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileBrowser.h; sourceTree = "<group>"; };
+		35AD9C86223F33A300F4DAB5 /* PreviewTransitionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewTransitionViewController.swift; sourceTree = "<group>"; };
+		35AD9C87223F33A300F4DAB5 /* FBFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBFile.swift; sourceTree = "<group>"; };
+		35AD9C88223F33A300F4DAB5 /* FileListPreview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileListPreview.swift; sourceTree = "<group>"; };
+		35AD9C89223F33A300F4DAB5 /* WebviewPreviewViewContoller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebviewPreviewViewContoller.swift; sourceTree = "<group>"; };
+		35AD9C8A223F33A300F4DAB5 /* PreviewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewManager.swift; sourceTree = "<group>"; };
+		35AD9C8B223F33A300F4DAB5 /* FileBrowser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileBrowser.swift; sourceTree = "<group>"; };
+		35AD9C8C223F33A300F4DAB5 /* FileListTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileListTableView.swift; sourceTree = "<group>"; };
+		35AD9C8E223F33A400F4DAB5 /* folder@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "folder@2x.png"; sourceTree = "<group>"; };
+		35AD9C8F223F33A400F4DAB5 /* zip@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zip@2x.png"; sourceTree = "<group>"; };
+		35AD9C90223F33A400F4DAB5 /* WebviewPreviewViewContoller.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebviewPreviewViewContoller.xib; sourceTree = "<group>"; };
+		35AD9C91223F33A400F4DAB5 /* image@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "image@2x.png"; sourceTree = "<group>"; };
+		35AD9C92223F33A400F4DAB5 /* documents@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "documents@2x.png"; sourceTree = "<group>"; };
+		35AD9C93223F33A400F4DAB5 /* file@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "file@2x.png"; sourceTree = "<group>"; };
+		35AD9C94223F33A400F4DAB5 /* FileBrowser.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FileBrowser.xib; sourceTree = "<group>"; };
+		35AD9C95223F33A400F4DAB5 /* pdf@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pdf@2x.png"; sourceTree = "<group>"; };
+		35AD9C96223F33A400F4DAB5 /* PreviewTransitionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PreviewTransitionViewController.xib; sourceTree = "<group>"; };
+		35AD9C97223F33A400F4DAB5 /* FileListSearch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileListSearch.swift; sourceTree = "<group>"; };
+		35AD9C98223F33A400F4DAB5 /* FileListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileListViewController.swift; sourceTree = "<group>"; };
 		35E75F25223B470200B4069A /* WKWebView+SwCapture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WKWebView+SwCapture.swift"; sourceTree = "<group>"; };
 		35E75F26223B470200B4069A /* UIScrollView+SwCapture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+SwCapture.swift"; sourceTree = "<group>"; };
 		35E75F27223B470200B4069A /* UIView+SwCapture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+SwCapture.swift"; sourceTree = "<group>"; };
@@ -251,26 +271,6 @@
 		35E75FA6223B470200B4069A /* MagiSystemEye.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagiSystemEye.swift; sourceTree = "<group>"; };
 		35E75FA7223B470200B4069A /* MagiFPS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagiFPS.swift; sourceTree = "<group>"; };
 		35E75FA8223B470200B4069A /* MagiSystemEye.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagiSystemEye.h; sourceTree = "<group>"; };
-		35E75FAD223B470200B4069A /* WebviewPreviewViewContoller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebviewPreviewViewContoller.swift; sourceTree = "<group>"; };
-		35E75FAE223B470200B4069A /* PreviewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewManager.swift; sourceTree = "<group>"; };
-		35E75FAF223B470200B4069A /* FileListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileListViewController.swift; sourceTree = "<group>"; };
-		35E75FB0223B470200B4069A /* FileParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileParser.swift; sourceTree = "<group>"; };
-		35E75FB2223B470200B4069A /* folder@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "folder@2x.png"; sourceTree = "<group>"; };
-		35E75FB3223B470200B4069A /* zip@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zip@2x.png"; sourceTree = "<group>"; };
-		35E75FB4223B470200B4069A /* WebviewPreviewViewContoller.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebviewPreviewViewContoller.xib; sourceTree = "<group>"; };
-		35E75FB5223B470200B4069A /* image@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "image@2x.png"; sourceTree = "<group>"; };
-		35E75FB6223B470200B4069A /* documents@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "documents@2x.png"; sourceTree = "<group>"; };
-		35E75FB7223B470200B4069A /* file@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "file@2x.png"; sourceTree = "<group>"; };
-		35E75FB8223B470200B4069A /* FileBrowser.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FileBrowser.xib; sourceTree = "<group>"; };
-		35E75FB9223B470200B4069A /* pdf@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pdf@2x.png"; sourceTree = "<group>"; };
-		35E75FBA223B470200B4069A /* PreviewTransitionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PreviewTransitionViewController.xib; sourceTree = "<group>"; };
-		35E75FBB223B470200B4069A /* PreviewTransitionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewTransitionViewController.swift; sourceTree = "<group>"; };
-		35E75FBC223B470200B4069A /* FileListTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileListTableView.swift; sourceTree = "<group>"; };
-		35E75FBD223B470200B4069A /* FileListPreview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileListPreview.swift; sourceTree = "<group>"; };
-		35E75FBE223B470200B4069A /* FBFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBFile.swift; sourceTree = "<group>"; };
-		35E75FBF223B470200B4069A /* FileListSearch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileListSearch.swift; sourceTree = "<group>"; };
-		35E75FC0223B470200B4069A /* FileBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileBrowser.h; sourceTree = "<group>"; };
-		35E75FC1223B470200B4069A /* FileBrowser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileBrowser.swift; sourceTree = "<group>"; };
 		35E75FC3223B470200B4069A /* URLSession+MagiNetworkEye.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URLSession+MagiNetworkEye.swift"; sourceTree = "<group>"; };
 		35E75FC4223B470200B4069A /* MagiEyeURLProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagiEyeURLProtocol.swift; sourceTree = "<group>"; };
 		35E75FC5223B470200B4069A /* MagiNetworkEye.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagiNetworkEye.swift; sourceTree = "<group>"; };
@@ -373,7 +373,7 @@
 		35E76108223B906800B4069A /* MonitorSysNetFlowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonitorSysNetFlowView.swift; sourceTree = "<group>"; };
 		35E76109223B906800B4069A /* MonitorBaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonitorBaseView.swift; sourceTree = "<group>"; };
 		35E7610F223B971B00B4069A /* MagiEye.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagiEye.swift; sourceTree = "<group>"; };
-		35E76111223B984600B4069A /* MagiEyeController+Show.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MagiEyeController+Show.swift"; sourceTree = "<group>"; };
+		35E76111223B984600B4069A /* MagiEyeController+ShowOrHide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MagiEyeController+ShowOrHide.swift"; sourceTree = "<group>"; };
 		35E76114223B998C00B4069A /* eye@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "eye@3x.png"; sourceTree = "<group>"; };
 		35E76115223B998C00B4069A /* eye@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "eye@2x.png"; sourceTree = "<group>"; };
 		FA072CFB223B3BC600AE0CEE /* MagiEye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagiEye.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -396,6 +396,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		35AD9C8D223F33A400F4DAB5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				35AD9C8E223F33A400F4DAB5 /* folder@2x.png */,
+				35AD9C8F223F33A400F4DAB5 /* zip@2x.png */,
+				35AD9C90223F33A400F4DAB5 /* WebviewPreviewViewContoller.xib */,
+				35AD9C91223F33A400F4DAB5 /* image@2x.png */,
+				35AD9C92223F33A400F4DAB5 /* documents@2x.png */,
+				35AD9C93223F33A400F4DAB5 /* file@2x.png */,
+				35AD9C94223F33A400F4DAB5 /* FileBrowser.xib */,
+				35AD9C95223F33A400F4DAB5 /* pdf@2x.png */,
+				35AD9C96223F33A400F4DAB5 /* PreviewTransitionViewController.xib */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		35E75F23223B470200B4069A /* MagiEyeClasses */ = {
 			isa = PBXGroup;
 			children = (
@@ -503,7 +519,7 @@
 			isa = PBXGroup;
 			children = (
 				35E760D6223B816E00B4069A /* MagiEyeController.swift */,
-				35E76111223B984600B4069A /* MagiEyeController+Show.swift */,
+				35E76111223B984600B4069A /* MagiEyeController+ShowOrHide.swift */,
 				35E76101223B8A2300B4069A /* ConsolePrintViewController.swift */,
 				35E760D8223B81BA00B4069A /* TabbarConttoller */,
 			);
@@ -784,44 +800,20 @@
 		35E75FA9223B470200B4069A /* FileBrowser */ = {
 			isa = PBXGroup;
 			children = (
-				35E75FAC223B470200B4069A /* FileBrowser */,
+				35AD9C87223F33A300F4DAB5 /* FBFile.swift */,
+				35AD9C85223F33A300F4DAB5 /* FileBrowser.h */,
+				35AD9C8B223F33A300F4DAB5 /* FileBrowser.swift */,
+				35AD9C88223F33A300F4DAB5 /* FileListPreview.swift */,
+				35AD9C97223F33A400F4DAB5 /* FileListSearch.swift */,
+				35AD9C8C223F33A300F4DAB5 /* FileListTableView.swift */,
+				35AD9C98223F33A400F4DAB5 /* FileListViewController.swift */,
+				35AD9C84223F33A300F4DAB5 /* FileParser.swift */,
+				35AD9C8A223F33A300F4DAB5 /* PreviewManager.swift */,
+				35AD9C86223F33A300F4DAB5 /* PreviewTransitionViewController.swift */,
+				35AD9C89223F33A300F4DAB5 /* WebviewPreviewViewContoller.swift */,
+				35AD9C8D223F33A400F4DAB5 /* Resources */,
 			);
 			path = FileBrowser;
-			sourceTree = "<group>";
-		};
-		35E75FAC223B470200B4069A /* FileBrowser */ = {
-			isa = PBXGroup;
-			children = (
-				35E75FAD223B470200B4069A /* WebviewPreviewViewContoller.swift */,
-				35E75FAE223B470200B4069A /* PreviewManager.swift */,
-				35E75FAF223B470200B4069A /* FileListViewController.swift */,
-				35E75FB0223B470200B4069A /* FileParser.swift */,
-				35E75FB1223B470200B4069A /* Resources */,
-				35E75FBB223B470200B4069A /* PreviewTransitionViewController.swift */,
-				35E75FBC223B470200B4069A /* FileListTableView.swift */,
-				35E75FBD223B470200B4069A /* FileListPreview.swift */,
-				35E75FBE223B470200B4069A /* FBFile.swift */,
-				35E75FBF223B470200B4069A /* FileListSearch.swift */,
-				35E75FC0223B470200B4069A /* FileBrowser.h */,
-				35E75FC1223B470200B4069A /* FileBrowser.swift */,
-			);
-			path = FileBrowser;
-			sourceTree = "<group>";
-		};
-		35E75FB1223B470200B4069A /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				35E75FB2223B470200B4069A /* folder@2x.png */,
-				35E75FB3223B470200B4069A /* zip@2x.png */,
-				35E75FB4223B470200B4069A /* WebviewPreviewViewContoller.xib */,
-				35E75FB5223B470200B4069A /* image@2x.png */,
-				35E75FB6223B470200B4069A /* documents@2x.png */,
-				35E75FB7223B470200B4069A /* file@2x.png */,
-				35E75FB8223B470200B4069A /* FileBrowser.xib */,
-				35E75FB9223B470200B4069A /* pdf@2x.png */,
-				35E75FBA223B470200B4069A /* PreviewTransitionViewController.xib */,
-			);
-			path = Resources;
 			sourceTree = "<group>";
 		};
 		35E75FC2223B470200B4069A /* MagiNetworkEye */ = {
@@ -837,11 +829,11 @@
 		35E75FC7223B470200B4069A /* MagiCatonEye */ = {
 			isa = PBXGroup;
 			children = (
-				35E75FC8223B470200B4069A /* BSBacktraceLogger.h */,
 				35E75FC9223B470200B4069A /* MagiCatonEye.h */,
+				35E75FC8223B470200B4069A /* BSBacktraceLogger.h */,
+				35E75FCC223B470200B4069A /* BSBacktraceLogger.m */,
 				35E75FCA223B470200B4069A /* AppBacktrace.swift */,
 				35E75FCB223B470200B4069A /* MagiCatonEye.swift */,
-				35E75FCC223B470200B4069A /* BSBacktraceLogger.m */,
 			);
 			path = MagiCatonEye;
 			sourceTree = "<group>";
@@ -1133,21 +1125,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35E76031223B470200B4069A /* image@2x.png in Resources */,
-				35E76036223B470200B4069A /* PreviewTransitionViewController.xib in Resources */,
 				FA072D09223B3BC700AE0CEE /* LaunchScreen.storyboard in Resources */,
+				35AD9CA8223F33A400F4DAB5 /* pdf@2x.png in Resources */,
 				35E76116223B998C00B4069A /* eye@3x.png in Resources */,
+				35AD9CA4223F33A400F4DAB5 /* image@2x.png in Resources */,
+				35AD9CA2223F33A400F4DAB5 /* zip@2x.png in Resources */,
+				35AD9CA6223F33A400F4DAB5 /* file@2x.png in Resources */,
+				35AD9CA7223F33A400F4DAB5 /* FileBrowser.xib in Resources */,
+				35AD9CA9223F33A400F4DAB5 /* PreviewTransitionViewController.xib in Resources */,
+				35AD9CA3223F33A400F4DAB5 /* WebviewPreviewViewContoller.xib in Resources */,
+				35AD9CA5223F33A400F4DAB5 /* documents@2x.png in Resources */,
+				35AD9CA1223F33A400F4DAB5 /* folder@2x.png in Resources */,
 				FA072D06223B3BC700AE0CEE /* Assets.xcassets in Resources */,
-				35E76034223B470200B4069A /* FileBrowser.xib in Resources */,
 				35E76117223B998C00B4069A /* eye@2x.png in Resources */,
-				35E7602E223B470200B4069A /* folder@2x.png in Resources */,
-				35E7602F223B470200B4069A /* zip@2x.png in Resources */,
-				35E76035223B470200B4069A /* pdf@2x.png in Resources */,
-				35E76033223B470200B4069A /* file@2x.png in Resources */,
 				FA072D04223B3BC600AE0CEE /* Main.storyboard in Resources */,
-				35E76032223B470200B4069A /* documents@2x.png in Resources */,
 				35E7601B223B470200B4069A /* Image.bundle in Resources */,
-				35E76030223B470200B4069A /* WebviewPreviewViewContoller.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1160,7 +1152,6 @@
 			files = (
 				35E760FE223B881900B4069A /* ObjectAgent.swift in Sources */,
 				35E76043223B470200B4069A /* BSBacktraceLogger.m in Sources */,
-				35E7603C223B470200B4069A /* FileBrowser.swift in Sources */,
 				35E75FEE223B470200B4069A /* AppSwizzle.swift in Sources */,
 				35E76077223B4DC900B4069A /* Coding.swift in Sources */,
 				35E76083223B51E300B4069A /* DemoModel.swift in Sources */,
@@ -1179,12 +1170,10 @@
 				35E76023223B470200B4069A /* MagiNetwork.swift in Sources */,
 				35E76022223B470200B4069A /* MagiFPSLabel.swift in Sources */,
 				35E76004223B470200B4069A /* MagiReplicatorHeader.swift in Sources */,
-				35E76039223B470200B4069A /* FileListPreview.swift in Sources */,
 				35E7609D223B72B700B4069A /* NetworkRecordModel.swift in Sources */,
 				35E760F8223B881900B4069A /* NSNotification+MagiLeakEye.swift in Sources */,
 				35E7606B223B4DC900B4069A /* Connection.swift in Sources */,
 				35E760AA223B753200B4069A /* String+MagiEye.swift in Sources */,
-				35E76038223B470200B4069A /* FileListTableView.swift in Sources */,
 				35E7610D223B906800B4069A /* MonitorSysNetFlowView.swift in Sources */,
 				35E760EB223B81FD00B4069A /* MagiEyesManager.swift in Sources */,
 				35E75FD4223B470200B4069A /* UIScrollView+SwCapture.swift in Sources */,
@@ -1204,16 +1193,17 @@
 				35E7610C223B906800B4069A /* MonitorDeviceView.swift in Sources */,
 				35E7608D223B57A500B4069A /* ControlConfiguration.swift in Sources */,
 				35E760BB223B7B6100B4069A /* CommandRecordModel+ORM.swift in Sources */,
-				35E7602B223B470200B4069A /* PreviewManager.swift in Sources */,
 				35E76078223B4DC900B4069A /* Expression.swift in Sources */,
 				35E7601E223B470200B4069A /* MagiASL.swift in Sources */,
 				35E75FF1223B470200B4069A /* UIAlertView+AppBaseKit.swift in Sources */,
 				35E76070223B4DC900B4069A /* Helpers.swift in Sources */,
+				35AD9C9A223F33A400F4DAB5 /* PreviewTransitionViewController.swift in Sources */,
 				35E7607B223B4DC900B4069A /* CustomFunctions.swift in Sources */,
 				35E76026223B470200B4069A /* MagiSystemEye.swift in Sources */,
 				35E76011223B470200B4069A /* MagiBasePlaceHolder.swift in Sources */,
 				35E7603E223B470200B4069A /* MagiEyeURLProtocol.swift in Sources */,
 				35E75FD3223B470200B4069A /* WKWebView+SwCapture.swift in Sources */,
+				35AD9C99223F33A400F4DAB5 /* FileParser.swift in Sources */,
 				35E76071223B4DC900B4069A /* Cipher.swift in Sources */,
 				35E760FC223B881900B4069A /* String+MagiLeakEye.swift in Sources */,
 				35E75FD5223B470200B4069A /* UIView+SwCapture.swift in Sources */,
@@ -1222,6 +1212,8 @@
 				35E75FF5223B470200B4069A /* UIImage+AppBaseKit.swift in Sources */,
 				35E76005223B470200B4069A /* UIView+MagiRefresh.swift in Sources */,
 				35E760AC223B753200B4069A /* UIScreen+MagiEye.swift in Sources */,
+				35AD9CAB223F33A400F4DAB5 /* FileListViewController.swift in Sources */,
+				35AD9C9E223F33A400F4DAB5 /* PreviewManager.swift in Sources */,
 				35E76014223B470200B4069A /* MagiRefresh+Configuration.swift in Sources */,
 				35E75FF6223B470200B4069A /* UIColor+AppBaseKit.swift in Sources */,
 				35E76073223B4DC900B4069A /* FTS4.swift in Sources */,
@@ -1236,12 +1228,11 @@
 				35E76016223B470200B4069A /* MagiRefreshFooterConrol.swift in Sources */,
 				35E760FB223B881900B4069A /* NSObject+MagiAlive.swift in Sources */,
 				35E760CB223B7ED100B4069A /* CommandRecordViewModel.swift in Sources */,
-				35E7602C223B470200B4069A /* FileListViewController.swift in Sources */,
 				35E7606A223B4DC900B4069A /* SQLite-Bridging.m in Sources */,
-				35E7603B223B470200B4069A /* FileListSearch.swift in Sources */,
 				35E76003223B470200B4069A /* MagiRingIndicatorHeader.swift in Sources */,
 				35E760D3223B7EFF00B4069A /* NetworkRecordViewModel.swift in Sources */,
 				35E76102223B8A2300B4069A /* ConsolePrintViewController.swift in Sources */,
+				35AD9CAA223F33A400F4DAB5 /* FileListSearch.swift in Sources */,
 				35E760C3223B7C1400B4069A /* LogRecordModel+ORM.swift in Sources */,
 				35E7610B223B906800B4069A /* RecordTableView.swift in Sources */,
 				35E760D1223B7EF300B4069A /* LogRecordViewModel.swift in Sources */,
@@ -1255,8 +1246,10 @@
 				35E75FFA223B470200B4069A /* String+AppBaseKit.swift in Sources */,
 				35E7600D223B470200B4069A /* MagiRefreshDefaults.swift in Sources */,
 				35E760C9223B7CE900B4069A /* CatonRecordViewModel.swift in Sources */,
+				35AD9C9F223F33A400F4DAB5 /* FileBrowser.swift in Sources */,
 				35E7607D223B4DC900B4069A /* Setter.swift in Sources */,
 				35E760B1223B753200B4069A /* UIApplication+MagiEye.swift in Sources */,
+				35AD9C9B223F33A400F4DAB5 /* FBFile.swift in Sources */,
 				35E760B3223B753200B4069A /* UITableView+MagiEye.swift in Sources */,
 				35E7606F223B4DC900B4069A /* Value.swift in Sources */,
 				35E760BF223B7BF800B4069A /* CrashRecordModel+ORM.swift in Sources */,
@@ -1267,7 +1260,6 @@
 				35E760BD223B7BE100B4069A /* CatonRecordModel+ORM.swift in Sources */,
 				35E7608F223B598A00B4069A /* Configuration.swift in Sources */,
 				35E75FF2223B470200B4069A /* UIFont+AppBaseKit.swift in Sources */,
-				35E7603A223B470200B4069A /* FBFile.swift in Sources */,
 				35E76099223B729900B4069A /* LeakRecordModel.swift in Sources */,
 				35E7600F223B470200B4069A /* MagiReplicatorLayer.swift in Sources */,
 				35E76100223B881900B4069A /* Preparer.swift in Sources */,
@@ -1284,10 +1276,10 @@
 				35E75FF7223B470200B4069A /* UIAlertController+AppBaseKit.swift in Sources */,
 				35E76041223B470200B4069A /* AppBacktrace.swift in Sources */,
 				35E76074223B4DC900B4069A /* FTS5.swift in Sources */,
-				35E7602A223B470200B4069A /* WebviewPreviewViewContoller.swift in Sources */,
 				35E7603F223B470200B4069A /* MagiNetworkEye.swift in Sources */,
+				35AD9CA0223F33A400F4DAB5 /* FileListTableView.swift in Sources */,
 				35E760C7223B7C9B00B4069A /* BaseRecordViewModel.swift in Sources */,
-				35E76112223B984600B4069A /* MagiEyeController+Show.swift in Sources */,
+				35E76112223B984600B4069A /* MagiEyeController+ShowOrHide.swift in Sources */,
 				35E76093223B5A9D00B4069A /* CommandRecordModel.swift in Sources */,
 				35E76027223B470200B4069A /* MagiFPS.swift in Sources */,
 				35E7601D223B470200B4069A /* MagiLog.swift in Sources */,
@@ -1297,15 +1289,14 @@
 				35E76008223B470200B4069A /* UIScrollView+MagiRefresh.swift in Sources */,
 				35E760D7223B816E00B4069A /* MagiEyeController.swift in Sources */,
 				35E75FF9223B470200B4069A /* NSFileManager+AppBaseKit.swift in Sources */,
-				35E76037223B470200B4069A /* PreviewTransitionViewController.swift in Sources */,
 				35E7607E223B4DC900B4069A /* Operators.swift in Sources */,
 				35E760AE223B753200B4069A /* UIView+MagiEye.swift in Sources */,
 				35E75FEF223B470200B4069A /* MagiCrashModel.swift in Sources */,
 				35E76072223B4DC900B4069A /* RTree.swift in Sources */,
 				35E760A9223B753200B4069A /* Thread+MagiEye.swift in Sources */,
 				35E7607C223B4DC900B4069A /* DateAndTimeFunctions.swift in Sources */,
+				35AD9C9D223F33A400F4DAB5 /* WebviewPreviewViewContoller.swift in Sources */,
 				35E7610A223B906800B4069A /* RecordTableViewCell.swift in Sources */,
-				35E7602D223B470200B4069A /* FileParser.swift in Sources */,
 				35E76042223B470200B4069A /* MagiCatonEye.swift in Sources */,
 				35E7603D223B470200B4069A /* URLSession+MagiNetworkEye.swift in Sources */,
 				35E7600E223B470200B4069A /* MagiAnimatableProtocol.swift in Sources */,
@@ -1317,6 +1308,7 @@
 				35E760AF223B753200B4069A /* UITableViewCell+MagiEye.swift in Sources */,
 				35E760B9223B7A6B00B4069A /* RecordType.swift in Sources */,
 				35E760D5223B800E00B4069A /* MonitorSystemType.swift in Sources */,
+				35AD9C9C223F33A400F4DAB5 /* FileListPreview.swift in Sources */,
 				35E760CF223B7EE700B4069A /* LeakRecordViewModel.swift in Sources */,
 				35E760B5223B77BF00B4069A /* Store.swift in Sources */,
 				35E75FFD223B470200B4069A /* MagiArrowFooter.swift in Sources */,

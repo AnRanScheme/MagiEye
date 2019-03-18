@@ -1,5 +1,5 @@
 //
-//  UIApplication+GodEye.swift
+//  UIApplication+MagiEye.swift
 //  Pods
 //
 //  Created by zixun on 16/12/27.
