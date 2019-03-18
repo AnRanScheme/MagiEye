@@ -20,7 +20,6 @@ enum RecordType {
     case network
     case caton
     case leak
-    
     case command
 }
 
@@ -81,7 +80,7 @@ extension RecordType {
 extension RecordType {
     
     func model() -> RecordORMProtocol.Type? {
-        var clazz:AnyClass?
+        var clazz: AnyClass?
         switch self {
         case .log:
             clazz = LogRecordModel.classForCoder()

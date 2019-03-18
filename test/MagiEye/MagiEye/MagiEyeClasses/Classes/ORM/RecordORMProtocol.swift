@@ -88,7 +88,7 @@ extension RecordORMProtocol {
         }
     }
     
-    func insert(complete:@escaping (_ success:Bool)->()) {
+    func insert(complete: @escaping (_ success:Bool)->()) {
         
         
         let insert = Self.table.insert(self.mappingToRelation())
@@ -130,7 +130,7 @@ extension RecordORMProtocol {
             if let sequence = try Self.connection?.prepare(select) {
                 var result = [Self]()
                 for row in sequence {
-                    result.append(Self.mappingToObject(with: row))
+                     result.append(Self.mappingToObject(with: row))
                 }
                 return result.reversed()
             }
