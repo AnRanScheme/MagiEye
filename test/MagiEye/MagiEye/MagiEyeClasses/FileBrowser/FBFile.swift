@@ -11,17 +11,18 @@ import Foundation
 /// FBFile is a class representing a file in FileBrowser
 @objc open class FBFile: NSObject {
     /// Display name. String.
-    @objc open let displayName: String
+    @objc  let displayName: String
     // is Directory. Bool.
-    open let isDirectory: Bool
+    
+    let isDirectory: Bool
     /// File extension.
-    open let fileExtension: String?
+    let fileExtension: String?
     /// File attributes (including size, creation date etc).
-    open let fileAttributes: NSDictionary?
+    let fileAttributes: NSDictionary?
     /// NSURL file path.
-    open let filePath: URL
+    let filePath: URL
     // FBFileType
-    open let type: FBFileType
+    let type: FBFileType
     
     open func delete()
     {
