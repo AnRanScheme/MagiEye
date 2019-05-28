@@ -36,7 +36,7 @@ class CatonRecordViewModel: BaseRecordViewModel {
     }
     
     private func headerString() -> NSAttributedString {
-        let content = "main thread not response with threshold:\(self.model.threshold)"
+        let content = "main thread not response with threshold:\(String(describing: self.model.threshold))"
         return self.headerString(with: "Caton", content: content, color: UIColor(hex: 0xFF0000))
     }
     

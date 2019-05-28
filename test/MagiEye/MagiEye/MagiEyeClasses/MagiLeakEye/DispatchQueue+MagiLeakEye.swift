@@ -12,7 +12,7 @@ public extension DispatchQueue {
     
     fileprivate static var _onceTracker = [String]()
     
-    public class func once(_ file: String = #file,
+    class func once(_ file: String = #file,
                            function: String = #function,
                            line: Int = #line,
                            block:()->Void) {
@@ -27,7 +27,7 @@ public extension DispatchQueue {
      - parameter token: A unique reverse DNS style name such as com.vectorform.<name> or a GUID
      - parameter block: Block to execute once
      */
-    public class func once(token: String, block:()->Void) {
+    class func once(token: String, block:()->Void) {
         // 原子操作 对于一个资源，在写入或读取时，只允许在一个时刻一个角色进行操作，则为原子操作。
         // objc_sync_enter objc_sync_exit配合使用
         objc_sync_enter(self)
